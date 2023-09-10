@@ -27,7 +27,7 @@ const HeaderComingSoon = () => {
               {/* <!--Social Icon--> */}
               <a
                 className="ptf-social-icon ptf-social-icon--style-3 twitter"
-                href="#"
+                href="/"
                 target="_blank"
               >
                 <i className="socicon-twitter"></i>
@@ -35,7 +35,7 @@ const HeaderComingSoon = () => {
               {/* <!--Social Icon--> */}
               <a
                 className="ptf-social-icon ptf-social-icon--style-3 facebook"
-                href="#"
+                href="/"
                 target="_blank"
               >
                 <i className="socicon-facebook"></i>
@@ -43,7 +43,7 @@ const HeaderComingSoon = () => {
               {/* <!--Social Icon--> */}
               <a
                 className="ptf-social-icon ptf-social-icon--style-3 instagram"
-                href="#"
+                href="/"
                 target="_blank"
               >
                 <i className="socicon-instagram"></i>
@@ -51,7 +51,7 @@ const HeaderComingSoon = () => {
               {/* <!--Social Icon--> */}
               <a
                 className="ptf-social-icon ptf-social-icon--style-3 pinterest"
-                href="#"
+                href="/"
                 target="_blank"
               >
                 <i className="socicon-pinterest"></i>

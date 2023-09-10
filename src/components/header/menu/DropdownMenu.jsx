@@ -5,67 +5,17 @@ const menuContent = [
   {
     name: "Home",
     activeClass: "sf-with-ul",
-    menuClass: "two-columns current-menu-item",
+    routerPath: "/home-agency",
+    menuClass: "current-menu-item",
     dropDownItems: [
-      {
-        name: "Home Default",
-        routerPath: "/home-default",
-      },
-      {
-        name: "Home Studio",
-        routerPath: "/home-studio",
-      },
-      {
-        name: "Home Agency",
-        routerPath: "/home-agency",
-      },
-      {
-        name: "Home Minimal",
-        routerPath: "/home-minimal",
-      },
-      {
-        name: "Home Dark",
-        routerPath: "/home-dark",
-      },
-      {
-        name: "Home Freelancer",
-        routerPath: "/home-freelancer",
-      },
-      {
-        name: "Home Trending",
-        routerPath: "/home-trending",
-      },
-      {
-        name: "Home Modern",
-        routerPath: "/home-modern",
-      },
     ],
   },
   {
     name: "Portfolio",
     activeClass: "",
     menuClass: "",
+    routerPath: "/works-masonry",
     dropDownItems: [
-      {
-        name: "Works Grid",
-        routerPath: "/works-grid",
-      },
-      {
-        name: "Works Masonry",
-        routerPath: "/works-masonry",
-      },
-      {
-        name: "Works Listing",
-        routerPath: "/works-listing",
-      },
-      {
-        name: "Works Carousel",
-        routerPath: "/works-carousel",
-      },
-      {
-        name: "Works Showcase",
-        routerPath: "/works-showcase",
-      },
     ],
   },
   {
@@ -149,20 +99,22 @@ const DropdownMenu = () => {
     <ul className="sf-menu">
       {menuContent.map((item, i) => (
         <li className={`menu-item-has-children ${item.menuClass}`} key={i}>
-          <a href="#" className={item.activeClass}>
+          <Link to={item.routerPath}>
             <span>{item.name}</span>
-          </a>
-
-          <ul className="sub-menu mega">
-            {item.dropDownItems.map((val, i) => (
-              <li key={i}>
-                <Link to={val.routerPath}>
-                  {" "}
-                  <span>{val.name}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          </Link>
+{/* Conditionally render the dropdown only if there are items */}
+{item.dropDownItems.length > 0 && (
+            <ul className="sub-menu mega">
+              {item.dropDownItems.map((val, j) => (
+                <li key={j}>
+                  <Link to={val.routerPath}>
+                    {" "}
+                    <span>{val.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       ))}
     </ul>

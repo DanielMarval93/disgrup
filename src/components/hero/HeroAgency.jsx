@@ -140,7 +140,7 @@ const HeroAgency = () => {
                     marginLeft: "2rem",
                   }}
                 >
-                  <a href="#" rel="nofollow">
+                  <a href="/" rel="nofollow">
                     <i className="lnil lnil-play"></i>
                   </a>
                   <div className="ptf-video-button__title">

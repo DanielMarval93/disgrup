@@ -395,7 +395,7 @@ const AboutMe = () => {
                   data-aos-delay="0"
                 >
                   <h2 className="has-secondary-font fw-normal text-center">
-                    <a href="#">@brunoerdison</a>
+                    <a href="/">@brunoerdison</a>
                   </h2>
                 </div>
 

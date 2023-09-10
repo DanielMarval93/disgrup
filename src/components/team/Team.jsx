@@ -59,7 +59,7 @@ const Team = () => {
           <div className="ptf-team-member ptf-team-member--has-effect">
             <div className="ptf-team-member__avatar">
               <div className="shadow-effect"></div>
-              <a href="#">
+              <a href="/">
                 {" "}
                 <img
                   src={`assets/img/root/team/${val.img}.png`}
@@ -70,7 +70,7 @@ const Team = () => {
             </div>
             <div className="ptf-team-member__content">
               <h6 className="ptf-team-member__name">
-                <a href="#">{val.title}</a>
+                <a href="/">{val.title}</a>
               </h6>
               <p className="ptf-team-member__function">{val.designation}</p>
             </div>

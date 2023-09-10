@@ -57,15 +57,17 @@ const HeaderAgency = () => {
               </nav>
               {/* <!--Buttons--> */}
 
-              {/* <!--Navbar Search--> */}
+              {/* <!--Navbar Search--> 
+              
               <div
                 className={
                   click ? "ptf-navbar-search is-open" : "ptf-navbar-search"
                 }
               >
                 <div className="ptf-navbar-search__wrapper">
-                  <Search />
+                   <Search /> 
                 </div>
+                
 
                 <div
                   className="ptf-navbar-search__toggle"
@@ -75,6 +77,7 @@ const HeaderAgency = () => {
                   <i className="lnir lnir-close"></i>
                 </div>
               </div>
+            */}
               {/* <!--Offcanvas Menu Toggle--> */}
 
               <div
@@ -97,11 +100,11 @@ const HeaderAgency = () => {
       >
         <div className="ptf-offcanvas-menu__header">
           <div className="ptf-language-switcher">
-            <a className="is-active" href="#">
+            <a className="is-active" href="/">
               Eng
             </a>
-            <a href="#">Fra</a>
-            <a href="#">Ger</a>
+            <a href="/">Fra</a>
+            <a href="/">Ger</a>
           </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"

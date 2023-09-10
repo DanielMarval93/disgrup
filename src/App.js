@@ -19,7 +19,7 @@ const App = () => {
     <>
       <Helmet>
         <title>Icy Media Agency</title>
-        <meta name="description" content="Portfolio & Agency React Template" />
+        <meta name="description" content="Portfolio & Agency" />
         <meta
           name="keywords"
           content="agency, bootstrap 5, business, clean, corporate, creative, fullpage, minimal, modern, multipurpose, parallax, personal, photography, portfolio, showcase"

@@ -5,7 +5,7 @@ const BlogComment = () => {
     <ul className="ptf-comments">
       <li className="ptf-comment-item">
         <div className="ptf-comment-item__inner">
-          <a className="ptf-comment-avatar" href="#">
+          <a className="ptf-comment-avatar" href="/">
             <img
               src="assets/img/root/comment-avatar-1.png"
               alt="comment author"
@@ -15,7 +15,7 @@ const BlogComment = () => {
           <div className="ptf-comment-content">
             <div className="ptf-comment-header">
               <h5 className="ptf-comment-name">
-                <a href="#">Robert Downey Jr</a>
+                <a href="/">Robert Downey Jr</a>
               </h5>
               <div className="ptf-comment-metas">3 hours ago</div>
             </div>
@@ -26,7 +26,7 @@ const BlogComment = () => {
                 Atume nusaate staman utra phone limo sumeria.
               </p>
             </div>
-            <a className="ptf-comment-reply" href="#">
+            <a className="ptf-comment-reply" href="/">
               Reply
             </a>
           </div>
@@ -36,7 +36,7 @@ const BlogComment = () => {
         <ul className="children">
           <li className="ptf-comment-item">
             <div className="ptf-comment-item__inner">
-              <a className="ptf-comment-avatar" href="#">
+              <a className="ptf-comment-avatar" href="/">
                 <img
                   src="assets/img/root/comment-avatar-2.png"
                   alt=""
@@ -46,7 +46,7 @@ const BlogComment = () => {
               <div className="ptf-comment-content">
                 <div className="ptf-comment-header">
                   <h5 className="ptf-comment-name">
-                    <a href="#">Leona Porter</a>
+                    <a href="/">Leona Porter</a>
                   </h5>
                   <div className="ptf-comment-metas">5 hours ago</div>
                 </div>
@@ -57,7 +57,7 @@ const BlogComment = () => {
                     occaecat cupidatat non proident.
                   </p>
                 </div>
-                <a className="ptf-comment-reply" href="#">
+                <a className="ptf-comment-reply" href="/">
                   Reply
                 </a>
               </div>
@@ -70,7 +70,7 @@ const BlogComment = () => {
 
       <li className="ptf-comment-item">
         <div className="ptf-comment-item__inner">
-          <a className="ptf-comment-avatar" href="#">
+          <a className="ptf-comment-avatar" href="/">
             <img
               src="assets/img/root/comment-avatar-3.png"
               alt=""
@@ -80,7 +80,7 @@ const BlogComment = () => {
           <div className="ptf-comment-content">
             <div className="ptf-comment-header">
               <h5 className="ptf-comment-name">
-                <a href="#">Janie Blonde</a>
+                <a href="/">Janie Blonde</a>
               </h5>
               <div className="ptf-comment-metas">December 25, 2021</div>
             </div>
@@ -90,7 +90,7 @@ const BlogComment = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <a className="ptf-comment-reply" href="#">
+            <a className="ptf-comment-reply" href="/">
               Reply
             </a>
           </div>

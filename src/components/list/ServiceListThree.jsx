@@ -13,7 +13,7 @@ const ServiceListThree = () => {
       <ul>
         {serviceContent.map((val, i) => (
           <li key={i}>
-            <a href="#">
+            <a href="/">
               <i className={`lnil ${val.icon}`}></i> {val.name}
             </a>
           </li>

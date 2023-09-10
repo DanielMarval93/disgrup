@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const awardContent = [
   {
     date: "2021",
@@ -79,17 +80,16 @@ const Award = () => {
               <div className="ptf-rewards-project" key={i}>
                 <div className="ptf-rewards-project__content">
                   <h5>
-                    <a href="#">{list.title}</a>
+                    <p >{list.title}</p>
                   </h5>
                   <span>{list.subTitle}</span>
                 </div>
                 <div className="ptf-rewards-project__link">
-                  <a
+                  <p
                     className="ptf-link-with-arrow text-uppercase fz-14"
-                    href="#"
                   >
                     See project
-                  </a>
+                  </p>
                 </div>
               </div>
             ))}

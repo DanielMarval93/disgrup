@@ -13,7 +13,7 @@ const Categories = () => {
     <ul>
       {cateContent.map((val, i) => (
         <li key={i}>
-          <a href="#">
+          <a href="/">
             {val.catName} <span>{val.postNumber}</span>
           </a>
         </li>

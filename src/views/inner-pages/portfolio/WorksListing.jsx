@@ -64,7 +64,7 @@ const WorksListing = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <a className="ptf-load-more" href="#">
+                  <a className="ptf-load-more" href="/">
                     More
                   </a>
                 </div>

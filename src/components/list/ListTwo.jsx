@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const listContent = [
-  "SEO",
-  "Marketing Strategy",
-  "Email Marketing",
-  "GG/FB ADs",
-  "Content Writing",
+  "SEM & Google Ads",
+  "Social Ads",
+  "Captación de Leads",
+  "Branded Content",
 ];
 
 const ListTwo = () => {

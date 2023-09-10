@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           <div className="ptf-footer-heading has-black-color">
-            Start by
+            Start by &nbsp;
             <Link
               className="has-accent-1 text-decoration-underline"
               to="/contact"
@@ -71,8 +71,8 @@ const Footer = () => {
           </div>
 
           <p className="fz-24">90 Fairground Rd, FL 3290, United States</p>
-          <a className="fz-40 has-black-color" href="mailto:hello@moonex.co">
-            hello@moonex.co
+          <a className="fz-40 has-black-color" href="mailto:info@icymediagency.es">
+            info@icymediagency.es
           </a>
         </div>
       </div>

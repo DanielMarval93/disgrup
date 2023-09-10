@@ -75,7 +75,7 @@ const BlogFive = () => {
                     {" "}
                     <i className="lnil lnil-comments"></i> {val.comments}
                   </Link>
-                  <a className="author" href="#">
+                  <a className="author" href="/">
                     <i className="lnil lnil-user"></i>by
                     <span>{val.author}</span>
                   </a>

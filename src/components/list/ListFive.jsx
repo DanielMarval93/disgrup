@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const listContent = [
-  "Creación y Reconocimiento de Marca",
-  "Storytelling ",
-  "Campañas Publicitarias",
+  "Tráfico",
+  "Visibilidad",
+  "Autoridad Web",
 ];
 
-const ListOne = () => {
+const ListFive= () => {
   return (
     <ul
       className="ptf-services-list ptf-services-list--style-5"
@@ -22,4 +22,4 @@ const ListOne = () => {
   );
 };
 
-export default ListOne;
+export default ListFive;

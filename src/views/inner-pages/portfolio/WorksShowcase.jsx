@@ -217,7 +217,7 @@ const WorksShowcase = () => {
                           Thiago Alcantara
                         </h6>
                         <div className="ptf-twitter-review__info">
-                          <a href="#">@thiago.lfc</a> - 15 Dec, 2022
+                          <a href="/">@thiago.lfc</a> - 15 Dec, 2022
                         </div>
                       </div>
                       <div className="ptf-twitter-review__icon">
@@ -226,7 +226,7 @@ const WorksShowcase = () => {
                     </div>
                     <div className="ptf-twitter-review__content">
                       <p>
-                        The team at <a href="#">@moonexlabs</a> is incredibly
+                        The team at <a href="/">@moonexlabs</a> is incredibly
                         dedicated, knowledgeable, and helpful. The finished
                         product was beautiful, and worth every penny. I would
                         absolutely recommend Moonex Labs.
@@ -294,7 +294,7 @@ const WorksShowcase = () => {
               <div className="ptf-post-navigation ptf-post-navigation--style-2">
                 <div className="container">
                   <span>Next Project</span>
-                  <a className="h1 large-heading ptf-filled-link" href="#">
+                  <a className="h1 large-heading ptf-filled-link" href="/">
                     SPA Brand
                   </a>
                 </div>

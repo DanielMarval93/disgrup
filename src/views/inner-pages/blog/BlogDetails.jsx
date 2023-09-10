@@ -55,16 +55,16 @@ const BlogDetails = () => {
                   <div className="col-xl-8 offset-xl-2">
                     {/* <!--Post Info--> */}
                     <div className="ptf-single-post__info">
-                      <a className="author" href="#">
+                      <a className="author" href="/">
                         <i className="lnil lnil-user"></i>by <span>Admin</span>
                       </a>
-                      <a className="view" href="#">
+                      <a className="view" href="/">
                         <i className="lnil lnil-eye"></i>5,6k Views
                       </a>
-                      <a className="comments" href="#">
+                      <a className="comments" href="/">
                         <i className="lnil lnil-comments"></i>3 Comments
                       </a>
-                      <a className="report" href="#">
+                      <a className="report" href="/">
                         <i className="lnil lnil-warning"></i>Report
                       </a>
                     </div>
@@ -136,7 +136,7 @@ const BlogDetails = () => {
                               Thiago Alcantara
                             </h6>
                             <div className="ptf-twitter-review__info">
-                              <a href="#">@thiago.lfc</a> - 15 Dec, 2022
+                              <a href="/">@thiago.lfc</a> - 15 Dec, 2022
                             </div>
                           </div>
                           <div className="ptf-twitter-review__icon">
@@ -145,7 +145,7 @@ const BlogDetails = () => {
                         </div>
                         <div className="ptf-twitter-review__content">
                           <p>
-                            <a href="#">@moonex</a> - a studio with passionate,
+                            <a href="/">@moonex</a> - a studio with passionate,
                             profressional & full creativity. Much more things
                             that i’m expect. Really awesome & satisfied, alway
                             recommended!
@@ -192,7 +192,7 @@ const BlogDetails = () => {
                         That immediately brought to mind one of{" "}
                         <a
                           className="text-decoration-underline has-accent-4"
-                          href="#"
+                          href="/"
                         >
                           my fondest
                         </a>{" "}
@@ -205,9 +205,9 @@ const BlogDetails = () => {
                     <footer className="ptf-single-post__footer">
                       {/* <!--Post Tags--> */}
                       <div className="ptf-post-tags">
-                        <a href="#">WordPress</a>
-                        <a href="#">Theme</a>
-                        <a href="#">Creative</a>
+                        <a href="/">WordPress</a>
+                        <a href="/">Theme</a>
+                        <a href="/">Creative</a>
                       </div>
                       {/* <!--Post Socials--> */}
                       <div className="ptf-post-socials">

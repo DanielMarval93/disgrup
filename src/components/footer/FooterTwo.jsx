@@ -18,12 +18,12 @@ const FooterTwo = () => {
               </li>
               <li>
                 <span>Phone</span>
-                <a href="tel:86631250859">+8 (663) 125-08-59</a>
+                <a href="tel:34622063782">+34 (622) 06-37-82</a>
               </li>
               <li>
                 <span>Email</span>
-                <a href="mailto:hello@moonexstudio.com">
-                  hello@moonexstudio.com
+                <a href="mailto:info@icymediagency.es">
+                  info@icymediagency.es
                 </a>
               </li>
             </ul>
