@@ -49,13 +49,7 @@ const HeaderPreview = () => {
               </ul>
             </nav>
             {/* <!--Button--> */}
-            <a
-              className="ptf-btn ptf-btn--underlined"
-              href="https://themeforest.net/item/moonex-portfolio-agency-react-template/35431456"
-              target="_blank"
-            >
-              Purchase Now $19
-            </a>
+
           </div>
         </div>
       </div>
