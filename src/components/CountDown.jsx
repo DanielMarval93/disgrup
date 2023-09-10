@@ -30,13 +30,15 @@ const CountDown = () => {
         setTimerMinutes(minutes);
         setTimerSeconds(seconds);
       }
-    }, 1000);
+    }, 1000); 
   };
 
   useEffect(() => {
+    var observerRefValue = null
+    observerRefValue = interval.current;
     setTimer();
     return () => {
-      clearInterval(interval.current);
+      clearInterval(observerRefValue);
     };
   });
 
