@@ -92,7 +92,7 @@ const HeroAgency = () => {
               ></div>
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
-                <a className="ptf-btn ptf-btn--primary" href="" target="_self">
+                <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
                   Get Started
                 </a>
                 {/* <!--Button--> */}
@@ -128,7 +128,7 @@ const HeroAgency = () => {
               ></div>
               <div className="d-flex">
                 {/* <!--Button--> */}
-                <a className="ptf-btn ptf-btn--primary" href="" target="_self">
+                <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
                   Get Started
                 </a>
                 {/* <!--Video Button--> */}
