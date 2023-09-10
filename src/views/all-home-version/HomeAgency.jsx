@@ -9,7 +9,6 @@ import HeroAgency from "../../components/hero/HeroAgency";
 import ListOne from "../../components/list/ListOne";
 import ListTwo from "../../components/list/ListTwo";
 import PortfolioTwo from "../../components/portfolio/PortfolioTwo";
-import Pricing from "../../components/pricing/Pricing";
 import Team from "../../components/team/Team";
 import TestimonialTwo from "../../components/testimonial/TestimonialTwo";
 import ImageGrid from "../../components/image-grid/ImageGrid";
