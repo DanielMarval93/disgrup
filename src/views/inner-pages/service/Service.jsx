@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import ServiceOne from "../../../components/service/ServiceOne";
+//import ServiceOne from "../../../components/service/ServiceOne";//
 import Approach from "../../..//components/service/Approach";
 import ContactJarallax from "../../../components/jarallax/ContactJarallax";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
