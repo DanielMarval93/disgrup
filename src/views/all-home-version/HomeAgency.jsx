@@ -1,22 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import CounterTwo from "../../components/counter/CounterTwo";
+// import CounterTwo from "../../components/counter/CounterTwo";// 
 import CopyRightTwo from "../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../components/footer/FooterTwo";
 import HeaderAgency from "../../components/header/HeaderAgency";
 import HeroAgency from "../../components/hero/HeroAgency";
-import ListOne from "../../components/list/ListOne";
-import ListTwo from "../../components/list/ListTwo";
 import PortfolioTwo from "../../components/portfolio/PortfolioTwo";
 import Team from "../../components/team/Team";
 import TestimonialTwo from "../../components/testimonial/TestimonialTwo";
 import ImageGrid from "../../components/image-grid/ImageGrid";
 import ServiceOne from "../../components/service/ServiceOne";
-import ListThree from "../../components/list/ListThree";
-import ListFour from "../../components/list/ListFour";
-import ListFive from "../../components/list/ListFive";
-import ListSix from "../../components/list/ListSix";
+
 
 const HomeAgency = () => {
   return (
@@ -79,7 +74,7 @@ const HomeAgency = () => {
                     </div>
                   </div>
                   {/* End .col */}
-                  <CounterTwo />
+                 {/* <CounterTwo />*/}
                 </div>
               </div>
               {/* <!--Spacer--> */}
@@ -170,8 +165,7 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.875rem" }}
                       ></div>
                       <h3 style={{ maxWidth: "30rem" }} className="has-accent-0">
-                        We bring trusted solutions for your business
-                      </h3>
+                      Tenemos las soluciones confiables que tu negocio necesita.                       </h3>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -199,193 +193,73 @@ const HomeAgency = () => {
             </section>
             {/* End  Advertising Banner */}
 
-            {/*=============================================
-          Start Service section
-          ============================================== */}
-
+                       {/*=============================================
+                Start Service Section
+              ============================================== */}
             <section>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
-              <div className="container">
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >
-                  <h2 className="h1 large-heading has-accent-0">What We Do</h2>
-                </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "4.375rem", "--ptf-md": "2.1875rem" }}
-                ></div>
-                <div
-                  className="row"
-                  style={{
-                    "--bs-gutter-x": "10.625rem",
-                    "--bs-gutter-y": " 5.3125rem",
-                  }}
-                >
-                  <div className="col-12 col-md-6">
+              <div className="container-xxl">
+                <div className="row">
+                  <div className="col-lg-3">
                     {/* <!--Animated Block--> */}
                     <div
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h2>Branding</h2>
+                      <h2 className="h1 large-heading">
+                        Nuestros <br />
+                        Servicios
+                      </h2>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
+                        style={{ "--ptf-xxl": "2.5rem" }}
                       ></div>
-                      {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListOne />
+                      <p className="fz-18">
+                      Colaboramos con empresas como la tuya para aumentar tus ganancias. Creamos impacto, dirigimos visitas a tu sitio web, conectamos con tus clientes y hacemos crecer tus ventas. ¡Damos un giro positivo a tu negocio!
+                      </p>
                     </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
+                    {/* <!--Spacer--> */}
                     <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Paid Media</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListTwo />
-                    </div>
+                      className="ptf-spacer"
+                      style={{
+                        "--ptf-lg": "4.375rem",
+                        "--ptf-md": "2.1875rem",
+                      }}
+                    ></div>
                   </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Marketing de Contenidos</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListThree />
-                    </div>
+                  <div className="col-lg-8 offset-lg-1">
+                    <ServiceOne />
                   </div>
-
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Marketing en Redes Sociales</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListFour />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>SEO</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListFive />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Desarrollo Paginas Web</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListSix />
-                    </div>
-                  </div>
-
-
                 </div>
-              </div>
+                {/* End .row */}
+                
+                {/* <!--Spacer--> */}
+                <div
+                  className="ptf-spacer"
+                  style={{ "--ptf-xxl": "7.5rem", "--ptf-md": "3.75rem" }}
+                ></div>
 
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
+                
+                <ImageGrid />
+              </div>
+              {/* End .container-xxl */}
             </section>
+            {/* End service */}
+
+                            {/* <!--Spacer--> */}
+                            <div
+                  className="ptf-spacer"
+                  style={{ "--ptf-xxl": "7.5rem", "--ptf-md": "3.75rem" }}
+                ></div>
+
+
+            
 
             {/*=============================================
           Start Latest Works section
@@ -479,65 +353,6 @@ const HomeAgency = () => {
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
             </section>
-
-                       {/*=============================================
-                Start Service Section
-              ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-lg-3">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1 large-heading">
-                        Our <br />
-                        Services
-                      </h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem" }}
-                      ></div>
-                      <p className="fz-18">
-                        We help ambitious businesses like yours generate more
-                        profits by building awareness, driving web traffic,
-                        connecting with customers and growing overall sales.
-                      </p>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{
-                        "--ptf-lg": "4.375rem",
-                        "--ptf-md": "2.1875rem",
-                      }}
-                    ></div>
-                  </div>
-                  <div className="col-lg-8 offset-lg-1">
-                    <ServiceOne />
-                  </div>
-                </div>
-                {/* End .row */}
-
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "7.5rem", "--ptf-md": "3.75rem" }}
-                ></div>
-                <ImageGrid />
-              </div>
-              {/* End .container-xxl */}
-            </section>
-            {/* End service */}
 
 
             <section>

@@ -306,13 +306,21 @@ const PortfolioListing = () => {
                       <div className="ptf-work__date">{val.date}</div>
                     </article>
                   ))}
+                        <div style={{ height: '25px' }}></div>
+
                 </div>
                 <div></div>
                 {/* End .grid-item */}
               </div>
+              <div
+      className="ptf-animated-block"
+      data-aos="fade"
+      data-aos-delay="0"
+      style={{ marginBottom: i === portfolioContent.length - 1 ? '25px' : '0' }}
+    ></div>
               {/* End .ptf-isotope-grid */}
             </div>
-
+                    
             {/* End portfolio */}
           </TabPanel>
         ))}

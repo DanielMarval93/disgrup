@@ -19,76 +19,46 @@ const menuContent = [
     ],
   },
   {
-    name: "Blog",
+    name: "Contact",
     activeClass: "",
     menuClass: "",
+    routerPath: "/contact",
     dropDownItems: [
-      {
-        name: "Blog Grid",
-        routerPath: "/blog-grid",
-      },
-      {
-        name: "Blog Masonry",
-        routerPath: "/blog-masonry",
-      },
-      {
-        name: "Blog Sidebar",
-        routerPath: "/blog-sidebar",
-      },
-      {
-        name: "Blog Details",
-        routerPath: "/blog-details",
-      },
-      {
-        name: "Blog Details Sidebar",
-        routerPath: "/blog-details-sidebar",
-      },
     ],
   },
   {
-    name: "Pages",
+    name: "About us",
     activeClass: "",
     menuClass: "two-columns",
+    routerPath: "/about-us",
+    dropDownItems: [
+    ],
+  },
+  {
+    name: "Services",
+    activeClass: "",
+    menuClass: "",
+    routerPath: "/service",
     dropDownItems: [
       {
-        name: "About Us",
-        routerPath: "/about-us",
+        name: "Service Details",
+        routerPath: "/service-details",
       },
       {
-        name: "About Me",
-        routerPath: "/about-me",
+        name: "Service Details",
+        routerPath: "/service-details",
       },
-      {
-        name: "Services",
-        routerPath: "/service",
+            {
+        name: "Service Details",
+        routerPath: "/service-details",
       },
       {
         name: "Service Details",
         routerPath: "/service-details",
       },
       {
-        name: "Pricing",
-        routerPath: "/pricing",
-      },
-      {
-        name: "Team",
-        routerPath: "/team",
-      },
-      {
-        name: "FAQ",
-        routerPath: "/faq",
-      },
-      {
-        name: "Contact",
-        routerPath: "/contact",
-      },
-      {
-        name: "Page 404",
-        routerPath: "/404",
-      },
-      {
-        name: "Coming Soon",
-        routerPath: "/coming-soon",
+        name: "Service Details",
+        routerPath: "/service-details",
       },
     ],
   },

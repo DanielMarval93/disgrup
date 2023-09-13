@@ -1,10 +1,10 @@
 import React from "react";
 
 const serviceContent = [
-  { icon: "lnil-cup", name: "Brand Consultant" },
-  { icon: "lnil-website-rank", name: "UI/UX Solution" },
-  { icon: "lnil-3d", name: "Packaging" },
-  { icon: "lnil-video-camera-alt-1", name: "Motion Video & TVC" },
+  { icon: "lnil-cup", name: "Consultoria de Branding" },
+  { icon: "lnil-website-rank", name: "Soluciones Web" },
+  { icon: "lnil-3d", name: "Growth Partner" },
+  { icon: "lnil-video-camera-alt-1", name: "Manejo de Redes Sociales" },
 ];
 
 const ServiceListThree = () => {

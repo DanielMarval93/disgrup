@@ -57,16 +57,16 @@ const Footer = () => {
             className="ptf-footer-heading has-black-color"
             style={{ maxWidth: "37.5rem" }}
           >
-            Boost Your Business Up To High Level
+              Impulsa tu negocio al maximo nivel.
           </div>
 
           <div className="ptf-footer-heading has-black-color">
-            Start by &nbsp;
+            Contact con &nbsp;
             <Link
               className="has-accent-1 text-decoration-underline"
               to="/contact"
             >
-              Saying Hi!
+              Nosotros!
             </Link>
           </div>
 

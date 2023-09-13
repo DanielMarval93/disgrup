@@ -84,13 +84,14 @@
 // custom
 .image-1 {
   background-image: url(../../img/home/agency/main-slide-1.jpg);
-  background-position: top !important;
+  //background-position: top !important;//
 }
 .image-2 {
   background-image: url(../../img/home/agency/main-slide-2.jpg);
 }
 .image-3 {
   background-image: url(../../img/home/agency/main-slide-3.jpg);
+  background-position: top !important;
 }
 .ptf-showcase-3 {
   .slick-prev {

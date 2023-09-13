@@ -4,31 +4,27 @@ import { Link } from "react-router-dom";
 const serviceContent = [
   {
     icon: "lnil lnil-cup",
-    titlePart1: "BRAND",
-    titlePart2: "CONSULTANT",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    titlePart1: "CONSULTORIA",
+    titlePart2: "DE BRANDING",
+    descriptions: `Transforma tu marca, conectando emociones con estrategias sólidas para destacar en línea.`,
   },
   {
     icon: "lnil lnil-website-rank",
-    titlePart1: "UI/UX",
-    titlePart2: "SOLUTION",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    titlePart1: "SOLUCIONES",
+    titlePart2: "WEB",
+    descriptions: ` Nuestras soluciones web UI/UX maximizan la experiencia del usuario y la interfaz para crear sitios web impactantes y efectivos.`,
   },
   {
     icon: "lnil lnil-3d",
-    titlePart1: "PACKAGING",
-    titlePart2: "",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    titlePart1: "GROWTH",
+    titlePart2: "PARTNERSHIP",
+    descriptions: ` Somos tu aliado de crecimiento, impulsando tu marca a nuevos niveles de éxito con estrategias probadas y personalizadas.`,
   },
   {
     icon: "lnil lnil-video-camera-alt-1",
-    titlePart1: "MOTION VIDEO",
-    titlePart2: "& TVC",
-    descriptions: ` We build and activate brands throung cultural insight &amp;
-        strategic vision.`,
+    titlePart1: "PRESENCIA EN",
+    titlePart2: "REDES SOCIALES",
+    descriptions: ` "Potenciamos tu presencia en redes sociales con estrategias impactantes que conectan, interactúan y crean seguidores leales.`,
   },
 ];
 
@@ -67,5 +63,7 @@ const ServiceOne = () => {
     </>
   );
 };
+
+
 
 export default ServiceOne;
