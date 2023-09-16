@@ -51,7 +51,7 @@ const HeroAgency = () => {
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
-                  Get Started
+                  Contactanos
                 </a>
                 {/* <!--Button--> */}
                 <Link
@@ -59,7 +59,7 @@ const HeroAgency = () => {
                   to="/service"
                   style={{ marginLeft: "2rem" }}
                 >
-                  Our Services
+                  Servicios
                 </Link>
               </div>
             </div>
@@ -93,7 +93,7 @@ const HeroAgency = () => {
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
-                  Get Started
+                  Contactanos
                 </a>
                 {/* <!--Button--> */}
               </div>
@@ -129,9 +129,9 @@ const HeroAgency = () => {
               <div className="d-flex">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
-                  Get Started
+                  Contactanos
                 </a>
-                {/* <!--Video Button--> */}
+                {/* <!--Video Button--> 
                 <div
                   className="ptf-video-button"
                   onClick={() => setOpen(true)}
@@ -148,6 +148,8 @@ const HeroAgency = () => {
                     story
                   </div>
                 </div>
+              */}
+
               </div>
             </div>
           </div>

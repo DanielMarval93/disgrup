@@ -9,7 +9,7 @@ const WorksMasonry = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--works-masonry">
       <Helmet>
-        <title>Moonex - Works/Portfolio Masonry</title>
+        <title>Portafolio - Icy Media Agency</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -35,7 +35,7 @@ const WorksMasonry = () => {
                       data-aos-delay="0"
                     >
                       <h1 className="large-heading">
-                        Look at usual things with unusual eyes.
+                        Ve mas alla de lo que esta a simple vista.
                       </h1>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ const WorksMasonry = () => {
             Start Portfolio More 
             ============================================== */}
             <section>
-              <div className="container-xxl">
+              <div className="container-xl">
                 {/* <!--Animated Block--> */}
                 <div
                   className="ptf-animated-block"
@@ -70,9 +70,9 @@ const WorksMasonry = () => {
                     <PortfolioSevenMasonry />
                   </div>
                 </div>
-                {/* <!--Spacer--> */}
+                {/* <!--Spacer--> 
                 <div className="text-center">
-                  {/* <!--Animated Block--> */}
+                  {/* <!--Animated Block--> 
                   <div
                     className="ptf-animated-block"
                     data-aos="fade"
@@ -82,14 +82,14 @@ const WorksMasonry = () => {
                       More
                     </a>
                   </div>
-                </div>
+                </div>*/}
               </div>
 
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> 
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
+              ></div>*/}
             </section>
           </div>
           {/* End .ptf-page */}

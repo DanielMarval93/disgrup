@@ -303,6 +303,7 @@ const Preview = () => {
                 style={{ "--ptf-xxl": "0.625rem" }}
               ></div>
               {/* <!--Button--> */}
+              {/*
               <a
                 className="ptf-btn ptf-btn--success"
                 href="https://themeforest.net/item/moonex-portfolio-agency-react-template/35431456"
@@ -310,6 +311,7 @@ const Preview = () => {
               >
                 Purchase Now
               </a>
+              */}
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"

@@ -4,7 +4,7 @@ const serviceContent = [
   { icon: "lnil-cup", name: "Consultoria de Branding" },
   { icon: "lnil-website-rank", name: "Soluciones Web" },
   { icon: "lnil-3d", name: "Growth Partner" },
-  { icon: "lnil-video-camera-alt-1", name: "Manejo de Redes Sociales" },
+  { icon: "lnil-video-camera-alt-1", name: "Manejo de redes sociales" },
 ];
 
 const ServiceListThree = () => {

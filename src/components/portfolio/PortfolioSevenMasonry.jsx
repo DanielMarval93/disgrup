@@ -11,58 +11,36 @@ const breakpointColumnsObj = {
 };
 
 const portfolioMenu = [
-  "All",
-  "Branding",
-  "Packaging",
-  "Illustration",
-  "Motion",
-  "Animation",
+  "Todo",
+  "Web",
+  "Redes",
 ];
 
 const portfolioContent = [
   {
     tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
-      { img: "work-3", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-5", meta: "Web Design", title: "Taskly Dashboard" },
-      { img: "work-4", meta: "Illustration", title: "LW Poster" },
-      { img: "work-2", meta: "Branding, Motion", title: "Film & Art Festival" },
-      { img: "work-6", meta: "Branding, Motion", title: "Dark Wishky Wine" },
+      { img: "work-1", meta: "Diseño Web", title: "Cathalo Box" },
+      { img: "work-2", meta: "Diseño Web", title: "Dvine Models" },
+      { img: "work-3", meta: "Redes", title: "La Perla Restaurante" },
+      { img: "work-4", meta: "Red", title: "Bocachica Mambo Beach" },
+      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN" },
+      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN" },
     ],
   },
   {
     tabContent: [
-      { img: "work-3", meta: "Illustration", title: "LW Poster" },
-      { img: "work-6", meta: "Branding, Motion", title: "Film & Art Festival" },
-      { img: "work-5", meta: "Branding, Motion", title: "Dark Wishky Wine" },
+      { img: "work-1", meta: "Diseño Web", title: "Cathalo Box" },
+      { img: "work-2", meta: "Diseño Web", title: "Dvine Models" },
+      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN" },
+      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN" },
     ],
   },
   {
     tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
-      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
-    ],
-  },
-  {
-    tabContent: [
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
-      { img: "work-3", meta: "Illustration", title: "LW Poster" },
-      { img: "work-6", meta: "Branding, Motion", title: "Film & Art Festival" },
-    ],
-  },
-  {
-    tabContent: [
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
-      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
-    ],
-  },
-  {
-    tabContent: [
-      { img: "work-2", meta: "Web Design, Branding", title: "FG Print Brand" },
-      { img: "work-4", meta: "Web Design", title: "Taskly Dashboard" },
-      { img: "work-1", meta: "Web Design", title: "Supro Online Store" },
+      { img: "work-3", meta: "Redes", title: "La Perla Restaurante" },
+      { img: "work-4", meta: "Red", title: "Bocachica Mambo Beach" },
+      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN" },
+      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN" },
     ],
   },
 ];

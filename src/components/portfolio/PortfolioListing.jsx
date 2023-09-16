@@ -17,25 +17,25 @@ const portfolioContent = [
   {
     tabContent: [
       {
-        cat: "Branding",
-        title: "Supro Online Store",
-        date: "2021",
+        cat: "Web + Redes",
+        title: "Cathalo Box",
+        date: "2023",
         routerLink: "/portfolio-details",
         imgPopup: "work-1",
         dataId: "work-1",
       },
       {
-        cat: "Illustration",
-        title: "LW Poster",
-        date: "2020",
+        cat: "Web",
+        title: "Dvine Models",
+        date: "2022",
         routerLink: "/portfolio-details",
         imgPopup: "work-2",
         dataId: "work-2",
       },
       {
-        cat: "Branding, UI/UX",
-        title: "Lewis Studio Website",
-        date: "2020",
+        cat: "Redes",
+        title: "La Perla Restaurante",
+        date: "2022",
         routerLink: "/portfolio-details",
         imgPopup: "work-3",
         dataId: "work-3",
@@ -49,24 +49,24 @@ const portfolioContent = [
         dataId: "work-4",
       },
       {
-        cat: "UI/UX",
-        title: "Taskly Dashboard",
-        date: "2020",
+        cat: "Redes + Web",
+        title: "Hummer BCN",
+        date: "2022",
         routerLink: "/portfolio-details",
         imgPopup: "work-5",
         dataId: "work-5",
       },
       {
-        cat: "Product",
-        title: "Film & Art Festival",
-        date: "2020",
+        cat: "Redes + Web",
+        title: "Partybusbcn",
+        date: "2022",
         routerLink: "/portfolio-details",
         imgPopup: "work-6",
         dataId: "work-6",
       },
       {
-        cat: "Branding, Packaging",
-        title: "Dark Wishky Wine",
+        cat: "Web/SEO + Campana de Ads",
+        title: "Lockstocks",
         date: "2020",
         routerLink: "/portfolio-details",
         imgPopup: "work-7",
@@ -312,12 +312,7 @@ const PortfolioListing = () => {
                 <div></div>
                 {/* End .grid-item */}
               </div>
-              <div
-      className="ptf-animated-block"
-      data-aos="fade"
-      data-aos-delay="0"
-      style={{ marginBottom: i === portfolioContent.length - 1 ? '25px' : '0' }}
-    ></div>
+              
               {/* End .ptf-isotope-grid */}
             </div>
                     

@@ -75,8 +75,8 @@ const HeaderAgency = () => {
                   <i className="lnir lnir-search-alt"></i>
                   <i className="lnir lnir-close"></i>
                 </div>
+                
               </div>
-            */}
               {/* <!--Offcanvas Menu Toggle--> */}
 
               <div
@@ -97,21 +97,21 @@ const HeaderAgency = () => {
           click1 ? "ptf-offcanvas-menu is-open" : "ptf-offcanvas-menu "
         }
       >
-        <div className="ptf-offcanvas-menu__header">
+         <div className="ptf-offcanvas-menu__header">
           <div className="ptf-language-switcher">
-            <a className="is-active" href="/">
+            {/*<a className="is-active" href="/">
               Eng
             </a>
             <a href="/">Fra</a>
-            <a href="/">Ger</a>
-          </div>
+      <a href="/">Ger</a>*/}
+      </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"
             onClick={handleClick1}
           >
             <i className="lnir lnir-close"></i>
           </span>
-        </div>
+      </div>
         {/* End .ptf-offcanvas-menu__header */}
 
         <MobileMenu />

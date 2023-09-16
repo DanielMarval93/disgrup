@@ -11,7 +11,7 @@ const menuContent = [
     ],
   },
   {
-    name: "Portfolio",
+    name: "Portafolio",
     activeClass: "",
     menuClass: "",
     routerPath: "/works-masonry",
@@ -19,7 +19,7 @@ const menuContent = [
     ],
   },
   {
-    name: "Contact",
+    name: "Contacto",
     activeClass: "",
     menuClass: "",
     routerPath: "/contact",
@@ -27,37 +27,29 @@ const menuContent = [
     ],
   },
   {
-    name: "About us",
-    activeClass: "",
-    menuClass: "two-columns",
-    routerPath: "/about-us",
-    dropDownItems: [
-    ],
-  },
-  {
-    name: "Services",
+    name: "Servicios",
     activeClass: "",
     menuClass: "",
     routerPath: "/service",
     dropDownItems: [
       {
-        name: "Service Details",
+        name: "Branding",
         routerPath: "/service-details",
       },
       {
-        name: "Service Details",
+        name: "Paid Media",
         routerPath: "/service-details",
       },
             {
-        name: "Service Details",
+        name: "Marketing de Contenidos",
         routerPath: "/service-details",
       },
       {
-        name: "Service Details",
+        name: "Marketing de Redes Sociales",
         routerPath: "/service-details",
       },
       {
-        name: "Service Details",
+        name: "Desarollo Paginas Web",
         routerPath: "/service-details",
       },
     ],

@@ -7,14 +7,14 @@ import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import ImageGrid from "../../../components/image-grid/ImageGrid";
-import ServiceOne from "../../../components/service/ServiceOne";
+import ServiceThree from "../../../components/service/ServiceThree";
 import Testimonial from "../../../components/testimonial/Testimonial";
 
 const AboutUs = () => {
   return (
     <div className="ptf-site-wrapper animsition  ptf-is--about-us">
       <Helmet>
-        <title>Moonex - About Us</title>
+        <title>Icy Media Agency - Nosotros</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -42,7 +42,7 @@ const AboutUs = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading">Moonex Labs</h1>
+                      <h1 className="large-heading has-accent-0">Icy Media Agency</h1>
                     </div>
                     {/* <!--Spacer--> */}
                     <div
@@ -55,7 +55,7 @@ const AboutUs = () => {
                       data-aos="fade"
                       data-aos-delay="100"
                     >
-                      <p className="fz-30 fw-bold text-uppercase has-3-color">
+                      <p className="fz-30 fw-bold text-uppercase has-12-color">
                         Digital solutions for <br />
                         your business
                       </p>
@@ -85,7 +85,7 @@ const AboutUs = () => {
                                 "--ptf-md": "2.1875rem",
                               }}
                             ></div>
-                            <p className="fz-24">
+                            <p className="fz-24 has-12-color">
                               We help our client suceed by creating identities,
                               digital experiences, andprintmaterials that
                               communicate clearly, achieve marketing goals &
@@ -191,7 +191,7 @@ const AboutUs = () => {
                     ></div>
                   </div>
                   <div className="col-lg-8 offset-lg-1">
-                    <ServiceOne />
+                    <ServiceThree/>
                   </div>
                 </div>
                 {/* End .row */}
