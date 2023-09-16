@@ -15,7 +15,7 @@ const Service = () => {
   return (
     <div>
       <Helmet>
-        <title>Moonex - Services</title>
+        <title>Icy Media Agency - Servicios</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -116,7 +116,7 @@ const Service = () => {
                 data-aos="fade"
                 data-aos-delay="0"
               >
-                <h2 className="h1 large-heading">Our Approach</h2>
+                <h2 className="h1 large-heading">Como lo hacemos</h2>
               </div>
               {/* <!--Spacer--> */}
               <div

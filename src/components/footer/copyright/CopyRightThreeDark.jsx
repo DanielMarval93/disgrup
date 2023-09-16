@@ -17,7 +17,7 @@ const CopyRightThreeDark = () => {
               ib-themes
             </a>
           </span>
-          . All Rights Reserved.
+          . All Rights Reserved.asdasdsa
         </p>
       </div>
       {/* End .col */}

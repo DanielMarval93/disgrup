@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 const pricingContent = [
   {
-    planName: "BASIC PLAN",
-    price: "49",
-    priceDuration: "Month",
+    planName: "PRESS KIT",
+    price: "250",
+    priceDuration: "Desde",
     pirceDescriptions: "10% taxed will include after make price",
-    pricingFeatures: ["Full Design & Development", "Installation"],
+    pricingFeatures: ["Presenta tu propuesta musical de manera adecuada. Cautiva y convence para que apuesten por ti. Cierra acuerdos de patrocinio y publicidad, muestra una marca sólida a las agencias de management y booking, y seduce con tu perfil y tu presentación"  ],
     badge: "",
     badgeClass: "",
     delayAnimation: "0",
   },
   {
-    planName: "PREMIUM PLAN",
+    planName: "GASTROBOMBA",
     price: "69",
-    priceDuration: "Month",
+    priceDuration: "Desde",
     pirceDescriptions: "10% taxed will include after make price",
     pricingFeatures: [
       "Full Design & Development",
@@ -27,9 +27,9 @@ const pricingContent = [
     delayAnimation: "100",
   },
   {
-    planName: "ULTIMATE PLAN",
+    planName: "SOCIAL MEDIA MANAGER",
     price: "99",
-    priceDuration: "Month",
+    priceDuration: "Desde",
     pirceDescriptions: "10% taxed will include after make price",
     pricingFeatures: [
       "Full Design & Development",
@@ -40,14 +40,29 @@ const pricingContent = [
     badge: "",
     badgeClass: "",
     delayAnimation: "200",
+  },{
+    planName: "WEB + POSICIONAMIENTO SEO",
+    price: "99",
+    priceDuration: "Desde",
+    pirceDescriptions: "10% taxed will include after make price",
+    pricingFeatures: [
+      "Full Design & Development",
+      "Installation",
+      "Support Lifetime",
+      "SEO/Marketing Include",
+    ],
+    badge: "",
+    badgeClass: "",
+    delayAnimation: "0",
   },
+  
 ];
 
 const Pricing = () => {
   return (
     <>
       {pricingContent.map((val, i) => (
-        <div className="col-xl-4 col-lg-6" key={i}>
+        <div className="col-xl-6 col-lg-6" key={i} style={{marginTop: "20px"}}>
           {/* <!--Animated Block--> */}
           <div
             className="ptf-animated-block h-100"
@@ -61,12 +76,12 @@ const Pricing = () => {
                 <h4 className="ptf-pricing-table__title">{val.planName}</h4>
               </div>
               <div className="ptf-pricing-table__price">
-                <span className="currency">$</span>
+                <span className="period">{val.priceDuration} </span>
+                <span className="currency">€</span>
                 <span className="price">{val.price}</span>
-                <span className="period">/ {val.priceDuration}</span>
               </div>
               <div className="ptf-pricing-table__description">
-                {val.priceDuration}
+            
               </div>
               <div className="ptf-pricing-table__content">
                 <ul>

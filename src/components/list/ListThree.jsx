@@ -17,7 +17,7 @@ const ListThree = () => {
     >
       {listContent.map((val, i) => (
         <li key={i}>
-          <Link to="/service-details">{val}</Link>
+          <Link className="has-white-color" to="/service-details">{val}</Link>
         </li>
       ))}
     </ul>

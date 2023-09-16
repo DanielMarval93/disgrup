@@ -57,7 +57,7 @@ const HeaderTrending = () => {
               </nav>
               {/* <!--Buttons--> */}
 
-              {/* <!--Navbar Search--> */}
+              {/* <!--Navbar Search--> 
               <div
                 className={
                   click ? "ptf-navbar-search is-open" : "ptf-navbar-search"
@@ -74,7 +74,7 @@ const HeaderTrending = () => {
                   <i className="lnir lnir-search-alt"></i>
                   <i className="lnir lnir-close"></i>
                 </div>
-              </div>
+              </div>*/}
               {/* <!--Offcanvas Menu Toggle--> */}
 
               <div

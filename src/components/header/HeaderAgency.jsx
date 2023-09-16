@@ -103,7 +103,7 @@ const HeaderAgency = () => {
               Eng
             </a>
             <a href="/">Fra</a>
-      <a href="/">Ger</a>*/}
+      <a href="/">Ger</a>*/}  
       </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"

@@ -2,40 +2,40 @@ import React from "react";
 
 const approachContent = [
   {
-    subTitle: "ONE",
-    title: "Research",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.`,
+    subTitle: "UNO",
+    title: "Busqueda",
+    descriptions: `Buscamos  las mejores soluciones, analizamos el mercado y la competencia.`,
     delayAnimation: "0",
   },
 
   {
-    subTitle: "TWO",
-    title: "Concept",
-    descriptions: `Donec venenatis consequat libero, quis auctor nunc volutpat quis. Proin at ipsum id magna dapibus dictum eget lobortis magna. Fusce et ligula non tellus vulputate condimentum.`,
+    subTitle: "DOS",
+    title: "Concepto",
+    descriptions: `Ideamos el concepto de marca y los objetivos a alcanzar.`,
     delayAnimation: "100",
   },
   {
-    subTitle: "THREE",
-    title: "Strategy",
-    descriptions: `Consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.`,
+    subTitle: "TRES",
+    title: "Estrategia",
+    descriptions: `Desarrollamos una estrategia conjunta con nuestros clientes, que nos permita aterrizar los conceptos y medir los resultados.`,
     delayAnimation: "200",
   },
   {
-    subTitle: "FOUR",
-    title: "Development",
-    descriptions: `Vivamus vel sollicitudin sem, id sagittis justo. Nam non magna eleifend, tempus nisl quis, commod diam. Morbi gravida ut nulla non porttitor. Suspendis eget arcu eu ex dignissim faucibus. Nullam et luctus tortor.`,
+    subTitle: "CUATRO",
+    title: "Desarrollo",
+    descriptions: `Creamos e Implementamos los elementos necesarios para cumplir con nuestra estrategia marcada ( web, social media… )`,
     delayAnimation: "300",
   },
   {
-    subTitle: "FIVE",
+    subTitle: "CINCO",
     title: "Test",
-    descriptions: `Suspendisse vel magna vitae nunc consequat eleifend. Aenean iaculis Nam non magna eleifend est eget turpis lacinia egest dictum ipsum sollicitudin.Suspendis eget arcu eu ex dignissim faucibus.`,
+    descriptions: `Testeamos y comprobamos la viabilidad de la estrategia y los productos desarrollados.`,
     delayAnimation: "400",
   },
   {
-    subTitle: "SIX",
-    title: "Hand Over",
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipiscing elit cras tempus. Libero ligula, vitae accumsan tortor varius nec. Ut luctus maximus dolor. Nunc sed diam sit amet urna fermentum accumsan vitae vitae diam.`,
+    subTitle: "SEIS",
+    title: "Entrega",
+    descriptions: `Se entrega el proyecto al cliente con todo el material previamente acordado.`,
     delayAnimation: "500",
   },
 ];

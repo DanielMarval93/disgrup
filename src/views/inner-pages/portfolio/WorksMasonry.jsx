@@ -9,7 +9,7 @@ const WorksMasonry = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--works-masonry">
       <Helmet>
-        <title>Portafolio - Icy Media Agency</title>
+        <title>Icy Media Agency - Portafolio</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">

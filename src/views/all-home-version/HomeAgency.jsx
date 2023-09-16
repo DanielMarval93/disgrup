@@ -25,7 +25,7 @@ const HomeAgency = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--home-agency">
       <Helmet>
-        <title>Moonex - Home Agency</title>
+        <title>Icy Media Agency</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -70,12 +70,12 @@ const HomeAgency = () => {
                         <div className="ptf-phone-block__icon">
                           <i className="lnil lnil-phone"></i>
                         </div>
-                        <div className="ptf-phone-block__caption">
-                          Call Us
+                        <div className="ptf-phone-block__caption has-white-color">
+                          LLamanos
                           <br />
-                          Directly
+                          Directamente
                         </div>
-                        <div className="ptf-phone-block__phone">
+                        <div className="ptf-phone-block__phone has-white-color">
                           <a href="tel:+34622063782">(+34) 622 06 37 82</a>
                         </div>
                       </div>
@@ -165,27 +165,27 @@ const HomeAgency = () => {
                       data-aos-delay="0"
                     >
                       <h6 className="fz-16 has-accent-4 text-uppercase">
-                        About Us
+                        Quienes Somos
                       </h6>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
                         style={{ "--ptf-xxl": "1.875rem" }}
                       ></div>
-                      <h3 style={{ maxWidth: "30rem" }} >
+                      <h3 className="has-white-color" style={{ maxWidth: "30rem" }} >
                       Tenemos las soluciones confiables que tu negocio necesita.                       </h3>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
                         style={{ "--ptf-xxl": "5rem", "--ptf-md": "2.5rem" }}
                       ></div>
-                      <p className="fz-18" style={{ maxWidth: "30rem" }}>
+                      <p className="fz-18 has-white-color" style={{ maxWidth: "30rem" }}>
                       En Icy Media Agency, somos un equipo de expertos en marketing digital
                       apasionados por obtener los mayores resultados para nuestros clientes,
                        y por ayudar a las marcas a crecer y cumplir sus metas y objetivos.
 
                       </p>
-                      <p className="fz-18" style={{ maxWidth: "30rem" }}>
+                      <p className="fz-18 has-white-color" style={{ maxWidth: "30rem" }}>
                        Nuestro lema, ser innovadores, rápidos y eficaces. Es por eso que siempre estamos actualizados con las últimas tendencias y tecnologías. 
                        Utilizamos nuestros conocimientos y experiencia para desarrollar estrategias de vanguardia y proyectos únicos, destacando por encima de la competencia. 
                       </p>
@@ -219,6 +219,7 @@ const HomeAgency = () => {
                   data-aos-delay="0"
                 >
                   <h2 className="h1 large-heading has-accent-0">Servicios</h2>
+                  
                 </div>
                 {/* <!--Spacer--> */}
                 <div
@@ -234,7 +235,7 @@ const HomeAgency = () => {
                 >
                   <div className="col-12 col-md-6">
                     {/* <!--Animated Block--> */}
-                    <div
+                    <div 
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="0"
@@ -246,7 +247,7 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
+                      <div className="ptf-divider" style={{ backgroundColor: 'white' }} ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -270,7 +271,7 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
+                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -294,7 +295,7 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
+                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -319,7 +320,7 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
+                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -343,7 +344,7 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
+                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -360,14 +361,14 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="100"
                     >
-                      <h2>Desarrollo Paginas Web</h2>
+                      <h2>Desarrollo Web</h2>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider"></div>
+                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -448,6 +449,7 @@ const HomeAgency = () => {
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
+              
             </section>
 
             {/*=============================================
@@ -487,13 +489,7 @@ const HomeAgency = () => {
             </section>
 
 
-            <section>
-              <div className="container">
-                {/* <!--Divider--> */}
-                <div className="ptf-divider"></div>
-              </div>
-            </section>
-
+     
            {/*=============================================
             Start Pricing section
             ============================================== */}
@@ -532,12 +528,6 @@ const HomeAgency = () => {
               ></div>
             </section>
 
-            <section>
-              <div className="container">
-                {/* <!--Divider--> */}
-                <div className="ptf-divider"></div>
-              </div>
-            </section>
 
             {/*=============================================
           Start Footer section

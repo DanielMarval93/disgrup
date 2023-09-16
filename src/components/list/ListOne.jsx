@@ -14,8 +14,8 @@ const ListOne = () => {
       style={{ "--ptf-font-family": "var(--ptf-primary-font)" }}
     >
       {listContent.map((val, i) => (
-        <li key={i}>
-          <Link to="/service-details">{val}</Link>
+        <li  key={i}>
+          <Link className="has-white-color" to="/service-details">{val}</Link>
         </li>
       ))}
     </ul>

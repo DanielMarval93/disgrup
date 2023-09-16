@@ -1,6 +1,8 @@
 /* WIDGET: PRICING TABLE
 -------------------------------------------- */
 
+
+
 .ptf-pricing-table {
 	position: relative;
 
@@ -34,7 +36,7 @@
 	&__title {
 		text-transform: uppercase;
 		color: var(--ptf-color-3);
-		font-size: px2rem(14px);
+		font-size: px2rem(40px);
 		font-weight: normal;
 
 		transition: all var(--ptf-transition-duration) var(--ptf-transition-easing);

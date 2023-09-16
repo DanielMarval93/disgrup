@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-        <title>Moonex - Contact</title>
+        <title>Icy Media Agency - Contact</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -37,8 +37,8 @@ const Contact = () => {
                     data-aos-delay="0"
                   >
                     <h1 className="large-heading">
-                      Let's get Contact an <br />
-                      estimate
+                      Dinos como podemos <br />
+                      ayudarte
                     </h1>
                     {/* <!--Spacer--> */}
                     <div

@@ -59,9 +59,8 @@ const Footer = () => {
           >
               Impulsa tu negocio al maximo nivel.
           </div>
-
           <div className="ptf-footer-heading has-black-color">
-            Contact con &nbsp;
+            Contacta con &nbsp;
             <Link
               className="has-accent-1 text-decoration-underline"
               to="/contact"
@@ -69,15 +68,20 @@ const Footer = () => {
               Nosotros!
             </Link>
           </div>
-
-          <p className="fz-24">90 Fairground Rd, FL 3290, United States</p>
+          </div>
+          </div>
+          {/*direccion*/}
+          
+        <div className="col-12 col-xl-6">
+          <a className="fz-40 has-black-color" href="tel:34622063782">+34 (622) 06-37-82</a>
+          <br/>
           <a className="fz-40 has-black-color" href="mailto:info@icymediagency.es">
             info@icymediagency.es
           </a>
         </div>
-      </div>
-      <div className="col-12 col-md-6 col-xl-3">
-        {/* <!--Animated Block--> */}
+      
+    {/*<div className="col-12 col-md-6 col-xl-3">
+        {/* <!--Animated Block--> 
         <div
           className="ptf-animated-block"
           data-aos="fade"
@@ -96,7 +100,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="col-12 col-md-6 col-xl-3">
-        {/* <!--Animated Block--> */}
+        {/* <!--Animated Block--> 
         <div
           className="ptf-animated-block"
           data-aos="fade"
@@ -116,6 +120,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    */}
     </div>
   );
 };
