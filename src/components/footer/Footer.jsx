@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const linkList = [
+
+
+
+/*const linkList = [
   {
     itemName: "Faqs",
     link: "/",
@@ -45,7 +48,9 @@ const Product = [
     itemName: "Contact",
     link: "/",
   },
-];
+]; */
+
+
 
 const Footer = () => {
   return (
