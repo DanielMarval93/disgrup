@@ -20,6 +20,14 @@ const HeaderAgency = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    console.log("!!!");
+  };
+
   window.addEventListener("scroll", changeBackground);
 
   return (
@@ -35,7 +43,7 @@ const HeaderAgency = () => {
           <div className="container-xxl">
             <div className="ptf-navbar-inner">
               {/* <!--Logo--> */}
-              <Link className="ptf-navbar-logo" to="/">
+              <Link className="ptf-navbar-logo" to="/" onClick={scrollToTop}>
                 <img
                   className="black"
                   src="assets/img/root/logo-dark.png"
@@ -97,21 +105,25 @@ const HeaderAgency = () => {
           click1 ? "ptf-offcanvas-menu is-open" : "ptf-offcanvas-menu "
         }
       >
-         <div className="ptf-offcanvas-menu__header">
+
+        {/*
+        <div className="ptf-offcanvas-menu__header">
           <div className="ptf-language-switcher">
             {/*<a className="is-active" href="/">
               Eng
             </a>
             <a href="/">Fra</a>
-      <a href="/">Ger</a>*/}  
-      </div>
+      <a href="/">Ger</a>
+          </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"
             onClick={handleClick1}
           >
             <i className="lnir lnir-close"></i>
           </span>
-      </div>
+        </div>
+
+      */}
         {/* End .ptf-offcanvas-menu__header */}
 
         <MobileMenu />

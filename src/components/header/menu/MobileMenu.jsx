@@ -12,37 +12,23 @@ import Social from "../../social/Social";
 
 const menuContent = [
   {
-    name: "Home",
+    name: "Icy Media Agency",
     routerPath: "/home-agency",
-    dropDownItems: [
+    dropDownItems: [   {
+      name: "Portafolio",
+      routerPath: "/home-agency",
+    },
+    {
+      name: "Servicios",
+      routerPath: "/home-minimal",
+    },  
+    {
+      name: "Contacto",
+      routerPath: "/home-minimal",
+    },
     ],
   },
-  {
-    name: "Portafolio",
-    dropDownItems: [
-
-    ],
-  },
-  {
-    name: "Contacto",
-    dropDownItems: [
-    ],
-  },
-
-  {
-    name: "Servicios",
-    dropDownItems: [
-      {
-        name: "Home Agency",
-        routerPath: "/home-agency",
-      },
-      {
-        name: "Home Minimal",
-        routerPath: "/home-minimal",
-      },
  
-    ],
-  },
 ];
 
 const MobileMenu = () => {
@@ -53,10 +39,11 @@ const MobileMenu = () => {
           <SidebarContent>
             <Menu className="sidebar-menu_wrapper">
               {menuContent.map((item, i) => (
-                <SubMenu title={item.name} key={i}>
+                <SubMenu defaultOpen='true' open="true" title={item.name} key={i}>
+                  
                   {item.dropDownItems.map((val, i) => (
-                    <MenuItem key={i}>
-                      <Link to={val.routerPath}>{val.name}</Link>
+                    <MenuItem key={i} >
+                      <Link style={{fontSize:"24px"}} to={val.routerPath}>{val.name}</Link>
                     </MenuItem>
                   ))}
                 </SubMenu>

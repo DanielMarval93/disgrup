@@ -56,12 +56,20 @@ const menuContent = [
   },
 ];
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+  console.log("!!!")
+};
+
 const DropdownMenu = () => {
   return (
     <ul className="sf-menu">
       {menuContent.map((item, i) => (
         <li className={`menu-item-has-children ${item.menuClass}`} key={i}>
-          <Link to={item.routerPath}>
+          <Link to={item.routerPath} onClick={scrollToTop}>
             <span>{item.name}</span>
           </Link>
 {/* Conditionally render the dropdown only if there are items */}
@@ -70,7 +78,7 @@ const DropdownMenu = () => {
               {item.dropDownItems.map((val, j) => (
                 <li key={j}>
                   <Link to={val.routerPath}>
-                    {" "}
+                    {""}
                     <span>{val.name}</span>
                   </Link>
                 </li>

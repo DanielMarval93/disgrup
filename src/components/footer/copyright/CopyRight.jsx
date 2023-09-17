@@ -8,7 +8,7 @@ const CopyRight = () => {
     <div className="row align-items-center justify-content-center">
       <div className="col-12 col-md">
         <a href="index.html">
-          <img src={logo} alt="" loading="lazy" style={{height: "80px", marginLeft:'25px'}} />
+          <img src={logo} alt="" loading="lazy" style={{height: "100px"}} />
         </a>
       </div>
       <div className="col-12 col-md text-md-center text-lg-center">
@@ -28,7 +28,7 @@ const CopyRight = () => {
         </p>
       </div>
       <div className="col-12 col-lg text-md-center text-lg-end">
-        <div className="ptf-footer-socials has-black-color " style={{marginRight:'25px'}}>
+        <div className="ptf-footer-socials has-black-color " style={{}}>
           <SocialTwo />
         </div>
       </div>

@@ -21,6 +21,7 @@ const HeaderDefault = () => {
     }
   };
 
+
   window.addEventListener("scroll", changeBackground);
 
   return (
