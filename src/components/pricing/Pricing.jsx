@@ -5,7 +5,8 @@ const pricingContent = [
   {
     planName: "PRESS KIT",
     price: "250",
-    priceDuration: "Desde",
+    priceStart: "Desde",
+    priceDuration: "",
     pirceDescriptions: "10% taxed will include after make price",
     pricingFeatures: ["Presenta tu propuesta musical de manera adecuada. Cautiva y convence para que apuesten por ti. Cierra acuerdos de patrocinio y publicidad, muestra una marca sólida a las agencias de management y booking, y seduce con tu perfil y tu presentación"  ],
     badge: "",
@@ -14,13 +15,12 @@ const pricingContent = [
   },
   {
     planName: "GASTROBOMBA",
-    price: "69",
-    priceDuration: "Desde",
+    price: "500",
+    priceStart: "Desde",
+    priceDuration: "Mensual",
     pirceDescriptions: "10% taxed will include after make price",
     pricingFeatures: [
-      "Full Design & Development",
-      "Installation",
-      "Support Lifetime",
+      "Atrae nuevos clientes a través de internet. Dale notoriedad y presencia a tu restaurante en redes sociales. Capta y fideliza nuevos comensales con nuestras estrategias combinadas de gastro-influencers y medios digitales."
     ],
     badge: "Popular",
     badgeClass: "badge",
@@ -28,28 +28,24 @@ const pricingContent = [
   },
   {
     planName: "SOCIAL MEDIA MANAGER",
-    price: "99",
-    priceDuration: "Desde",
+    price: "250",
+    priceStart: "Desde",
+    priceDuration: "Mensual",
     pirceDescriptions: "10% taxed will include after make price",
     pricingFeatures: [
-      "Full Design & Development",
-      "Installation",
-      "Support Lifetime",
-      "SEO/Marketing Include",
+      "Creamos un análisis y diagnóstico de las Redes Sociales. Establecemos una estrategia y un plan de contenidos, medimos métricas y te aportamos un plan mensual de resultados. Redactamos, diseñamos y publicamos post, gestiónamos comunidades y monitorizamos las redes, para que tu solo tengas que preocuparte por tu negocio. ",
     ],
     badge: "",
     badgeClass: "",
     delayAnimation: "200",
   },{
     planName: "WEB + POSICIONAMIENTO SEO",
-    price: "99",
-    priceDuration: "Desde",
+    price: "???",
+    priceStart: "Desde",
+    priceDuration: "Mensual",
     pirceDescriptions: "10% taxed will include after make price",
     pricingFeatures: [
-      "Full Design & Development",
-      "Installation",
-      "Support Lifetime",
-      "SEO/Marketing Include",
+      " Diseñamos y creamos la página web que tu negocio necesita. Websites, e-commerce,páginas intuitivas, experiencia UI/UX….posicionamiento orgánico y con resultados demostrables",
     ],
     badge: "",
     badgeClass: "",
@@ -76,12 +72,12 @@ const Pricing = () => {
                 <h4 className="ptf-pricing-table__title">{val.planName}</h4>
               </div>
               <div className="ptf-pricing-table__price">
-                <span className="period">{val.priceDuration} </span>
+                <span className="period">{val.priceStart} </span>
                 <span className="currency">€</span>
                 <span className="price">{val.price}</span>
               </div>
               <div className="ptf-pricing-table__description">
-            
+                {val.priceDuration}
               </div>
               <div className="ptf-pricing-table__content">
                 <ul>
@@ -96,7 +92,7 @@ const Pricing = () => {
                   className="ptf-btn ptf-btn--primary ptf-btn--block"
                   to="/contact"
                 >
-                  Start My Project Now
+                  Comienza tu proyecto
                 </Link>
               </div>
             </div>

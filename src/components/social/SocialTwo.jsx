@@ -14,11 +14,11 @@ const socialList = [
     link: "https://www.instagram.com/",
   },
   {
-    iconName: "socicon-pinterest",
+    iconName: "socicon-linkedin",
     link: "https://www.pinterest.com/",
   },
   {
-    iconName: "socicon-dribbble",
+    iconName: "socicon-whatsapp",
     link: "https://dribbble.com/",
   },
 ];

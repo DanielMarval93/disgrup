@@ -10,14 +10,14 @@ const CopyRightThreeDark = () => {
           <span>
             {" "}
             <a
-              href="https://themeforest.net/user/ib-themes"
+              href="https://www.icymediagency.es"
               rel="noopener noreferrer"
               target="_blank"
             >
-              ib-themes
+              Icy Media Agency
             </a>
           </span>
-          . All Rights Reserved.asdasdsa
+          . All Rights Reserved.
         </p>
       </div>
       {/* End .col */}

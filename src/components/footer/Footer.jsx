@@ -54,7 +54,8 @@ const Footer = () => {
         {/* <!--Animated Block--> */}
         <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
           <div
-            className="ptf-footer-heading has-black-color"
+            className="ptf-footer-heading has-black-color "
+            
             style={{ maxWidth: "37.5rem" }}
           >
               Impulsa tu negocio al maximo nivel.
@@ -73,9 +74,9 @@ const Footer = () => {
           {/*direccion*/}
           
         <div className="col-12 col-xl-6">
-          <a className="fz-40 has-black-color" href="tel:34622063782">+34 (622) 06-37-82</a>
+          <a className="fz-36 has-black-color" href="tel:34622063782">+34 (622) 06-37-82</a>
           <br/>
-          <a className="fz-40 has-black-color" href="mailto:info@icymediagency.es">
+          <a className="fz-36 has-black-color" href="mailto:info@icymediagency.es">
             info@icymediagency.es
           </a>
         </div>

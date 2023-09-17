@@ -7,9 +7,9 @@ const SocialShare = [
     iconClass: "twitter",
   },
   {
-    iconName: "socicon-facebook",
+    iconName: "socicon-whatsapp",
     link: "https://www.facebook.com/",
-    iconClass: "facebook",
+    iconClass: "whatsapp",
   },
   {
     iconName: "socicon-instagram",
@@ -17,9 +17,9 @@ const SocialShare = [
     iconClass: "instagram",
   },
   {
-    iconName: "socicon-pinterest",
-    link: "https://www.pinterest.com/",
-    iconClass: "pinterest",
+    iconName: "socicon-linkedin",
+    link: "https://www.tiktok.com/",
+    iconClass: "linkedin",
   },
 ];
 const Social = () => {
