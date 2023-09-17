@@ -1,5 +1,5 @@
 import React from "react";
-import FooterList from "../list/FooterList";
+//import FooterList from "../list/FooterList";
 
 const FooterTwo = () => {
   return (

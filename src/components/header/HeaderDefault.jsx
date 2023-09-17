@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Search from "../form/Search";
+//import Search from "../form/Search";
 import DropdownMenu from "./menu/DropdownMenu";
 import MobileMenu from "./menu/MobileMenu";
 
 const HeaderDefault = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  //const [click, setClick] = useState(false);
+  //const handleClick = () => setClick(!click);
 
   const [click1, setClick1] = useState(false);
   const handleClick1 = () => setClick1(!click1);
