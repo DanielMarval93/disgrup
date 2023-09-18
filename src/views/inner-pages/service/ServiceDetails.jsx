@@ -14,7 +14,7 @@ const ServiceDetails = () => {
   return (
     <div>
       <Helmet>
-        <title>Moonex - Service Details</title>
+        <title>Icy Media Agency - Service Details</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -121,6 +121,8 @@ const ServiceDetails = () => {
                     className="ptf-spacer"
                     style={{ "--ptf-xxl": "3.125rem" }}
                   ></div>
+                  
+                  
                   <div
                     className="row"
                     style={{

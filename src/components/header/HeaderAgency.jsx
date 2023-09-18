@@ -25,7 +25,7 @@ const HeaderAgency = () => {
       top: 0,
       behavior: "smooth",
     });
-    console.log("!!!");
+     ;
   };
 
   window.addEventListener("scroll", changeBackground);

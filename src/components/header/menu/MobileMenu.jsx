@@ -15,16 +15,20 @@ const menuContent = [
     name: "Icy Media Agency",
     routerPath: "/home-agency",
     dropDownItems: [   {
-      name: "Portafolio",
+      name: "Conocenos",
       routerPath: "/home-agency",
     },
     {
+      name: "Portafolio",
+      routerPath: "/works-masonry",
+    },
+    {
       name: "Servicios",
-      routerPath: "/home-minimal",
+      routerPath: "/service",
     },  
     {
       name: "Contacto",
-      routerPath: "/home-minimal",
+      routerPath: "/contact",
     },
     ],
   },

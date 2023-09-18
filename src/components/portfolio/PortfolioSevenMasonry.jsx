@@ -97,7 +97,7 @@ const PortfolioSevenMasonry = () => {
                       <div className="ptf-work__category">
                         {singleItem.meta}
                       </div>
-                      <h4 className="ptf-work__title">
+                      <h4 className="ptf-work__title ">
                         <Link to="/works-showcase">{singleItem.title}</Link>
                       </h4>
                     </div>

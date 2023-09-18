@@ -34,7 +34,7 @@ const WorksMasonry = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading">
+                      <h1 className="large-heading has-white-color">
                         Ve mas alla de lo que esta a simple vista.
                       </h1>
                     </div>
@@ -67,7 +67,7 @@ const WorksMasonry = () => {
                       "--bs-gutter-y": "5.75rem",
                     }}
                   >
-                    <PortfolioSevenMasonry />
+                    <PortfolioSevenMasonry className="has-white-color"/>
                   </div>
                 </div>
                 {/* <!--Spacer--> 

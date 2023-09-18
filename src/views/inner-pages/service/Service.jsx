@@ -10,6 +10,7 @@ import ImageGrid from "../../../components/image-grid/ImageGrid";
 import ServiceOne from "../../../components/service/ServiceOne";
 
 import Background from '../../../assets/img/service.jpg';
+import Pricing from "../../../components/pricing/Pricing";
 
 const Service = () => {
   return (
@@ -132,6 +133,44 @@ const Service = () => {
             ></div>
           </section>
 
+                    {/*=============================================
+            Start Pricing section
+            ============================================== */}
+            <section>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
+              ></div>
+              <div className="container">
+                {/* <!--Animated Block--> */}
+                <div
+                  className="ptf-animated-block"
+                  data-aos="fade"
+                  data-aos-delay="0"
+                >
+                  <h2 className="h1 large-heading has-accent-1">
+                    Paquetes
+                  </h2>
+                </div>
+                {/* <!--Spacer--> */}
+                <div
+                  className="ptf-spacer"
+                  style={{ "--ptf-xxl": "3.75rem", "--ptf-md": "1.875rem" }}
+                ></div>
+              </div>
+              <div className="container">
+                <div className="row" style={{ "--bs-gutter-x": "2rem" }}>
+                  <Pricing />
+                </div>
+              </div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
+              ></div>
+            </section>
+
           {/*=============================================
           Start Contact Section 
           ============================================== */}
@@ -158,6 +197,9 @@ const Service = () => {
           </section>
         </div>
       </div>
+
+          
+
 
       {/*=============================================
         Start Footer

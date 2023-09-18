@@ -3,15 +3,15 @@ import React, { useEffect, useState } from "react";
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Top: 0 takes us all the way back to the top of the page
+ /* // Top: 0 takes us all the way back to the top of the page
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-    console.log("!!!")
-  };
+     
+  };*/
 
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
@@ -32,7 +32,7 @@ export default function ScrollToTop() {
     <>
       {isVisible && (
         <div>
-          <button className="scroll-top " onClick={scrollToTop}>
+          <button className="scroll-top " href="https://wa.me/34622063782?text=Hola!%20estaria%20interesado%20en%20un%20proyecto%20con%20ustedes!">
             <img src="assets/img/chevron-w.png" alt="icon" />
           </button>
         </div>

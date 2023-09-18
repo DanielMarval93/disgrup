@@ -32,26 +32,7 @@ const menuContent = [
     menuClass: "",
     routerPath: "/service",
     dropDownItems: [
-      {
-        name: "Branding",
-        routerPath: "/service-details",
-      },
-      {
-        name: "Paid Media",
-        routerPath: "/service-details",
-      },
-            {
-        name: "Marketing de Contenidos",
-        routerPath: "/service-details",
-      },
-      {
-        name: "Marketing de Redes Sociales",
-        routerPath: "/service-details",
-      },
-      {
-        name: "Desarollo Paginas Web",
-        routerPath: "/service-details",
-      },
+    
     ],
   },
 ];
@@ -61,7 +42,7 @@ const scrollToTop = () => {
     top: 0,
     behavior: "smooth",
   });
-  console.log("!!!")
+   
 };
 
 const DropdownMenu = () => {

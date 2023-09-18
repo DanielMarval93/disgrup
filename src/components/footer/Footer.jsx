@@ -50,6 +50,14 @@ const Product = [
   },
 ]; */
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+   
+};
+
 
 
 const Footer = () => {
@@ -70,6 +78,7 @@ const Footer = () => {
             <Link
               className="has-accent-1 text-decoration-underline"
               to="/contact"
+              onClick={scrollToTop}
             >
               Nosotros!
             </Link>

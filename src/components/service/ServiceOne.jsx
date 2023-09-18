@@ -43,6 +43,7 @@ const ServiceOne = () => {
             <Link
               to="/service-details"
               className="ptf-service-box__link"
+              style={{pointerEvents:"none"}}
             ></Link>
             <div className="ptf-service-box__icon">
               <i className={val.icon}></i>
