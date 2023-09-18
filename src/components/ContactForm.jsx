@@ -34,7 +34,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="contact_form">
       <div className="ptf-form-group">
-        <label data-number="01">What’s your name?</label>
+        <label data-number="01">Cual es tu nombre?</label>
         <input
           type="text"
           name="name"
@@ -48,7 +48,7 @@ const ContactForm = () => {
       {/* End .ptf-form-group */}
 
       <div className="ptf-form-group">
-        <label data-number="02">What’s the name of your organization?</label>
+        <label data-number="02">Cual es el nombre de tu organizacion?</label>
         <input
           type="text"
           name="organization"
@@ -62,7 +62,7 @@ const ContactForm = () => {
       {/* End .ptf-form-group */}
 
       <div className="ptf-form-group">
-        <label data-number="03">What’s your email address?</label>
+        <label data-number="03">Cual es tu direccion de correo electronico?</label>
         <input
           name="email"
           type="text"
@@ -76,7 +76,7 @@ const ContactForm = () => {
       {/* End .ptf-form-group */}
 
       <div className="ptf-form-group">
-        <label data-number="04">Tell us about your project goals.</label>
+        <label data-number="04">Cuentanos de tus objetivos.</label>
         <textarea
           type="text"
           name="projectGoal"
@@ -90,7 +90,7 @@ const ContactForm = () => {
       {/* End .ptf-form-group */}
 
       <div className="ptf-form-group">
-        <label data-number="05">Do you have a timeline in mind?</label>
+        <label data-number="05">Para que fecha quisieras tener el proyecto?</label>
         <input
           type="text"
           name="timeline"
@@ -104,16 +104,16 @@ const ContactForm = () => {
       {/* End .ptf-form-group */}
 
       <div className="ptf-form-group">
-        <label data-number="06">What have you budgeted for this project?</label>
+        <label data-number="06">Cual es tu presupuesto para este proyecto?</label>
         <select
           name="budget"
           {...register("budget")}
           className={`${errors.budget ? "is-invalid" : ""}`}
         >
-          <option value="">$30,000 and under</option>
-          <option value="100-200">100$-200$</option>
-          <option value="200-500">200$-500$</option>
-          <option value="500-1000">500$-1000$</option>
+          <option value="">10000€ o mas</option>
+          <option value="200-500">200€-500€</option>
+          <option value="500-1000">500€-1000€</option>
+          <option value="1000-5000">1000€-5000€</option>
         </select>
         {errors.budget && (
           <div className="invalid-feedback">{errors.budget?.message}</div>
@@ -134,9 +134,7 @@ const ContactForm = () => {
         />
 
         <label className="ptf-checkbox" htmlFor="acceptTerms">
-          <span className="ptf-checkbox__checkmark"></span>I agree to receive
-          occasional MoonexLabs newsletters containing news & advice on creating
-          personal and business progress via digital tech.
+          <span className="ptf-checkbox__checkmark"></span>Acepto recibir comunicaciones comerciales u ofertas por parte de Icy Media Agency.
         </label>
         {errors.acceptTerms && (
           <div className="invalid-feedback">{errors.acceptTerms?.message}</div>

@@ -7,7 +7,7 @@ import FooterTwo from "../../components/footer/FooterTwo";
 import HeaderAgency from "../../components/header/HeaderAgency";
 import HeroAgency from "../../components/hero/HeroAgency";
 import PortfolioTwo from "../../components/portfolio/PortfolioTwo";
-import Team from "../../components/team/Team";
+//import Team from "../../components/team/Team";
 //import TestimonialTwo from "../../components/testimonial/TestimonialTwo";//
 import Pricing from "../../components/pricing/Pricing";
 
@@ -454,15 +454,15 @@ const HomeAgency = () => {
 
             {/*=============================================
           Start Our Crew/Team section
-          ============================================== */}
+          ============================================== 
             <section className="ptf-custom--1569">
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> 
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
               ></div>
               <div className="container">
-                {/* <!--Animated Block--> */}
+                {/* <!--Animated Block--> 
                 <div
                   className="ptf-animated-block"
                   data-aos="fade"
@@ -470,7 +470,7 @@ const HomeAgency = () => {
                 >
                   <h2 className="h1 large-heading has-accent-1">Nuestro Equipo</h2>
                 </div>
-                {/* <!--Spacer--> */}
+                {/* <!--Spacer--> 
                 <div
                   className="ptf-spacer"
                   style={{ "--ptf-xxl": "5.625rem", "--ptf-md": "2.8125rem" }}
@@ -481,14 +481,14 @@ const HomeAgency = () => {
                   <Team />
                 </div>
               </div>
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> 
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
             </section>
 
-
+          */}
      
            {/*=============================================
             Start Pricing section

@@ -40,7 +40,7 @@ const pricingContent = [
     delayAnimation: "200",
   },{
     planName: "WEB + POSICIONAMIENTO SEO",
-    price: "???",
+    price: "990",
     priceStart: "Desde",
     priceDuration: "Mensual",
     pirceDescriptions: "10% taxed will include after make price",

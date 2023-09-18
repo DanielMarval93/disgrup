@@ -11,7 +11,9 @@ const FooterTwo = () => {
             <ul>
               <li>
                 <span>Direccion:</span>
-                <p > Casa de Fanny </p>
+                <p > C/ de Sancho de Ávila 65</p>
+                <span></span>
+                <p >08018 Barcelona </p>
               </li>
             </ul>
           </div>
