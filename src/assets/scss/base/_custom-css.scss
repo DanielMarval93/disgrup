@@ -336,8 +336,8 @@
   color: #0cf;
 }
 .scroll-top {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   position: fixed;
   bottom: 20px;
   right: 5px;
@@ -347,7 +347,7 @@
   font-size: 18px;
   cursor: pointer;
   border-radius: 50%;
-  background: #000;
+  background: #00000000;
   transition: all 0.3s ease-in-out;
   border: none;
   outline: none;

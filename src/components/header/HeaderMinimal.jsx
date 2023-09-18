@@ -55,10 +55,10 @@ const HeaderMinimal = () => {
         <div className="ptf-offcanvas-menu__header">
           <div className="ptf-language-switcher">
             <a className="is-active" href="/">
-              Eng
+              Esp
             </a>
-            <a href="/">Fra</a>
-            <a href="/">Ger</a>
+            <a href="/">Eng</a>
+            
           </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"

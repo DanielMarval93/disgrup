@@ -25,7 +25,6 @@ const HeaderAgency = () => {
       top: 0,
       behavior: "smooth",
     });
-     ;
   };
 
   window.addEventListener("scroll", changeBackground);
@@ -105,15 +104,12 @@ const HeaderAgency = () => {
           click1 ? "ptf-offcanvas-menu is-open" : "ptf-offcanvas-menu "
         }
       >
-
-        {/*
         <div className="ptf-offcanvas-menu__header">
           <div className="ptf-language-switcher">
-            {/*<a className="is-active" href="/">
-              Eng
+            <a className="is-active" href="/">
+              Esp
             </a>
-            <a href="/">Fra</a>
-      <a href="/">Ger</a>
+            <a href="/">Eng</a>
           </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"
@@ -123,7 +119,6 @@ const HeaderAgency = () => {
           </span>
         </div>
 
-      */}
         {/* End .ptf-offcanvas-menu__header */}
 
         <MobileMenu />
