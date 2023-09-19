@@ -19,28 +19,28 @@ const portfolioMenu = [
 const portfolioContent = [
   {
     tabContent: [
-      { img: "work-1", meta: "Diseño Web", title: "Cathalo Box" },
-      { img: "work-2", meta: "Diseño Web", title: "Dvine Models" },
-      { img: "work-3", meta: "Redes", title: "La Perla Restaurante" },
-      { img: "work-4", meta: "Red", title: "Bocachica Mambo Beach" },
-      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN" },
-      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN" },
+      { img: "work-1", meta: "Diseño Web", title: "Cathalo Box", route: "https://www.cathalobox.com/"},
+      { img: "work-2", meta: "Diseño Web", title: "Dvine Models", route: "https://www.dvinemodels.com/" },
+      { img: "work-3", meta: "Redes", title: "La Perla Restaurante", route: "https://www.instagram.com/laperlabcn/" },
+      { img: "work-4", meta: "Redes", title: "Bocachica Mambo Beach", route: "https://www.instagram.com/bocachicamambobeach/" },
+      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN", route: "https://www.instagram.com/hummerbcn/" },
+      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN", route: "https://www.instagram.com/partybusbcn/" },
     ],
   },
   {
     tabContent: [
-      { img: "work-1", meta: "Diseño Web", title: "Cathalo Box" },
-      { img: "work-2", meta: "Diseño Web", title: "Dvine Models" },
-      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN" },
-      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN" },
+      { img: "work-1", meta: "Diseño Web", title: "Cathalo Box", route: "https://www.cathalobox.com/" },
+      { img: "work-2", meta: "Diseño Web", title: "Dvine Models", route: "https://www.dvinemodels.com/" },
+      { img: "work-5", meta: "Diseño Web", title: "Hummer BCN", route: "https://www.hummerbcn.com/" },
+      { img: "work-6", meta: "Diseño Web", title: "Partybus BCN", route: "https://partybusbcn.com/" },
     ],
   },
   {
     tabContent: [
-      { img: "work-3", meta: "Redes", title: "La Perla Restaurante" },
-      { img: "work-4", meta: "Red", title: "Bocachica Mambo Beach" },
-      { img: "work-5", meta: "Redes, Web", title: "Hummer BCN" },
-      { img: "work-6", meta: "Redes, Web", title: "Partybus BCN" },
+      { img: "work-3", meta: "Redes", title: "La Perla Restaurante", route: "https://www.instagram.com/laperlabcn/" },
+      { img: "work-4", meta: "Redes", title: "Bocachica Mambo Beach", route: "https://www.instagram.com/bocachicamambobeach/" },
+      { img: "work-5", meta: "Diseño Web", title: "Hummer BCN", route: "https://www.instagram.com/hummerbcn/" },
+      { img: "work-6", meta: "Diseño Web", title: "Partybus BCN", route: "https://www.instagram.com/partybusbcn/" },
     ],
   },
 ];
@@ -84,8 +84,9 @@ const PortfolioSevenMasonry = () => {
                   <article className="ptf-work ptf-work--style-1" key={i}>
                     <div className="ptf-work__media">
                       <Link
+                      
                         className="ptf-work__link"
-                        to="/works-showcase"
+                        to={singleItem.route}
                       ></Link>
                       <img
                         src={`assets/img/portfolio/masonry/${singleItem.img}.png`}
@@ -98,7 +99,7 @@ const PortfolioSevenMasonry = () => {
                         {singleItem.meta}
                       </div>
                       <h4 className="ptf-work__title ">
-                        <Link to="/works-showcase">{singleItem.title}</Link>
+                        <Link to={singleItem.route} >{singleItem.title}</Link>
                       </h4>
                     </div>
                   </article>

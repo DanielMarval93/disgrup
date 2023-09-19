@@ -15,7 +15,7 @@ const menuContent = [
     name: "Icy Media Agency",
     routerPath: "/home-agency",
     dropDownItems: [   {
-      name: "Conocenos",
+      name: "Home",
       routerPath: "/home-agency",
     },
     {

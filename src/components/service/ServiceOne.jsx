@@ -12,19 +12,19 @@ const serviceContent = [
     icon: "lnil lnil-website-rank",
     titlePart1: "SOLUCIONES",
     titlePart2: "WEB",
-    descriptions: ` Nuestras soluciones web UI/UX maximizan la experiencia del usuario y la interfaz para crear sitios web impactantes y efectivos.`,
+    descriptions: ` Nuestras soluciones web maximizan la experiencia del usuario y la interfaz para crear sitios web impactantes.`,
   },
   {
     icon: "lnil lnil-3d",
     titlePart1: "GROWTH",
     titlePart2: "PARTNERSHIP",
-    descriptions: ` Somos tu aliado de crecimiento, impulsando tu marca a nuevos niveles de éxito con estrategias probadas y personalizadas.`,
+    descriptions: ` Somos tu aliado de crecimiento, impulsando tu marca a nuevos niveles de éxito con estrategias probadas.`,
   },
   {
     icon: "lnil lnil-video-camera-alt-1",
     titlePart1: "PRESENCIA EN",
     titlePart2: "REDES SOCIALES",
-    descriptions: ` "Potenciamos tu presencia en redes sociales con estrategias impactantes que conectan, interactúan y crean seguidores leales.`,
+    descriptions: `Potenciamos tu presencia en redes sociales con estrategias impactantes que conectan seguidores leales.`,
   },
 ];
 

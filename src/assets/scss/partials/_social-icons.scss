@@ -81,6 +81,16 @@
       background-color: #3b5998;
     }
   }
+  &.whatsapp {
+    &:hover {
+      background-color: #25D366;
+    }
+  }
+  &.linkedin {
+    &:hover {
+      background-color: #0e76a8;
+    }
+  }
   &.instagram {
     &:hover {
       background: radial-gradient(

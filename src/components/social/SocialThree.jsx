@@ -2,16 +2,19 @@ import React from "react";
 
 const socialList = [
   {
-    iconName: "socicon-twitter",
-    link: "https://twitter.com/",
-  },
-  {
-    iconName: "socicon-facebook",
-    link: "https://www.facebook.com/",
+    iconName: "socicon-whatsapp",
+    link: "https://wa.me/34622063782?text=Hola!%20estaria%20interesado%20en%20un%20proyecto%20con%20ustedes",
+    iconClass: "whatsapp",
   },
   {
     iconName: "socicon-instagram",
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/icymediagency",
+    iconClass: "instagram",
+  },
+  {
+    iconName: "socicon-linkedin",
+    link: "https://www.linkedin.com/",
+    iconClass: "linkedin",
   },
 ];
 
