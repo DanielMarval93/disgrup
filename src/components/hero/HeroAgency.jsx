@@ -124,7 +124,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color"
                 style={{ maxWidth: "34.375rem" }}
               >
-                Creamos experiencias digitales unicas
+                Creamos experiencias digitales únicas
               </p>
               {/* <!--Spacer--> */}
               <div
