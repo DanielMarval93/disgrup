@@ -49,9 +49,11 @@ const HeroAgency = () => {
 
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
-                <a className="ptf-btn ptf-btn--primary" href="/contact" target="_self">
+                <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
+                
                   Contáctanos
-                </a>
+                
+                </Link>
                 {/* <!--Button--> */}
                 <Link
                   className="ptf-btn ptf-btn--secondary"
@@ -82,7 +84,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Rompe el hielo y Contactanos
+                Rompe el hielo y Contáctanos
               </p>
               <div
                 className="ptf-spacer"
@@ -91,10 +93,10 @@ const HeroAgency = () => {
               <div className="d-flex justify-content-center">
 
                 {/* <!--Button--> */}
-                <Link  to="/contact">
-                <a className="ptf-btn ptf-btn--primary" href="/contact" target="_self">
+                <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
+                
                   Contáctanos
-                </a>
+                
                 </Link>
                 {/* <!--Button--> */}
               </div>
@@ -129,9 +131,11 @@ const HeroAgency = () => {
               ></div>
               <div className="d-flex">
                 {/* <!--Button--> */}
-                <a className="ptf-btn ptf-btn--primary" href="/contact" target="_self">
+                <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
+                
                   Contáctanos
-                </a>
+                
+                </Link>
                 {/* <!--Video Button--> 
                 <div
                   className="ptf-video-button"
