@@ -109,7 +109,9 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color">
-              Quedaras 
+              Te 
+              <br/>
+              Dejaremos
               <br/>
               <span className="has-accent-1"> helado</span> 
               </h1>
