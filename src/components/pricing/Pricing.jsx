@@ -58,7 +58,7 @@ const Pricing = () => {
   return (
     <>
       {pricingContent.map((val, i) => (
-        <div className="col-xl-6 col-lg-6" key={i} style={{marginTop: "20px"}}>
+        <div className="col-xl-6 col-lg-6" key={i} style={{marginTop: "30px"}}>
           {/* <!--Animated Block--> */}
           <div
             className="ptf-animated-block h-100"
