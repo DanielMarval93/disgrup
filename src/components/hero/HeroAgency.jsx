@@ -24,8 +24,9 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
-                <span className="has-accent-1">Derritete</span> con <br />
-                Nosotros
+              Te Dejaremos
+              <br/>
+              <span className="has-accent-3"> helado</span> 
               </h1>
 
               {/* <!--Spacer--> */}
@@ -109,12 +110,11 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-80 fz-80--lg lh-1 has-white-color">
-              Te 
-              <br/>
-              Dejaremos
-              <br/>
-              <span className="has-accent-1"> helado</span> 
+              <span className="has-accent-1">Derritete</span> con <br />
+                Nosotros
               </h1>
+
+              
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"

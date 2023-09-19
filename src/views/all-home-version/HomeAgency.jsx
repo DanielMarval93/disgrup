@@ -444,11 +444,7 @@ const HomeAgency = () => {
                   {/* End .ptf-isotope-grid */}
                 </div>
               </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
+
               
             </section>
 
