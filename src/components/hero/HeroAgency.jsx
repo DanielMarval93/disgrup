@@ -89,10 +89,13 @@ const HeroAgency = () => {
                 style={{ "--ptf-xxl": "3.625rem" }}
               ></div>
               <div className="d-flex justify-content-center">
+
                 {/* <!--Button--> */}
+                <Link  to="/contact">
                 <a className="ptf-btn ptf-btn--primary" href="/contact" target="_self">
                   Contáctanos
                 </a>
+                </Link>
                 {/* <!--Button--> */}
               </div>
             </div>
