@@ -82,7 +82,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Contáctanos sin compromiso, no mordemos
+                Rompe el hielo y Contactanos
               </p>
               <div
                 className="ptf-spacer"
@@ -104,9 +104,9 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color">
-              Te dejaremos 
+              Quedaras 
               <br/>
-                <span className="has-accent-1"> helado</span> 
+              <span className="has-accent-1"> helado</span> 
               </h1>
               {/* <!--Spacer--> */}
               <div
@@ -117,7 +117,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color"
                 style={{ maxWidth: "34.375rem" }}
               >
-                Contáctanos sin compromiso, no mordemos
+                Creamos experiencias digitales unicas
               </p>
               {/* <!--Spacer--> */}
               <div
