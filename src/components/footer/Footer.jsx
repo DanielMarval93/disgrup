@@ -71,7 +71,7 @@ const Footer = () => {
             
             style={{ maxWidth: "37.5rem" }}
           >
-              Impulsa tu negocio al maximo nivel.
+              Impulsa tu negocio al máximo nivel.
           </div>
           <div className="ptf-footer-heading has-black-color">
             Contacta con &nbsp;

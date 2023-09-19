@@ -38,7 +38,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Contactanos sin compromiso, no mordemos
+                Contáctanos sin compromiso, no mordemos
               </p>
 
               {/* <!--Spacer--> */}
@@ -50,7 +50,7 @@ const HeroAgency = () => {
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="/contact" target="_self">
-                  Contactanos
+                  Contáctanos
                 </a>
                 {/* <!--Button--> */}
                 <Link
@@ -82,7 +82,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Contactanos sin compromiso, no mordemos
+                Contáctanos sin compromiso, no mordemos
               </p>
               <div
                 className="ptf-spacer"
@@ -91,7 +91,7 @@ const HeroAgency = () => {
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
-                  Contactanos
+                  Contáctanos
                 </a>
                 {/* <!--Button--> */}
               </div>
@@ -117,7 +117,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color"
                 style={{ maxWidth: "34.375rem" }}
               >
-                Contactanos sin compromiso, no mordemos
+                Contáctanos sin compromiso, no mordemos
               </p>
               {/* <!--Spacer--> */}
               <div
@@ -127,7 +127,7 @@ const HeroAgency = () => {
               <div className="d-flex">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="/" target="_self">
-                  Contactanos
+                  Contáctanos
                 </a>
                 {/* <!--Video Button--> 
                 <div

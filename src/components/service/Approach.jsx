@@ -3,7 +3,7 @@ import React from "react";
 const approachContent = [
   {
     subTitle: "UNO",
-    title: "Busqueda",
+    title: "Búsqueda",
     descriptions: `Buscamos  las mejores soluciones, analizamos el mercado y la competencia.`,
     delayAnimation: "0",
   },
