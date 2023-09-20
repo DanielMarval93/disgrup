@@ -13,7 +13,6 @@ const WorksMasonry = () => {
       </Helmet>
       {/* End Page SEO Content */}
       <HeaderDefault />
-      <div className="ptf-site-wrapper__inner">
         
         {/* End  HeaderHomeDefault */}
 
@@ -95,7 +94,7 @@ const WorksMasonry = () => {
           </div>
           {/* End .ptf-page */}
         </div>
-      </div>
+      
       {/* End .main */}
 
       {/* <!--Footer--> */}
