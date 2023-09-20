@@ -12,8 +12,9 @@ const WorksMasonry = () => {
         <title>Icy Media Agency - Portafolio</title>
       </Helmet>
       {/* End Page SEO Content */}
+      <HeaderDefault />
       <div className="ptf-site-wrapper__inner">
-        <HeaderDefault />
+        
         {/* End  HeaderHomeDefault */}
 
         <div className="main">
@@ -67,7 +68,7 @@ const WorksMasonry = () => {
                       "--bs-gutter-y": "5.75rem",
                     }}
                   >
-                    <PortfolioSevenMasonry className="has-white-color"/>
+                    <PortfolioSevenMasonry/>
                   </div>
                 </div>
                 {/* <!--Spacer--> 
