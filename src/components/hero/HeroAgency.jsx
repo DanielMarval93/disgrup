@@ -20,28 +20,30 @@ const HeroAgency = () => {
   return (
     <>
       <Slider {...settings}>
-        <div className="ptf-showcase-image image-1">
+
+      <div className="ptf-showcase-image image-3">
           <div className="ptf-showcase-slide">
             <div className="container">
-              <h1 className="fz-100 fz-100--sm lh-1 has-white-color text-center">
-              Te Dejaremos
-              <br/>
-              <span className="has-accent-3"> helado</span> 
+              <h1 className="fz-100 fz-80--sm lh-1 has-white-color">
+              <span className="has-accent-1">Derrítete</span> con <br />
+                Nosotros
               </h1>
 
+              
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "2.125rem" }}
+                style={{ "--ptf-xxl": "3.125rem" }}
               ></div>
-
               <p
-                className="fz-24 has-white-color text-center"
-                style={{ maxWidth: "34.375rem", margin: "0 auto" }}
+                className="fz-24 has-white-color"
+                style={{ maxWidth: "34.375rem" }}
               >
-                Contáctanos sin compromiso, no mordemos
+                Creamos experiencias digitales únicas
               </p>
 
+
+ 
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
@@ -106,26 +108,28 @@ const HeroAgency = () => {
         </div>
         {/* End .ptf-showcase-image */}
 
-        <div className="ptf-showcase-image image-3">
+        <div className="ptf-showcase-image image-1">
           <div className="ptf-showcase-slide">
             <div className="container">
-              <h1 className="fz-100 fz-80--sm lh-1 has-white-color">
-              <span className="has-accent-1">Derrítete</span> con <br />
-                Nosotros
+              <h1 className="fz-100 fz-100--sm lh-1 has-white-color text-center">
+              Te Dejaremos
+              <br/>
+              <span className="has-accent-3"> helado</span> 
               </h1>
 
-              
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "3.125rem" }}
+                style={{ "--ptf-xxl": "2.125rem" }}
               ></div>
+
               <p
-                className="fz-24 has-white-color"
-                style={{ maxWidth: "34.375rem" }}
+                className="fz-24 has-white-color text-center"
+                style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Creamos experiencias digitales únicas
+                Contáctanos sin compromiso, no mordemos
               </p>
+
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
