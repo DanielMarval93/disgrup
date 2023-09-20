@@ -99,6 +99,11 @@ const Service = () => {
                                 {/* <!--Divider--> */}
                                 <div className="ptf-divider"></div>
               </div>
+                            {/* <!--Spacer--> */}
+                            <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
+              ></div>
               {/* End .container-xxl */}
             </section>
             {/* End service */}

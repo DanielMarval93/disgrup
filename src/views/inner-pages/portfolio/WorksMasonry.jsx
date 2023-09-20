@@ -19,11 +19,11 @@ const WorksMasonry = () => {
         <div className="main">
           <div className="ptf-page ptf-page--portfolio-masonry">
             <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem," }}
-              ></div>
+            {/* <!--Spacer--> */}
+            <div
+              className="ptf-spacer"
+              style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+            ></div>
 
               <div className="container-xxl">
                 <div className="row">
