@@ -12,8 +12,8 @@ const WorksMasonry = () => {
         <title>Icy Media Agency - Portafolio</title>
       </Helmet>
       {/* End Page SEO Content */}
-      <HeaderDefault />
-        
+      <div className="ptf-site-wrapper__inner">
+        <HeaderDefault />
         {/* End  HeaderHomeDefault */}
 
         <div className="main">
@@ -94,7 +94,7 @@ const WorksMasonry = () => {
           </div>
           {/* End .ptf-page */}
         </div>
-      
+      </div>
       {/* End .main */}
 
       {/* <!--Footer--> */}
