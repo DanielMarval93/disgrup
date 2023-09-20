@@ -21,7 +21,7 @@ const portfolioContent = [
     tabContent: [
       { img: "work-1", meta: "Diseño Web", title: "Cathalo Box", route: "https://www.cathalobox.com/"},
       { img: "work-2", meta: "Diseño Web", title: "Dvine Models", route: "https://www.dvinemodels.com/" },
-      { img: "work-3", meta: "Redes", title: "La Perla Restaurante", route: "https://www.instagram.com/laperlabcn/" },
+      { img: "work-3", meta: "Redes", title: "La Perla Restaurante", route: "https://www.instagram.com/laperlaclub_bcn/" },
       { img: "work-4", meta: "Redes", title: "Bocachica Mambo Beach", route: "https://www.instagram.com/bocachicamambobeach/" },
       { img: "work-5", meta: "Redes, Web", title: "Hummer BCN", route: "https://www.instagram.com/hummerbcn/" },
       { img: "work-6", meta: "Redes, Web", title: "Partybus BCN", route: "https://www.instagram.com/partybusbcn/" },
@@ -37,7 +37,7 @@ const portfolioContent = [
   },
   {
     tabContent: [
-      { img: "work-3", meta: "Redes", title: "La Perla Restaurante", route: "https://www.instagram.com/laperlabcn/" },
+      { img: "work-3", meta: "Redes", title: "La Perla Restaurante", route: "https://www.instagram.com/laperlaclub_bcn//" },
       { img: "work-4", meta: "Redes", title: "Bocachica Mambo Beach", route: "https://www.instagram.com/bocachicamambobeach/" },
       { img: "work-5", meta: "Diseño Web", title: "Hummer BCN", route: "https://www.instagram.com/hummerbcn/" },
       { img: "work-6", meta: "Diseño Web", title: "Partybus BCN", route: "https://www.instagram.com/partybusbcn/" },

@@ -7,7 +7,7 @@ const portfolioContent = [
     cat: "Web + Redes",
     title: "Cathalo Box",
     date: "2023",
-    routerLink: "/portfolio-details",
+    routerLink: "https://www.cathalobox.com/",
     imgPopup: "work-1",
     dataId: "work-1",
   },
@@ -15,7 +15,7 @@ const portfolioContent = [
     cat: "Web",
     title: "Dvine Models",
     date: "2022",
-    routerLink: "/portfolio-details",
+    routerLink: "https://www.dvinemodels.com/",
     imgPopup: "work-2",
     dataId: "work-2",
   },
@@ -23,7 +23,7 @@ const portfolioContent = [
     cat: "Redes",
     title: "La Perla Restaurante",
     date: "2022",
-    routerLink: "/portfolio-details",
+    routerLink: "https://www.instagram.com/laperlaclub_bcn/",
     imgPopup: "work-3",
     dataId: "work-3",
   },
@@ -31,7 +31,7 @@ const portfolioContent = [
     cat: "Redes",
     title: "Bocachica Mambo Beach",
     date: "2021",
-    routerLink: "/portfolio-details",
+    routerLink: "https://www.instagram.com/bocachicamambobeach/",
     imgPopup: "work-4",
     dataId: "work-4",
   },
@@ -39,7 +39,7 @@ const portfolioContent = [
     cat: "Redes + Web",
     title: "Hummer BCN",
     date: "2022",
-    routerLink: "/portfolio-details",
+    routerLink: "https://www.instagram.com/hummerbcn/",
     imgPopup: "work-5",
     dataId: "work-5",
   },
@@ -47,7 +47,7 @@ const portfolioContent = [
     cat: "Redes + Web",
     title: "Partybus BCN",
     date: "2022",
-    routerLink: "/portfolio-details",
+    routerLink: "https://www.instagram.com/partybusbcn/",
     imgPopup: "work-6",
     dataId: "work-6",
   },
@@ -55,7 +55,7 @@ const portfolioContent = [
     cat: "Web/SEO + Ads",
     title: "Lockstocks",
     date: "2020",
-    routerLink: "/portfolio-details",
+    routerLink: "https://liquidacionstocks.es/",
     imgPopup: "work-7",
     dataId: "work-7",
   },
@@ -73,7 +73,7 @@ const PortfolioTwo = () => {
             data-for={val.dataId}
             key={i}
           >
-            <Link className="ptf-work__link" to="/works-showcase"></Link>
+            <Link className="ptf-work__link" to={`${val.routerLink}`}></Link>
             <ReactTooltip
               id={val.dataId}
               place="right"
