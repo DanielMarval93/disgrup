@@ -111,6 +111,12 @@
 
 .fz-100 {
   font-size: px2rem(100px);
+  &--sm {
+    @include mq("small") {
+      font-size: px2rem(75px);
+    }
+  }
+
 }
 
 .fz-90 {
@@ -131,6 +137,14 @@
 
 .fz-80 {
   font-size: px2rem(80px);
+
+  &--sm {
+    @include mq("small") {
+      font-size: px2rem(80px);
+    }
+  }
+
+
 }
 
 .fz-75 {

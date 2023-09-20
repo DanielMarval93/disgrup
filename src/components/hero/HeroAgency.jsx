@@ -23,7 +23,7 @@ const HeroAgency = () => {
         <div className="ptf-showcase-image image-1">
           <div className="ptf-showcase-slide">
             <div className="container">
-              <h1 className="fz-80 fz-80--lg lh-1 has-white-color text-center">
+              <h1 className="fz-100 fz-100--sm lh-1 has-white-color text-center">
               Te Dejaremos
               <br/>
               <span className="has-accent-3"> helado</span> 
@@ -109,8 +109,8 @@ const HeroAgency = () => {
         <div className="ptf-showcase-image image-3">
           <div className="ptf-showcase-slide">
             <div className="container">
-              <h1 className="fz-80 fz-80--lg lh-1 has-white-color">
-              <span className="has-accent-1">Derritete</span> con <br />
+              <h1 className="fz-100 fz-80--sm lh-1 has-white-color">
+              <span className="has-accent-1">Derrítete</span> con <br />
                 Nosotros
               </h1>
 
