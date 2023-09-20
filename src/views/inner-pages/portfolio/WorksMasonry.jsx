@@ -12,7 +12,7 @@ const WorksMasonry = () => {
         <title>Icy Media Agency - Portafolio</title>
       </Helmet>
       {/* End Page SEO Content */}
-      <div className="ptf-site-wrapper__inner">
+      <div className="ptf-site-wrapper__inner" style={{background:"#f9d178"}} >
         <HeaderDefault />
         {/* End  HeaderHomeDefault */}
 
@@ -22,7 +22,7 @@ const WorksMasonry = () => {
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem," }}
               ></div>
 
               <div className="container-xxl">

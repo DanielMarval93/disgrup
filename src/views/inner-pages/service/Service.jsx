@@ -12,6 +12,9 @@ import ServiceOne from "../../../components/service/ServiceOne";
 import Background from '../../../assets/img/service.jpg';
 import Pricing from "../../../components/pricing/Pricing";
 
+import AnimatedCursor
+ from "react-animated-cursor";
+
 const Service = () => {
   return (
     <div>
@@ -20,12 +23,21 @@ const Service = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={44}
+        color= "249,209,120"
+        outerAlpha={0.3}
+        innerScale={0.7}
+        outerScale={1.2}
+      />
+
       <HeaderDefault />
       {/* End Header */}
 
       <div className="ptf-main">
         <div></div>
-        <div className="ptf-page ptf-page--services" style={{backgroundImage: Background}}>
+        <div className="ptf-page ptf-page--services" style={{backgroundImage: Background, background:"#f394c0"}}>
 
 
           
@@ -36,7 +48,8 @@ const Service = () => {
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" ,}}
+              
               ></div>
               <div className="container-xxl">
                 <div className="row">
@@ -47,7 +60,7 @@ const Service = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h2 className="h1 large-heading">
+                      <h2 className="h1 large-heading has-accent-1">
                         Nuestros <br />
                         Servicios
                       </h2>
@@ -83,6 +96,8 @@ const Service = () => {
 
                 
                 <ImageGrid />
+                                {/* <!--Divider--> */}
+                                <div className="ptf-divider"></div>
               </div>
               {/* End .container-xxl */}
             </section>
@@ -117,7 +132,7 @@ const Service = () => {
                 data-aos="fade"
                 data-aos-delay="0"
               >
-                <h2 className="h1 large-heading">Como lo hacemos</h2>
+                <h2 className="h1 large-heading" style={{color:"white"}}>Como lo hacemos</h2>
               </div>
               {/* <!--Spacer--> */}
               <div
