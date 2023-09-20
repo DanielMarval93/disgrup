@@ -113,7 +113,7 @@
   font-size: px2rem(100px);
   &--sm {
     @include mq("small") {
-      font-size: px2rem(75px);
+      font-size: px2rem(70px);
     }
   }
 
