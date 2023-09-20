@@ -93,7 +93,7 @@ const WorksGrid = () => {
                   <div
                     className="ptf-isotope-grid row"
                     style={{
-                      
+                      "--bs-gutter-x": "4rem",
                       "--bs-gutter-y": "5.75rem",
                     }}
                   >
