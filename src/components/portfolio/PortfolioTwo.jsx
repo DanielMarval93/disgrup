@@ -89,7 +89,9 @@ const PortfolioTwo = () => {
             </ReactTooltip>
             <div className="ptf-work__category">{val.cat}</div>
             <h4 className="ptf-work__title">{val.title}</h4>
-            <div className="ptf-work__date">{val.date}</div>
+            {/*
+            <div className="ptf-work__date">{val.date}</div>*/}
+            <div className="ptf-work__date"></div>
           </article>
         ))}
       </div>
