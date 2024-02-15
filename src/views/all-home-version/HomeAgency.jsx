@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-// import CounterTwo from "../../components/counter/CounterTwo";// 
+// import CounterTwo from "../../components/counter/CounterTwo";//
 import CopyRightTwo from "../../components/footer/copyright/CopyRightTwo";
 import FooterTwo from "../../components/footer/FooterTwo";
 import HeaderAgency from "../../components/header/HeaderAgency";
@@ -9,9 +9,7 @@ import HeroAgency from "../../components/hero/HeroAgency";
 import PortfolioTwo from "../../components/portfolio/PortfolioTwo";
 //import Team from "../../components/team/Team";
 //import TestimonialTwo from "../../components/testimonial/TestimonialTwo";//
-import Pricing from "../../components/pricing/Pricing";
-
-
+import YouTubeEmbed from "../../components/youtube/youTubeEmbed";
 
 import ListOne from "../../components/list/ListOne";
 import ListTwo from "../../components/list/ListTwo";
@@ -20,12 +18,11 @@ import ListFour from "../../components/list/ListFour";
 import ListFive from "../../components/list/ListFive";
 import ListSix from "../../components/list/ListSix";
 
-
 const HomeAgency = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--home-agency">
       <Helmet>
-        <title>Icy Media Agency</title>
+        <title>Fundacion Disgrup</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -48,106 +45,46 @@ const HomeAgency = () => {
           Start Call to Counter section
           ============================================== */}
             <section>
-              {/* <!--Spacer--> */}
               <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "3.75rem" }}
-              ></div>
-              <div className="container">
-                <div
-                  className="row align-items-center"
-                  style={{ "--bs-gutter-y": "2rem" }}
-                >
-                  <div className="col-12 col-xl-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      {/* <!--Phone Block--> */}
-                      <div className="ptf-phone-block">
-                        <div className="ptf-phone-block__icon">
-                          <i className="lnil lnil-phone"></i>
-                        </div>
-                        <div className="ptf-phone-block__caption has-white-color">
-                          LLamanos
-                          <br />
-                          Directamente
-                        </div>
-                        <div className="ptf-phone-block__phone has-white-color">
-                          <a href="tel:+34622063782">(+34) 622 06 37 82</a>
-                        </div>
+                className="row align-items-center has-accent-1-background"
+                style={{ "--bs-gutter-y": "2rem" }}
+              >
+                <div className="col-12">
+                  {/* <!--Animated Block--> */}
+                  <div
+                    className="ptf-animated-block"
+                    data-aos="fade"
+                    data-aos-delay="0"
+                  >
+                    <div>
+                      {/* <!--Divider--> */}
+                      <div className="ptf-divider"></div>
+                      
+                      <div className="align-items-center">
+                        <img
+                          style={{ maxWidth: "150px" }}
+                          alt="aef"
+                          src="https://identitatcorporativa.gencat.cat/web/.content/Documentacio/descarregues/identificacio/BN/idb_c_blanc.png"
+                        />
+                        <img
+                          style={{ maxWidth: "150px" }}
+                          alt="aef"
+                          src="https://ccfundacions.cat/wp-content/uploads/2019/05/logo-white.png"
+                        />
                       </div>
                     </div>
                   </div>
-                  {/* End .col */}
-                 {/* <CounterTwo />*/}
                 </div>
+                {/* End .col */}
+                {/* <CounterTwo />*/}
               </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "3.75rem" }}
-              ></div>
             </section>
 
             <section>
-              <div className="container">
-                {/* <!--Divider--> */}
-                <div className="ptf-divider"></div>
-              </div>
+              {/* <!--Divider--> */}
+              <div className="ptf-divider"></div>
             </section>
             {/* End .ptf-devider */}
-
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "8.125rem", "--ptf-md": "4.0625rem" }}
-              ></div>
-              <div className="container">
-                <div className="row ">
-                  <div className="col-xl-7 " >
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1 large-heading has-accent-0 ">
-                        Diseño <br/> Creativo y<br/> Publicidad
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="col-xl-5 d-none d-xl-block">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <div className="has-black-color fz-90 lh-1 text-end">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          style={{ height: "1em" }}
-                          viewBox="0 0 17 17"
-                        >
-                          <path d="M16 .997V10h-1V2.703L4.683 13l-.707-.708L14.291 1.997H6.975v-1H16z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "6.25rem", "--ptf-md": "3.125rem" }}
-              ></div>
-            </section>
-            {/* End  Advertising Big Title */}
 
             <section className="ptf-custom--3993 jarallax">
               <div className="container">
@@ -164,7 +101,7 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h6 className="fz-16 has-accent-4 text-uppercase">
+                      <h6 className="fz-36 has-accent-1 text-uppercase">
                         Quienes Somos
                       </h6>
                       {/* <!--Spacer--> */}
@@ -172,22 +109,37 @@ const HomeAgency = () => {
                         className="ptf-spacer"
                         style={{ "--ptf-xxl": "1.875rem" }}
                       ></div>
-                      <h3 className="has-white-color" style={{ maxWidth: "30rem" }} >
-                      Tenemos las soluciones confiables que tu negocio necesita.                       </h3>
+                      <h3
+                        className="has-black-color"
+                        style={{ maxWidth: "30rem" }}
+                      >
+                        Tenemos las soluciones confiables que tu negocio
+                        necesita.{" "}
+                      </h3>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
                         style={{ "--ptf-xxl": "5rem", "--ptf-md": "2.5rem" }}
                       ></div>
-                      <p className="fz-18 has-white-color" style={{ maxWidth: "30rem" }}>
-                      En Icy Media Agency, somos un equipo de expertos en marketing digital
-                      apasionados por obtener los mayores resultados para nuestros clientes,
-                       y por ayudar a las marcas a crecer y cumplir sus metas y objetivos.
-
+                      <p
+                        className="fz-18 has-black-color"
+                        style={{ maxWidth: "30rem" }}
+                      >
+                        En Icy Media Agency, somos un equipo de expertos en
+                        marketing digital apasionados por obtener los mayores
+                        resultados para nuestros clientes, y por ayudar a las
+                        marcas a crecer y cumplir sus metas y objetivos.
                       </p>
-                      <p className="fz-18 has-white-color" style={{ maxWidth: "30rem" }}>
-                       Nuestro lema, ser innovadores, rápidos y eficaces. Es por eso que siempre estamos actualizados con las últimas tendencias y tecnologías. 
-                       Utilizamos nuestros conocimientos y experiencia para desarrollar estrategias de vanguardia y proyectos únicos, destacando por encima de la competencia. 
+                      <p
+                        className="fz-18 has-black-color"
+                        style={{ maxWidth: "30rem" }}
+                      >
+                        Nuestro lema, ser innovadores, rápidos y eficaces. Es
+                        por eso que siempre estamos actualizados con las últimas
+                        tendencias y tecnologías. Utilizamos nuestros
+                        conocimientos y experiencia para desarrollar estrategias
+                        de vanguardia y proyectos únicos, destacando por encima
+                        de la competencia.
                       </p>
                     </div>
                     {/* <!--Spacer--> */}
@@ -201,11 +153,73 @@ const HomeAgency = () => {
             </section>
             {/* End  Advertising Banner */}
 
+
+
+            <section>
+
+              <div className="container">
+                <div className="row ">
+                  <div className="col-xl-7 ">
+                    {/* <!--Animated Block--> */}
+                    <div
+                      className="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="0"
+                    >
+                      <h3 className="has-accent-1">ULTIMOS VIDEOS</h3>
+                      <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "2.125rem", "--ptf-md": "4.0625rem" }}
+              ></div>
+                      <div>
+                        <YouTubeEmbed
+                          videoId="uRINHRkbhqY?si=SD8zmGBTUAo_-Mpb"
+                          width={560}
+                          height={315}
+                        />
+
+                        <YouTubeEmbed
+                          videoId="12RBdsn4TSo?si=JXu68wX9Fezu-3Mz"
+                          width={560}
+                          height={315}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-5 d-none d-xl-block">
+                    {/* <!--Animated Block--> */}
+                    <div
+                      className="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="100"
+                    >
+                                    <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "5.125rem", "--ptf-md": "4.0625rem" }}
+              ></div>
+                      <img
+                        alt="Donacion bizum"
+                        src="https://i.imgur.com/7mG5f1v.jpeg"
+
+                        style={{}}
+
+
+                      />
+                      <div className="has-black-color fz-90 lh-1 text-end"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+            {/* End  Advertising Big Title */}
+
             
-          {/*============================================}=
+
+            {/*============================================}=
         Service Section
       ============================================== */}
-                  <section>
+            <section>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
@@ -218,8 +232,7 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-0">Servicios</h2>
-                  
+                  <h2 className="h1 large-heading has-accent-1 important!">Disgrup ayuda a</h2>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
@@ -235,7 +248,7 @@ const HomeAgency = () => {
                 >
                   <div className="col-12 col-md-6">
                     {/* <!--Animated Block--> */}
-                    <div 
+                    <div
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="0"
@@ -247,7 +260,10 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider" style={{ backgroundColor: 'white' }} ></div>
+                      <div
+                        className="ptf-divider"
+                        style={{ backgroundColor: "white" }}
+                      ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -271,7 +287,10 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
+                      <div
+                        className="ptf-divider"
+                        style={{ backgroundColor: "white" }}
+                      ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -295,7 +314,10 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
+                      <div
+                        className="ptf-divider"
+                        style={{ backgroundColor: "white" }}
+                      ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -320,7 +342,10 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
+                      <div
+                        className="ptf-divider"
+                        style={{ backgroundColor: "white" }}
+                      ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -344,7 +369,10 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
+                      <div
+                        className="ptf-divider"
+                        style={{ backgroundColor: "white" }}
+                      ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -368,7 +396,10 @@ const HomeAgency = () => {
                         style={{ "--ptf-xxl": "1.5625rem" }}
                       ></div>
                       {/* <!--Divider--> */}
-                      <div className="ptf-divider" style={{ backgroundColor: 'white' }}></div>
+                      <div
+                        className="ptf-divider"
+                        style={{ backgroundColor: "white" }}
+                      ></div>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
@@ -378,8 +409,6 @@ const HomeAgency = () => {
                       <ListSix />
                     </div>
                   </div>
-
-
                 </div>
               </div>
 
@@ -389,10 +418,6 @@ const HomeAgency = () => {
                 style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
               ></div>
             </section>
-
-
-
-            
 
             {/*=============================================
           Start Latest Works section
@@ -406,7 +431,7 @@ const HomeAgency = () => {
                   data-aos-delay="0"
                 >
                   <h2 className="h1 large-heading has-accent-0 d-inline-flex">
-                    Ultimos Trabajos
+                    Ultimas Noticias
                   </h2>
                   <Link
                     className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
@@ -444,8 +469,6 @@ const HomeAgency = () => {
                   {/* End .ptf-isotope-grid */}
                 </div>
               </div>
-
-              
             </section>
 
             {/*=============================================
@@ -485,45 +508,8 @@ const HomeAgency = () => {
             </section>
 
           */}
-     
-           {/*=============================================
-            Start Pricing section
-            ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
-              ></div>
-              <div className="container">
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >
-                  <h2 className="h1 large-heading has-accent-1">
-                    Paquetes
-                  </h2>
-                </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "3.75rem", "--ptf-md": "1.875rem" }}
-                ></div>
-              </div>
-              <div className="container">
-                <div className="row" style={{ "--bs-gutter-x": "2rem" }}>
-                  <Pricing />
-                </div>
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
-              ></div>
-            </section>
 
+  
 
             {/*=============================================
           Start Footer section

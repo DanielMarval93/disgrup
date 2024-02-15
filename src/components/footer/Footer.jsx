@@ -63,37 +63,25 @@ const scrollToTop = () => {
 const Footer = () => {
   return (
     <div className="row">
-      <div className="col-12 col-xl-6">
+<div className="col-12 col-lg-7">
         {/* <!--Animated Block--> */}
         <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
-          <div
-            className="ptf-footer-heading has-black-color "
-            
-            style={{ maxWidth: "37.5rem" }}
-          >
-              Impulsa tu negocio al máximo nivel.
+          <div className="ptf-widget ptf-widget-contacts has-black-color">
+            <ul>
+              <li>
+                <span className="has-accent-1">Contacto:</span>
+                <p > Calle Aragón 61, 3º 2ª, 08015 Barcelona (Spain)</p>
+                <span></span>
+                <p >info@Disgrup.org </p>
+                <span></span>
+                <p >+34 932 265 050 </p>
+                <span></span>
+                <p>CIF: G65195430</p>
+              </li>
+            </ul>
           </div>
-          <div className="ptf-footer-heading has-black-color">
-            Contacta con &nbsp;
-            <Link
-              className="has-accent-1 text-decoration-underline"
-              to="/contact"
-              onClick={scrollToTop}
-            >
-              Nosotros!
-            </Link>
-          </div>
-          </div>
-          </div>
-          {/*direccion*/}
-          
-        <div className="col-12 col-xl-6">
-          <a className="fz-36 has-black-color" href="tel:34622063782">+34 (622) 06-37-82</a>
-          <br/>
-          <a className="fz-36 has-black-color" href="mailto:info@icymediagency.es">
-            info@icymediagency.es
-          </a>
         </div>
+      </div>
       
     {/*<div className="col-12 col-md-6 col-xl-3">
         {/* <!--Animated Block--> 
@@ -136,6 +124,30 @@ const Footer = () => {
         </div>
       </div>
     */}
+
+<div className="col-12 col-lg-5">
+        {/* <!--Animated Block--> */}
+        <div
+          className="ptf-animated-block"
+          data-aos="fade"
+          data-aos-delay="100"
+        >
+          <div className="ptf-widget ptf-widget-contacts has-black-color">
+          <ul>   
+          <li>
+                <span className="has-accent-1">Legal:</span>
+                <p > Aviso legal</p>
+                <span></span>
+                <p >Política de cookies</p>
+                <span></span>
+                <p >Política de privacidad</p>
+                <span></span>
+                <p>Política de devoluciones y reembolsos</p>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

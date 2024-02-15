@@ -54,7 +54,7 @@ const HeroAgency = () => {
                 {/* <!--Button--> */}
                 <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
                 
-                  Contáctanos
+                  Ayudanos
                 
                 </Link>
                 {/* <!--Button--> */}
@@ -63,7 +63,7 @@ const HeroAgency = () => {
                   to="/service"
                   style={{ marginLeft: "2rem" }}
                 >
-                  Servicios
+                  Conocenos
                 </Link>
               </div>
             </div>
@@ -98,7 +98,7 @@ const HeroAgency = () => {
                 {/* <!--Button--> */}
                 <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
                 
-                  Contáctanos
+                  Ayudanos
                 
                 </Link>
                 {/* <!--Button--> */}

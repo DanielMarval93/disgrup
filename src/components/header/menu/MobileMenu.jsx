@@ -19,16 +19,19 @@ const menuContent = [
       routerPath: "/home-agency",
     },
     {
-      name: "Portafolio",
+      name: "videos",
       routerPath: "/works-masonry",
     },
     {
-      name: "Servicios",
+      name: "Noticias",
       routerPath: "/service",
     },  
     {
-      name: "Contacto",
+      name: "Ayudanos",
       routerPath: "/contact",
+    },    {
+      name: "Conocenos",
+      routerPath: "/blog-details",
     },
     ],
   },

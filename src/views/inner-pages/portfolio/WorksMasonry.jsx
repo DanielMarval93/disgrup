@@ -9,10 +9,10 @@ const WorksMasonry = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--works-masonry">
       <Helmet>
-        <title>Icy Media Agency - Portafolio</title>
+        <title>Icy Media Agency - Conocenos</title>
       </Helmet>
       {/* End Page SEO Content */}
-      <div className="ptf-site-wrapper__inner" style={{background:"#f9d178"}} >
+      <div className="ptf-site-wrapper__inner" style={{background:"white"}} >
         <HeaderDefault />
         {/* End  HeaderHomeDefault */}
 
@@ -34,7 +34,7 @@ const WorksMasonry = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading has-white-color">
+                      <h1 className="large-heading has-accent-1">
                         Ve mas alla de lo que esta a simple vista.
                       </h1>
                     </div>

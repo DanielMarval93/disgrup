@@ -4,9 +4,9 @@ $base_font_size: 16px;
 
 :root {
   // Accent colors
-  @include defineColorHSL("--ptf-accent-1", 201.61, 69.70%, 54.71%); // #084888
-  @include defineColorHSL("--ptf-accent-2", 203, 91%, 83%); // #abddfb
-  @include defineColorHSL("--ptf-accent-3", 332, 80%, 77%); // #f394c0
+  @include defineColorHSL("--ptf-accent-1", 31, 90%, 51%); // #084888
+  @include defineColorHSL("--ptf-accent-2", 342, 99%, 47%); // #abddfb
+  @include defineColorHSL("--ptf-accent-3", 342, 99%, 47%); // #f394c0
   @include defineColorHSL("--ptf-accent-4", 41, 91%, 72%); // #f9d178
   @include defineGradient("--ptf-accent-5");
   @include defineColorHSL("--ptf-accent-6", 210, 89%, 28%); // #084888

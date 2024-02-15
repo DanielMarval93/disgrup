@@ -19,14 +19,14 @@ const Service = () => {
   return (
     <div>
       <Helmet>
-        <title>Icy Media Agency - Servicios</title>
+        <title>Icy Media Agency - Noticias</title>
       </Helmet>
       {/* End Page SEO Content */}
 
       <AnimatedCursor
         innerSize={8}
         outerSize={44}
-        color= "249,209,120"
+        color= "240,1,69"
         outerAlpha={0.3}
         innerScale={0.7}
         outerScale={1.2}

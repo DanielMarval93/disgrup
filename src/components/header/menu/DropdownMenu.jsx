@@ -11,15 +11,31 @@ const menuContent = [
     ],
   },
   {
-    name: "Portafolio",
+    name: "Videos",
     activeClass: "",
     menuClass: "",
     routerPath: "/works-masonry",
     dropDownItems: [
+      {
+        name: "Agradecimientos",
+        routerPath: "/videos-agradecimientos",
+      },
+      {
+        name: "Ayudas a personas con discapacidad",
+        routerPath: "/videos-ayudas",
+      },
+      {
+        name: "Ejercicios cognitivos con Guille",
+        routerPath: "/videos-ejercicios",
+      },
+      {
+        name: "Terapia ocupacional con Candi",
+        routerPath: "/videos-terapias",
+      },
     ],
   },
   {
-    name: "Contacto",
+    name: "Ayudanos",
     activeClass: "",
     menuClass: "",
     routerPath: "/contact",
@@ -27,10 +43,19 @@ const menuContent = [
     ],
   },
   {
-    name: "Servicios",
+    name: "Noticias",
     activeClass: "",
     menuClass: "",
     routerPath: "/service",
+    dropDownItems: [
+    
+    ],
+  },
+  {
+    name: "Conocenos",
+    activeClass: "",
+    menuClass: "",
+    routerPath: "/blog-details",
     dropDownItems: [
     
     ],

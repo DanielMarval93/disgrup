@@ -11,7 +11,7 @@
 
 
 .has-accent-0 {
-  color: var(--ptf-color-white) !important;
+  color: var(--ptf-color-black) !important;
 }
 
 .has-accent-1 {
@@ -20,6 +20,10 @@
 
 .has-accent-1-background {
   background-color: var(--ptf-accent-1);
+}
+
+.has-accent-2-background {
+  background-color: var(--ptf-accent-2);
 }
 
 .has-accent-2 {

@@ -19,6 +19,13 @@ import BlogSidebar from "../views/inner-pages/blog/BlogSidebar";
 import BlogDetails from "../views/inner-pages/blog/BlogDetails";
 import BlogDetailsSidebar from "../views/inner-pages/blog/BlogDetailsSidebar";
 
+// Videos
+
+import Ayudas from "../views/inner-pages/blog/Ayudas";
+import Agradecimientos from "../views/inner-pages/blog/Agradecimientos"
+import Ejercicios from "../views/inner-pages/blog/Ejercicios";
+import Terapias from "../views/inner-pages/blog/Terapia"
+
 // Portfolio
 import WorksGrid from "../views/inner-pages/portfolio/WorksGrid";
 import WorksMasonry from "../views/inner-pages/portfolio/WorksMasonry";
@@ -45,7 +52,6 @@ const AllRoutes = () => {
         {/*  Homepage Demo */}
 
         <Route path="/home-agency" element={<HomeAgency />} />
-       
 
         {/* Service */}
         <Route path="/service" element={<Service />} />
@@ -61,6 +67,12 @@ const AllRoutes = () => {
         <Route path="/blog-sidebar" element={<BlogSidebar />} />
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/blog-details-sidebar" element={<BlogDetailsSidebar />} />
+
+        {/* Videos */}
+        <Route path="/videos-ayudas" element={<Ayudas />} />
+        <Route path="/videos-agradecimientos" element={<Agradecimientos />} />
+        <Route path="/videos-ejercicios" element={<Ejercicios />} />
+        <Route path="/videos-terapias" element={<Terapias />} />
 
         {/* Portfolio */}
         <Route path="/works-grid" element={<WorksGrid />} />

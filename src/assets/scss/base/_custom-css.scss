@@ -288,16 +288,44 @@
   }
 }
 
+  .ptf-custom--3992 {
+  position: relative;
+  background-image: url(../../img/home/agency/about-image-2.svg);
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  background-position-x:  26.5rem;
+  background-position-y: 1rem;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    width: calc(50% - #{px2rem(250px)});
+
+    background-color: var(--ptf-color-white);
+
+    @include mq("large") {
+      width: 100%;
+    }
+  }
+}
+
 /* SECTION: HOME AGENCY
 -------------------------------------------- */
 
 .ptf-is--home-agency {
   .ptf-custom--3993 {
     position: relative;
-    background-image: url(../../img/home/agency/about-image.png);
+    background-image: url(../../img/home/agency/about-image.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 40rem;
     background-position-x: center -10px;
+    background-position-y: 10rem;
 
     &::after {
       content: "";
