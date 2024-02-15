@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 
 
@@ -48,7 +47,7 @@ const Product = [
     itemName: "Contact",
     link: "/",
   },
-]; */
+]; 
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -56,7 +55,7 @@ const scrollToTop = () => {
     behavior: "smooth",
   });
    
-};
+};*/
 
 
 
