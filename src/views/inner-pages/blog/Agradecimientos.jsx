@@ -6,12 +6,6 @@ import HeaderDefault from "../../../components/header/HeaderDefault";
 import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
 import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioSevenMasonry";
 
-const scrollDown = (ref, yValue) => {
-  window.scrollTo({
-    top: ref.current.offsetTop - yValue,
-    behavior: "smooth",
-  });
-}
 
 
 const Ayudas = () => {
