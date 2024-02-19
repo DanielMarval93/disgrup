@@ -5,11 +5,11 @@ import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 
-const BlogGrid = () => {
+const Historias = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Fundacion Disgrup - Noticias</title>
+        <title>Fundacion Disgrup - Historias</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -34,7 +34,7 @@ const BlogGrid = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading has-accent-2">Noticias</h1>
+                      <h1 className="large-heading has-accent-2">Historias</h1>
                     </div>
                   </div>
                   {/* End .col */}
@@ -164,4 +164,4 @@ const BlogGrid = () => {
   );
 };
 
-export default BlogGrid;
+export default Historias;

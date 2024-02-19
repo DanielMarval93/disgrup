@@ -22,10 +22,10 @@ const CopyRightTwo = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Icy Media Agency
-            </a>
+             © Fundacion Disgrup.
+            </a><br></br>
           </span>
-          . All Rights Reserved.
+          Todos los derechos reservados.
         </p>
       </div>
       {/* End .col */}

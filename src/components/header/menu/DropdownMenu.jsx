@@ -14,7 +14,6 @@ const menuContent = [
     name: "Videos",
     activeClass: "",
     menuClass: "",
-    routerPath: "/works-masonry",
     dropDownItems: [
       {
         name: "Agradecimientos",
@@ -46,7 +45,7 @@ const menuContent = [
     name: "Noticias",
     activeClass: "",
     menuClass: "",
-    routerPath: "/service",
+    routerPath: "/noticias",
     dropDownItems: [
     
     ],
@@ -55,7 +54,7 @@ const menuContent = [
     name: "Conocenos",
     activeClass: "",
     menuClass: "",
-    routerPath: "/blog-details",
+    routerPath: "/conocenos",
     dropDownItems: [
     
     ],

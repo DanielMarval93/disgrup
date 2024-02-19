@@ -26,6 +26,10 @@ import Agradecimientos from "../views/inner-pages/blog/Agradecimientos"
 import Ejercicios from "../views/inner-pages/blog/Ejercicios";
 import Terapias from "../views/inner-pages/blog/Terapia"
 
+// Noticias
+
+import Historias from "../views/inner-pages/blog/Historias";
+
 // Portfolio
 import WorksGrid from "../views/inner-pages/portfolio/WorksGrid";
 import WorksMasonry from "../views/inner-pages/portfolio/WorksMasonry";
@@ -42,6 +46,7 @@ import Faq from "../views/inner-pages/Faq";
 import NotFound from "../views/NotFound";
 import { Routes, Route } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
+import PoliticaCookies from "../views/inner-pages/blog/PoliticaCookies";
 
 const AllRoutes = () => {
   return (
@@ -65,7 +70,7 @@ const AllRoutes = () => {
         <Route path="/blog-grid" element={<BlogGrid />} />
         <Route path="/blog-masonry" element={<BlogMasonry />} />
         <Route path="/blog-sidebar" element={<BlogSidebar />} />
-        <Route path="/blog-details" element={<BlogDetails />} />
+        <Route path="/conocenos" element={<BlogDetails />} />
         <Route path="/blog-details-sidebar" element={<BlogDetailsSidebar />} />
 
         {/* Videos */}
@@ -74,12 +79,24 @@ const AllRoutes = () => {
         <Route path="/videos-ejercicios" element={<Ejercicios />} />
         <Route path="/videos-terapias" element={<Terapias />} />
 
+        
+        {/* Noticias */}
+        <Route path="/noticias" element={<BlogGrid />} />
+        <Route path="/historias" element={<Historias />} />
+
+
+
         {/* Portfolio */}
         <Route path="/works-grid" element={<WorksGrid />} />
         <Route path="/works-masonry" element={<WorksMasonry />} />
         <Route path="/works-listing" element={<WorksListing />} />
         <Route path="/works-carousel" element={<WorksCarousel />} />
         <Route path="/works-showcase" element={<WorksShowcase />} />
+
+        
+        {/* Legal */}
+        <Route path="/cookies" element={<PoliticaCookies/>} />
+        <Route path="/politicas" element={<WorksMasonry />} />
 
         {/* others */}
         <Route path="/team" element={<Team />} />

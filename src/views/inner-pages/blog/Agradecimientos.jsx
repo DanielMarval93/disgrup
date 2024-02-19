@@ -6,6 +6,14 @@ import HeaderDefault from "../../../components/header/HeaderDefault";
 import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
 import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioSevenMasonry";
 
+const scrollDown = (ref, yValue) => {
+  window.scrollTo({
+    top: ref.current.offsetTop - yValue,
+    behavior: "smooth",
+  });
+}
+
+
 const Ayudas = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
@@ -54,8 +62,8 @@ const Ayudas = () => {
                         <div
                           className="ptf-spacer"
                           style={{
-                            "--ptf-xxl": "2.5rem",
-                            "--ptf-md": "2.5rem",
+                            "--ptf-xxl": "1rem",
+                            "--ptf-md": "1rem",
                           }}
                         ></div>
                       </div>
@@ -64,8 +72,8 @@ const Ayudas = () => {
                   <div className="ptf-single-post__meta">
                     <YouTubeEmbed
                       videoId="XaB7dP-b2to?si=xWTZpf6ERyT2dmfd"
-                      width={960}
-                      height={455}
+                      width={760}
+                      height={375}
                     />
                     <div className="col-xl-8 offset-xl-2">
                       {/* <!--Post Info--> */}
@@ -80,6 +88,11 @@ const Ayudas = () => {
                         labor para conseguir un mundo mejor para el colectivo de
                         personas con discapacidad
                       </div>
+                      <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
+                      ></div>
+                      <h2 className="has-accent-1">Ultimos Videos</h2>
 
                       <PortfolioSevenMasonry />
                     </div>

@@ -4,13 +4,12 @@ import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import ImageGridTwo from "../../../components/image-grid/ImageGridTwo";
-import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
 
-const BlogDetails = () => {
+const PoliticaCookies = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Moonex - Bog Post Details</title>
+        <title>Disgrup - Politica de Cookies</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -24,54 +23,6 @@ const BlogDetails = () => {
             data-aos-delay="0"
           >
             <article className="ptf-single-post">
-              {/* <!--Post Header--> */}
-              <header className="ptf-single-post__header ptf-single-post__header--style-1">
-                <div className="container-xxl">
-                  <h1 className="ptf-single-post__title">¿Como nace</h1>
-                  <h1>
-                    {" "}
-                    <span className="has-accent-1">Fundación Disgrup</span>?
-                  </h1>
-                  <div className="ptf-single-post__meta">
-                    <span className="cat has-accent-1">Disgrup</span>
-                    <span className="date"> Ene 1, 2010</span>
-                  </div>
-                </div>
-              </header>
-
-              {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
-                <div
-                  className="container-xxl"
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                >
-                  <img
-                    src="assets/img/blog/single-post/post-media-1.png"
-                    alt="blog post"
-                    loading="lazy"
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  >
-                    <YouTubeEmbed
-                      videoId="D6daFM-p8Mg?si=wk6HVaQcyLplEshJ"
-                      width={960}
-                      height={455}
-                    />
-                  </div>
-                </div>
-              </div>
-
               {/* <!--Post Wrapper--> */}
               <div className="ptf-single-post__wrapper">
                 <div className="container-xxl">
@@ -80,33 +31,136 @@ const BlogDetails = () => {
                       {/* <!--Post Info--> */}
 
                       {/* <!--Post Excerpt--> */}
-                      <div className="ptf-single-post__excerpt has-accent">
-                        A fines del año 2009, Guillermo Egido acababa de salir
-                        del hospital con 33 años, luego de encontrarse con un
-                        cambio significativo en su vida
+                      <div className="ptf-single-post__excerpt">
+                        <h3 className="has-accent-2 important!">
+                          Política de cookies
+                        </h3>
                       </div>
 
                       {/* <!--Post Content--> */}
                       <div className="ptf-single-post__content">
                         <p>
-                          Supo que si el destino había decidido un cambio
-                          trascendental en su vida, de alguna manera o de otra,
-                          el también haría algo para colaborar con aquellas
-                          personas que se encontraban en una situación similar a
-                          la suya. Tres meses despues, el primero de Enero de
-                          2010, nace la Fundación Disgrup.
+                          Esta política de cookies fue actualizada por última
+                          vez el 10 de julio de 2023 y se aplica a los
+                          ciudadanos y residentes legales permanentes del
+                          Espacio Económico Europeo y Suiza.
                         </p>
+
+                        {/* <!--Spacer--> */}
+                        <div
+                          className="ptf-spacer"
+                          style={{ "--ptf-xxl": "2rem", "--ptf-md": "2.5rem" }}
+                        ></div>
+
+                        <h4 className="has-accent-1 important!">
+                          1. Introducción
+                        </h4>
                         <p>
-                          El nombre no fue aleatorio, sino que resulta
-                          trascendental para el trabajo que Guillermo fijaría
-                          como sustento de un proyecto social, que permitiese
-                          mejorar la calidad de vida de las personas con
-                          discapacidad. En Cataluña, donde Disgrup tiene su
-                          dirección física, «GRUP» significa grupo, y «DIS»,
-                          claramente, alude a la condición de las personas que
-                          son objeto de las acciones que se realizarán a lo
-                          largo de los años.
+                          Nuestra web,{" "}
+                          <a href="https://disgrup.org">https://disgrup.org</a>{" "}
+                          (en adelante: «la web») utiliza cookies y otras
+                          tecnologías relacionadas (para mayor comodidad, todas
+                          las tecnologías se denominan «cookies»). Las cookies
+                          también son colocadas por terceros a los que hemos
+                          contratado. En el siguiente documento te informamos
+                          sobre el uso de cookies en nuestra web.
                         </p>
+
+                        {/* <!--Spacer--> */}
+                        <div
+                          className="ptf-spacer"
+                          style={{ "--ptf-xxl": "1rem", "--ptf-md": "1.5rem" }}
+                        ></div>
+
+                        <h4 className="has-accent-1 important!">
+                          2. ¿Qué son las cookies?
+                        </h4>
+                        <p>
+                          Una cookie es un pequeño archivo que se envía junto
+                          con las páginas de esta web y que tu navegador
+                          almacena en el disco duro de su ordenador u otro
+                          dispositivo. La información almacenada puede ser
+                          devuelta a nuestros servidores o a los servidores de
+                          terceros apropiados durante una visita posterior.
+                        </p>
+
+                        {/* <!--Spacer--> */}
+                        <div
+                          className="ptf-spacer"
+                          style={{ "--ptf-xxl": "1rem", "--ptf-md": "1.5rem" }}
+                        ></div>
+
+                        <h4 className="has-accent-1 important!">
+                          3. ¿Qué son los scripts?
+                        </h4>
+                        <p>
+                          Un script es un fragmento de código de programa que se
+                          utiliza para hacer que nuestra web funcione
+                          correctamente y de forma interactiva. Este código se
+                          ejecuta en nuestro servidor o en tu dispositivo.
+                        </p>
+
+                        {/* <!--Spacer--> */}
+                        <div
+                          className="ptf-spacer"
+                          style={{ "--ptf-xxl": "1rem", "--ptf-md": "1.5rem" }}
+                        ></div>
+
+                        <h4 className="has-accent-1 important!">
+                          4. ¿Qué es una baliza web?
+                        </h4>
+                        <p>
+                          Una baliza web (o una etiqueta de píxel) es una
+                          pequeña e invisible pieza de texto o imagen en una web
+                          que se utiliza para monitorear el tráfico en una web.
+                          Para ello, se almacenan varios datos sobre usted
+                          mediante estas balizas web.
+                        </p>
+
+                        {/* <!--Spacer--> */}
+                        <div
+                          className="ptf-spacer"
+                          style={{ "--ptf-xxl": "1rem", "--ptf-md": "1.5rem" }}
+                        ></div>
+
+                        <h4 className="has-accent-1 important!">5. Cookies</h4>
+                        <div
+                          className="ptf-spacer"
+                          style={{ "--ptf-xxl": "1rem", "--ptf-md": "1.5rem" }}
+                        ></div>
+                        <ul>
+                        <h6>5.1 Cookies técnicas o funcionales</h6>
+                        <p>
+                          Algunas cookies aseguran que ciertas partes de la web
+                          funcionen correctamente y que tus preferencias de
+                          usuario sigan recordándose. Al colocar cookies
+                          funcionales, te facilitamos la visita a nuestra web.
+                          De esta manera, no necesitas introducir repetidamente
+                          la misma información cuando visitas nuestra web y, por
+                          ejemplo, los artículos permanecen en tu cesta de la
+                          compra hasta que hayas pagado. Podemos colocar estas
+                          cookies sin tu consentimiento.
+                        </p>
+                        
+                        <h6>5.2 Cookies de estadísticas</h6>
+                        
+                        <p>
+                          Utilizamos cookies estadísticas para optimizar la
+                          experiencia de la web para nuestros usuarios. Con
+                          estas cookies estadísticas obtenemos información sobre
+                          el uso de nuestra web. Te pedimos tu permiso para
+                          colocar cookies de estadísticas.
+                        </p>
+                        <h6>5.3 Cookies de marketing/seguimiento</h6>
+                        <p>
+                          Las cookies de marketing/seguimiento son cookies, o
+                          cualquier otra forma de almacenamiento local, usadas
+                          para crear perfiles de usuario para mostrar publicidad
+                          o para hacer el seguimiento del usuario en esta web o
+                          en varias webs con fines de marketing similares.
+                        </p>
+                        </ul>
+
                         {/* <!--Spacer--> */}
                         <div
                           className="ptf-spacer"
@@ -297,4 +351,4 @@ const BlogDetails = () => {
   );
 };
 
-export default BlogDetails;
+export default PoliticaCookies;

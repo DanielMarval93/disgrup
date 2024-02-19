@@ -11,102 +11,70 @@ const breakpointColumnsObj = {
   500: 1,
 };
 
-const portfolioMenu = ["1", "2", "3"];
+const portfolioMenu = ["1", "2"];
 
 const portfolioContent = [
   {
     tabContent: [
       {
         img: "work-1",
-        meta: "Diseño Web",
-        title: "Cathalo Box",
-        route: "https://www.cathalobox.com/",
+        meta: "Fundador de la Casa del Tíbet",
+        title: "Thubten Wangchen",
+        route: "https://www.youtube.com/watch?v=KJK-mxNAotM",
+        videoId: "KJK-mxNAotM?si=N7_BfKDrkrB0bxR8",
       },
       {
         img: "work-2",
-        meta: "Diseño Web",
-        title: "Dvine Models",
-        route: "https://www.dvinemodels.com/",
+        meta: "Subcampeón del Mundo",
+        title: "Lionel Morales",
+        route: "https://www.youtube.com/watch?v=ni3Hwc4JWWQ",
+        videoId: "ni3Hwc4JWWQ?si=rlrHYRFeWOdml5VT",
       },
       {
         img: "work-3",
-        meta: "Redes",
-        title: "La Perla Restaurante",
-        route: "https://www.instagram.com/laperlaclub_bcn/",
+        meta: "Locutor Radio Mollet",
+        title: "Josep Roca",
+        route: "https://www.youtube.com/watch?v=aPv6sFioSEE",
+        videoId: "aPv6sFioSEE?si=M4em6C6fVj5I7wfb",
       },
       {
         img: "work-4",
-        meta: "Redes",
-        title: "Bocachica Mambo Beach",
-        route: "https://www.instagram.com/bocachicamambobeach/",
-      },
-      {
-        img: "work-5",
-        meta: "Redes, Web",
-        title: "Hummer BCN",
-        route: "https://www.instagram.com/hummerbcn/",
-      },
-      {
-        img: "work-6",
-        meta: "Redes, Web",
-        title: "Partybus BCN",
-        route: "https://www.instagram.com/partybusbcn/",
+        meta: "Vice presidente de Barcelona Comerç",
+        title: "Lluis Llanas",
+        route: "https://www.youtube.com/watch?v=cGgBDyc5x74",
+        videoId: "cGgBDyc5x74?si=UWH3tS2lvWf5e13s",
       },
     ],
   },
   {
     tabContent: [
       {
-        img: "work-1",
-        meta: "Diseño Web",
-        title: "Cathalo Box",
-        route: "https://www.cathalobox.com/",
-      },
-      {
-        img: "work-2",
-        meta: "Diseño Web",
-        title: "Dvine Models",
-        route: "https://www.dvinemodels.com/",
-      },
-      {
         img: "work-5",
-        meta: "Diseño Web",
-        title: "Hummer BCN",
-        route: "https://www.hummerbcn.com/",
+        meta: "Activista social / Portavoz de COESPE",
+        title: "Ramon Franquesa",
+        route: "https://www.youtube.com/watch?v=cGgBDyc5x74",
+        videoId: "FHAO7_SHFII?si=IwOR-2uoKcKaXuJf",
       },
       {
         img: "work-6",
-        meta: "Diseño Web",
-        title: "Partybus BCN",
-        route: "https://partybusbcn.com/",
-      },
-    ],
-  },
-  {
-    tabContent: [
-      {
-        img: "work-3",
-        meta: "Redes",
-        title: "La Perla Restaurante",
-        route: "https://www.instagram.com/laperlaclub_bcn//",
+        meta: "Fundación Esport Solidari Internacional",
+        title: "Josep Maldonado",
+        route: "https://www.youtube.com/watch?v=fwtHJCTLbF8",
+        videoId: "fwtHJCTLbF8?si=6vXlefydguOAT4jA",
       },
       {
-        img: "work-4",
-        meta: "Redes",
-        title: "Bocachica Mambo Beach",
-        route: "https://www.instagram.com/bocachicamambobeach/",
+        img: "work-7",
+        meta: "Critico de Moda / Presentador de Television",
+        title: "Erik Putzbach",
+        route: "https://www.youtube.com/watch?v=zIbm5690LKI",
+        videoId: "zIbm5690LKI?si=9yYhc9ADHVU9V2d4",
       },
       {
-        img: "work-5",
-        meta: "Diseño Web",
-        title: "Hummer BCN",
-        route: "https://www.instagram.com/hummerbcn/",
-      },
-      {
-        img: "work-6",
-        meta: "Diseño Web",
-        title: "Partybus BCN",
-        route: "https://www.instagram.com/partybusbcn/",
+        img: "work-8",
+        meta: "Pizzero / YouTuber",
+        title: "Pino Prestanizzi",
+        route: "https://www.youtube.com/watch?v=XaB7dP-b2to",
+        videoId: "XaB7dP-b2to?si=OAfCDLjEXFt3rSrY",
       },
     ],
   },
@@ -121,7 +89,7 @@ const PortfolioSevenMasonry = () => {
         {/* <!--Spacer--> */}
         <div
           className="ptf-spacer"
-          style={{ "--ptf-xxl": "6.25rem", "--ptf-md": "3.125rem" }}
+          style={{ "--ptf-xxl": "2.55rem", "--ptf-md": "2 .125rem" }}
         ></div>
 
         {portfolioContent.map((item, i) => (
@@ -140,24 +108,26 @@ const PortfolioSevenMasonry = () => {
               >
                 {item.tabContent.map((singleItem, i) => (
                   <article className="ptf-work ptf-work--style-1" key={i}>
-                    <div className="ptf-work__media">
-                      <Link
-                        className="ptf-work__link"
-                        to={singleItem.route}
-                      ></Link>
-                    <YouTubeEmbed
-                      videoId="XaB7dP-b2to?si=xWTZpf6ERyT2dmfd"
-                      width={560}
-                      height={315}
-                    />
-                    </div>
                     <div className="ptf-work__meta">
                       <div className="ptf-work__category">
                         {singleItem.meta}
                       </div>
-                      <h4 className="ptf-work__title ">
+                      <h4 className="ptf-work__title has-accent-2">
                         <Link to={singleItem.route}>{singleItem.title}</Link>
                       </h4>
+                    </div>
+
+                    {/* <!--Spacer--> */}
+                    <div
+                      className="ptf-spacer"
+                      style={{ "--ptf-xxl": "1.25rem", "--ptf-md": "1.125rem" }}
+                    ></div>
+                    <div className="ptf-video">
+                      <YouTubeEmbed
+                        videoId={singleItem.videoId}
+                        width={560}
+                        height={315}
+                      />
                     </div>
                   </article>
                 ))}
@@ -168,7 +138,11 @@ const PortfolioSevenMasonry = () => {
             {/* End portfolio */}
           </TabPanel>
         ))}
-                <div className="ptf-animated-block" data-aos="fade" data-aos-delay="0">
+                <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
+                      ></div>
+        <div >
           <TabList className="ptf-filters ptf-filters--style-1">
             {portfolioMenu.map((item, i) => (
               <Tab className="filter-item " key={i}>

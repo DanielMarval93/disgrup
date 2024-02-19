@@ -18,13 +18,29 @@ import ListFour from "../../components/list/ListFour";
 import ListFive from "../../components/list/ListFive";
 import ListSix from "../../components/list/ListSix";
 
+import CookieConsent from "react-cookie-consent";
+
+
 const HomeAgency = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--home-agency">
+
       <Helmet>
         <title>Fundacion Disgrup</title>
       </Helmet>
       {/* End Page SEO Content */}
+
+      <CookieConsent
+        location="bottom"
+        buttonText="I agree"
+        cookieName="myAppCookieConsent"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
+
 
       <div className="ptf-site-wrapper__inner">
         <HeaderAgency />
@@ -430,15 +446,15 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-0 d-inline-flex">
+                  <h2 className="h1 large-heading has-accent-1 d-inline-flex">
                     Ultimas Noticias
                   </h2>
                   <Link
                     className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
-                    to="/works-masonry"
+                    to="/blog-grid"
                     style={{ marginLeft: "5.625rem" }}
                   >
-                    All Projects{" "}
+                    + Noticias{" "}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -454,7 +470,7 @@ const HomeAgency = () => {
                 {/* <!--Spacer--> */}
                 <div
                   className="ptf-spacer"
-                  style={{ "--ptf-xxl": "6.25rem" }}
+                  style={{ "--ptf-xxl": "2.25rem" }}
                 ></div>
 
                 {/* <!--Animated Block--> */}
@@ -463,12 +479,20 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <div className="ptf-isotope-grid">
+
+                <div className="row ptf-custom--3991 jarallax">
+                  <div className="ptf-isotope-grid col-lg-7">
                     <PortfolioTwo />
                   </div>
+                                  {/* <!--Spacer--> */}
+                <div
+                  className="ptf-spacer"
+                  style={{ "--ptf-xxl": "4.25rem" }}
+                ></div>
                   {/* End .ptf-isotope-grid */}
-                </div>
-              </div>
+                  </div>
+                  </div>
+                  </div>
             </section>
 
             {/*=============================================

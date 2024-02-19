@@ -25,8 +25,8 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-80--sm lh-1 has-white-color">
-              <span className="has-accent-1">Derrítete</span> con <br />
-                Nosotros
+              <span className="has-accent-1">Fundacion</span> <br />
+                Disgrup
               </h1>
 
               
@@ -39,7 +39,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color"
                 style={{ maxWidth: "34.375rem" }}
               >
-                Creamos experiencias digitales únicas
+                Ayudando a quien mas lo necesita
               </p>
 
 
@@ -60,7 +60,7 @@ const HeroAgency = () => {
                 {/* <!--Button--> */}
                 <Link
                   className="ptf-btn ptf-btn--secondary"
-                  to="/service"
+                  to="/blog-details"
                   style={{ marginLeft: "2rem" }}
                 >
                   Conocenos
@@ -75,30 +75,21 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
-                All you need <br />
-                is <span className="has-accent-1">Icy Agency</span> 
+                Participa en <br />
+                 nuestros <span className="has-accent-1"><br />Eventos</span> 
               </h1>
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "2.125rem" }}
               ></div>
-              <p
-                className="fz-24 has-white-color text-center"
-                style={{ maxWidth: "34.375rem", margin: "0 auto" }}
-              >
-                Rompe el hielo y Contáctanos
-              </p>
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "3.625rem" }}
-              ></div>
+
               <div className="d-flex justify-content-center">
 
                 {/* <!--Button--> */}
                 <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
                 
-                  Ayudanos
+                  Eventos
                 
                 </Link>
                 {/* <!--Button--> */}
@@ -112,9 +103,9 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-100--sm lh-1 has-white-color text-center">
-              Te Dejaremos
+              Haz una
               <br/>
-              <span className="has-accent-3"> helado</span> 
+              <span className="has-accent-3"> Donacion</span> 
               </h1>
 
               {/* <!--Spacer--> */}
@@ -123,23 +114,18 @@ const HeroAgency = () => {
                 style={{ "--ptf-xxl": "2.125rem" }}
               ></div>
 
-              <p
-                className="fz-24 has-white-color text-center"
-                style={{ maxWidth: "34.375rem", margin: "0 auto" }}
-              >
-                Contáctanos sin compromiso, no mordemos
-              </p>
 
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "3.625rem" }}
               ></div>
-              <div className="d-flex">
+              <div className="d-flex  justify-content-center">
+                
                 {/* <!--Button--> */}
                 <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
                 
-                  Contáctanos
+                  Ayudanos
                 
                 </Link>
                 {/* <!--Video Button--> 

@@ -12,30 +12,77 @@ import Social from "../../social/Social";
 
 const menuContent = [
   {
-    name: "Icy Media Agency",
-    routerPath: "/home-agency",
-    dropDownItems: [   {
-      name: "Home",
-      routerPath: "/home-agency",
-    },
-    {
-      name: "videos",
-      routerPath: "/works-masonry",
-    },
-    {
-      name: "Noticias",
-      routerPath: "/service",
-    },  
-    {
-      name: "Ayudanos",
-      routerPath: "/contact",
-    },    {
-      name: "Conocenos",
-      routerPath: "/blog-details",
-    },
+    name: "Conocenos",
+    dropDownItems: [
+      {
+        name: "Que hace la fundacion?",
+        routerPath: "/conocenos",
+      },
+      {
+        name: "Boligrafo Solidario",
+        routerPath: "/conocenos",
+      },
+      {
+        name: "Charlas de concienciación",
+        routerPath: "/conocenos",
+      },
     ],
   },
- 
+  {
+    name: "Ayudanos",
+    dropDownItems: [
+      {
+        name: "Beneficios de donar",
+        routerPath: "/works-grid",
+      },
+      {
+        name: "Dona por Bizum",
+        routerPath: "/works-masonry",
+      },
+      {
+        name: "Hacer Donacion",
+        routerPath: "/works-listing",
+      },
+    ],
+  },
+  {
+    name: "Videos",
+    dropDownItems: [
+      {
+        name: "Agradecimientos",
+        routerPath: "/videos-agradecimientos",
+      },
+      {
+        name: "Ayudas a Personas con Discapacidad",
+        routerPath: "/videos-ayudas",
+      },
+      {
+        name: "Ejercicios Cognitivos  ",
+        routerPath: "/videos-ejercicios",
+      },
+      {
+        name: "Terapia Ocupacional",
+        routerPath: "/videos-terapia",
+      },
+    ],
+  },
+  {
+    name: "Noticias",
+    dropDownItems: [      
+      {
+      name: "Noticias",
+      routerPath: "/noticias",
+    },
+    {
+      name: "Historias",
+      routerPath: "/historias",
+    }, 
+    {
+      name: "Eventos",
+      routerPath: "/coming-soon",
+    }, 
+    ],
+  },
 ];
 
 const MobileMenu = () => {
@@ -46,11 +93,10 @@ const MobileMenu = () => {
           <SidebarContent>
             <Menu className="sidebar-menu_wrapper">
               {menuContent.map((item, i) => (
-                <SubMenu defaultOpen='true' open="true" title={item.name} key={i}>
-                  
+                <SubMenu title={item.name} key={i}>
                   {item.dropDownItems.map((val, i) => (
-                    <MenuItem key={i} >
-                      <Link style={{fontSize:"24px"}} to={val.routerPath}>{val.name}</Link>
+                    <MenuItem key={i}>
+                      <Link to={val.routerPath}>{val.name}</Link>
                     </MenuItem>
                   ))}
                 </SubMenu>

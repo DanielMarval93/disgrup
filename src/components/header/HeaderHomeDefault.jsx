@@ -112,7 +112,7 @@ const HeaderHomeDefault = () => {
         </div>
         {/* End .ptf-offcanvas-menu__header */}
 
-        <MobileMenu />
+        < />
       </div>
       {/* End sidebar menu */}
     </>
