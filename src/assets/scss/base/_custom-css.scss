@@ -225,8 +225,16 @@
   }
 }
 
+/* youtube */
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 /* SECTION: HOME DARK
 -------------------------------------------- */
+
 
 .ptf-is--home-dark {
   body,
@@ -353,7 +361,7 @@
     background-repeat: no-repeat;
     background-size: 40rem;
     background-position-x: center -10px;
-    background-position-y: 10rem;
+    background-position-y: 5rem;
 
     &::after {
       content: "";

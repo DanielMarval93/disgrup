@@ -21,7 +21,7 @@ const FooterTwo = () => {
                 <span className="has-accent-1">Contacto:</span>
                 <p> Calle Aragón 61, 3º 2ª, 08015 Barcelona (Spain)</p>
                 <span></span>
-                <p>info@Disgrup.org </p>
+                <p>info@disgrup.org </p>
                 <span></span>
                 <p>+34 932 265 050 </p>
                 <span></span>
@@ -44,15 +44,18 @@ const FooterTwo = () => {
             <ul>
               <li>
                 <span className="has-accent-1">Legal:</span>
-
-                <p> Aviso legal</p>
+                <Link to="/aviso-legal" onClick={scrollToTop}>
+                  <p>Aviso legal</p>
+                </Link>
                 <span></span>
 
                 <Link to="/cookies" onClick={scrollToTop}>
                   <p>Política de cookies</p>
                 </Link>
                 <span></span>
+                <Link to="/politica-privacidad" onClick={scrollToTop}>
                 <p >Política de privacidad</p>
+                </Link>
                 <span></span>
                 <p>Política de devoluciones y reembolsos</p>
               </li>

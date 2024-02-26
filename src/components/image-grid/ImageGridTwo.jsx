@@ -48,13 +48,7 @@ const ImageGridTwo = () => {
                 </Item>
               </div>
               {/* End  .ptf-simple-image */}
-              <div className="ptf-simple-image-caption">
-                Image by{" "}
-                <a href={val.link} target="_blank" rel="noopener noreferrer">
-                  {val.imageOwner}
-                </a>
-              </div>
-              {/* End .ptf-simple-image-caption */}
+        
             </div>
           </div>
         ))}

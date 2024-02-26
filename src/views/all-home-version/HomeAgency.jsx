@@ -10,21 +10,14 @@ import PortfolioTwo from "../../components/portfolio/PortfolioTwo";
 //import Team from "../../components/team/Team";
 //import TestimonialTwo from "../../components/testimonial/TestimonialTwo";//
 import YouTubeEmbed from "../../components/youtube/youTubeEmbed";
+import BlogHistorias from "../../components/blog/BlogHistorias";
 
-import ListOne from "../../components/list/ListOne";
-import ListTwo from "../../components/list/ListTwo";
-import ListThree from "../../components/list/ListThree";
-import ListFour from "../../components/list/ListFour";
-import ListFive from "../../components/list/ListFive";
-import ListSix from "../../components/list/ListSix";
 
 import CookieConsent from "react-cookie-consent";
-
 
 const HomeAgency = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--home-agency">
-
       <Helmet>
         <title>Fundacion Disgrup</title>
       </Helmet>
@@ -40,7 +33,6 @@ const HomeAgency = () => {
       >
         This website uses cookies to enhance the user experience.
       </CookieConsent>
-
 
       <div className="ptf-site-wrapper__inner">
         <HeaderAgency />
@@ -75,7 +67,7 @@ const HomeAgency = () => {
                     <div>
                       {/* <!--Divider--> */}
                       <div className="ptf-divider"></div>
-                      
+
                       <div className="align-items-center">
                         <img
                           style={{ maxWidth: "150px" }}
@@ -109,7 +101,7 @@ const HomeAgency = () => {
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"
-                      style={{ "--ptf-xxl": "8.125rem", "--ptf-lg": "0" }}
+                      style={{ "--ptf-xxl": "4.125rem", "--ptf-lg": "0" }}
                     ></div>
                     {/* <!--Animated Block--> */}
                     <div
@@ -117,7 +109,7 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h6 className="fz-36 has-accent-1 text-uppercase">
+                      <h6 className="fz-40 has-accent-1 text-uppercase">
                         Quienes Somos
                       </h6>
                       {/* <!--Spacer--> */}
@@ -125,43 +117,50 @@ const HomeAgency = () => {
                         className="ptf-spacer"
                         style={{ "--ptf-xxl": "1.875rem" }}
                       ></div>
-                      <h3
+                      <h5
                         className="has-black-color"
                         style={{ maxWidth: "30rem" }}
                       >
-                        Tenemos las soluciones confiables que tu negocio
-                        necesita.{" "}
-                      </h3>
+                        «Cada uno sabe sus dificultades. Las personas con
+                        discapacidad ya bastante tienen con lo que tienen»{" "}
+                      </h5>
                       {/* <!--Spacer--> */}
                       <div
                         className="ptf-spacer"
-                        style={{ "--ptf-xxl": "5rem", "--ptf-md": "2.5rem" }}
+                        style={{ "--ptf-xxl": "2rem", "--ptf-md": "2.5rem" }}
                       ></div>
                       <p
                         className="fz-18 has-black-color"
                         style={{ maxWidth: "30rem" }}
                       >
-                        En Icy Media Agency, somos un equipo de expertos en
-                        marketing digital apasionados por obtener los mayores
-                        resultados para nuestros clientes, y por ayudar a las
-                        marcas a crecer y cumplir sus metas y objetivos.
+                        Señala su fundador al referirse al sentido que le impuso
+                        a este grupo de personas que trabajan desde hace más de
+                        diez años brindándoles ayudas directas a los socios en
+                        toda España, que van desde productos ortopédicos, hasta
+                        terapias a las que de otra manera no accederían y que
+                        mejoran sensiblemente su día a día.
                       </p>
+                      {/* <!--Spacer--> */}
+                      <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "1rem", "--ptf-md": "1.5rem" }}
+                      ></div>
                       <p
                         className="fz-18 has-black-color"
                         style={{ maxWidth: "30rem" }}
                       >
-                        Nuestro lema, ser innovadores, rápidos y eficaces. Es
-                        por eso que siempre estamos actualizados con las últimas
-                        tendencias y tecnologías. Utilizamos nuestros
-                        conocimientos y experiencia para desarrollar estrategias
-                        de vanguardia y proyectos únicos, destacando por encima
-                        de la competencia.
+                        Sin embargo, el objetivo de la Fundación no sólo es el
+                        de la asistencia, sino que también se realizan trabajos
+                        de concienciación sobre temáticas vinculadas, y de
+                        elaboración de propuestas (accesibilidad) y de proyectos
+                        para su tratamiento y discusión posterior por aquellos
+                        que tienen poder de decisión a nivel local.
                       </p>
                     </div>
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"
-                      style={{ "--ptf-xxl": "8.125rem", "--ptf-lg": "0" }}
+                      style={{ "--ptf-xxl": "5.125rem", "--ptf-lg": "0" }}
                     ></div>
                   </div>
                 </div>
@@ -169,10 +168,19 @@ const HomeAgency = () => {
             </section>
             {/* End  Advertising Banner */}
 
-
-
             <section>
-
+              <div
+                className="ptf-divider"
+                style={{
+                  "--ptf-height": "1px",
+                  "--ptf-color": "var(--ptf-color-14)",
+                }}
+              ></div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "3rem", "--ptf-md": "5rem" }}
+              ></div>
               <div className="container">
                 <div className="row ">
                   <div className="col-xl-7 ">
@@ -182,11 +190,14 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h3 className="has-accent-1">ULTIMOS VIDEOS</h3>
+                      <h1 className="has-accent-1">ULTIMOS VIDEOS</h1>
                       <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "2.125rem", "--ptf-md": "4.0625rem" }}
-              ></div>
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "3.125rem",
+                          "--ptf-md": "4.0625rem",
+                        }}
+                      ></div>
                       <div>
                         <YouTubeEmbed
                           videoId="uRINHRkbhqY?si=SD8zmGBTUAo_-Mpb"
@@ -209,28 +220,25 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="100"
                     >
-                                    <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "5.125rem", "--ptf-md": "4.0625rem" }}
-              ></div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "5.125rem",
+                          "--ptf-md": "4.0625rem",
+                        }}
+                      ></div>
                       <img
                         alt="Donacion bizum"
                         src="https://i.imgur.com/7mG5f1v.jpeg"
-
                         style={{}}
-
-
                       />
                       <div className="has-black-color fz-90 lh-1 text-end"></div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </section>
             {/* End  Advertising Big Title */}
-
-            
 
             {/*============================================}=
         Service Section
@@ -239,7 +247,19 @@ const HomeAgency = () => {
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+                style={{ "--ptf-xxl": "3rem", "--ptf-md": "5rem" }}
+              ></div>
+              <div
+                className="ptf-divider"
+                style={{
+                  "--ptf-height": "1px",
+                  "--ptf-color": "var(--ptf-color-14)",
+                }}
+              ></div>
+              {/* <!--Spacer--> */}
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "3rem", "--ptf-md": "5rem" }}
               ></div>
               <div className="container">
                 {/* <!--Animated Block--> */}
@@ -248,7 +268,9 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-1 important!">Disgrup ayuda a</h2>
+                  <h2 className="h1 large-heading has-accent-1 important!">
+                    DISGRUP AYUDA
+                  </h2>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
@@ -262,168 +284,17 @@ const HomeAgency = () => {
                     "--bs-gutter-y": " 5.3125rem",
                   }}
                 >
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2>Branding</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div
-                        className="ptf-divider"
-                        style={{ backgroundColor: "white" }}
-                      ></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListOne />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Paid Media</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div
-                        className="ptf-divider"
-                        style={{ backgroundColor: "white" }}
-                      ></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListTwo />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Marketing de Contenidos</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div
-                        className="ptf-divider"
-                        style={{ backgroundColor: "white" }}
-                      ></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListThree />
-                    </div>
-                  </div>
 
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Marketing en Redes Sociales</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div
-                        className="ptf-divider"
-                        style={{ backgroundColor: "white" }}
-                      ></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListFour />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>SEO</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div
-                        className="ptf-divider"
-                        style={{ backgroundColor: "white" }}
-                      ></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListFive />
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-6">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="100"
-                    >
-                      <h2>Desarrollo Web</h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "1.5625rem" }}
-                      ></div>
-                      {/* <!--Divider--> */}
-                      <div
-                        className="ptf-divider"
-                        style={{ backgroundColor: "white" }}
-                      ></div>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3.125rem" }}
-                      ></div>
-                      {/* <!--Services List--> */}
-                      <ListSix />
-                    </div>
+<div
+                    className="ptf-isotope-grid row"
+                    style={{
+                      "--bs-gutter-x": "3rem",
+                      "--bs-gutter-y": "3rem",
+                      "marginLeft": "0",
+                      "marginRight":"0"
+                    }}
+                  >
+                    <BlogHistorias/>
                   </div>
                 </div>
               </div>
@@ -431,7 +302,7 @@ const HomeAgency = () => {
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
+                style={{ "--ptf-xxl": "6rem", "--ptf-md": "5rem" }}
               ></div>
             </section>
 
@@ -446,8 +317,8 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-1 d-inline-flex">
-                    Ultimas Noticias
+                  <h2 className="h1 fz-40 large-heading has-accent-1 d-inline-flex">
+                    ULTIMAS NOTICIAS
                   </h2>
                   <Link
                     className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
@@ -479,20 +350,19 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-
-                <div className="row ptf-custom--3991 jarallax">
-                  <div className="ptf-isotope-grid col-lg-7">
-                    <PortfolioTwo />
+                  <div className="row ptf-custom--3991 jarallax">
+                    <div className="ptf-isotope-grid col-lg-7">
+                      <PortfolioTwo />
+                    </div>
+                    {/* <!--Spacer--> */}
+                    <div
+                      className="ptf-spacer"
+                      style={{ "--ptf-xxl": "4.25rem" }}
+                    ></div>
+                    {/* End .ptf-isotope-grid */}
                   </div>
-                                  {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "4.25rem" }}
-                ></div>
-                  {/* End .ptf-isotope-grid */}
-                  </div>
-                  </div>
-                  </div>
+                </div>
+              </div>
             </section>
 
             {/*=============================================
@@ -532,8 +402,6 @@ const HomeAgency = () => {
             </section>
 
           */}
-
-  
 
             {/*=============================================
           Start Footer section

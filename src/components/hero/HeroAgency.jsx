@@ -11,11 +11,11 @@ const HeroAgency = () => {
     arrow: true,
     infinite: true,
     fade: true,
-    speed: 1200,
+    speed: 4500,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 0,
     autoplay: false,
-    // adaptiveHeight: true,
+     adaptiveHeight: true,
   };
   return (
     <>
@@ -23,8 +23,8 @@ const HeroAgency = () => {
 
       <div className="ptf-showcase-image image-3">
           <div className="ptf-showcase-slide">
-            <div className="container">
-              <h1 className="fz-100 fz-80--sm lh-1 has-white-color">
+            <div className="container" >
+              <h1 className="fz-100 fz-80--sm lh-1 has-white-color" style={{"marginLeft":"2.5rem"}}>
               <span className="has-accent-1">Fundacion</span> <br />
                 Disgrup
               </h1>
@@ -37,7 +37,7 @@ const HeroAgency = () => {
               ></div>
               <p
                 className="fz-24 has-white-color"
-                style={{ maxWidth: "34.375rem" }}
+                style={{ maxWidth: "34.375rem","marginLeft":"3rem" }}
               >
                 Ayudando a quien mas lo necesita
               </p>
@@ -57,11 +57,31 @@ const HeroAgency = () => {
                   Ayudanos
                 
                 </Link>
-                {/* <!--Button--> */}
-                <Link
+          
+
+                <div
+                    className="ptf-video-button"
+                    onClick={() => setOpen(true)}
+                    style={{
+                      "--ptf-title-color": "var(--ptf-color-white)",
+                      marginLeft: "2rem",
+                    }}
+                  >
+                    <a href="/" rel="nofollow">
+                      <i className="lnil lnil-play"></i>
+                    </a>
+                    <div className="ptf-video-button__title">
+                      Nuestra <br />
+                      historia
+
+                      </div>
+                    </div>
+                    
+             {/* <!--Button--> */}
+             <Link
                   className="ptf-btn ptf-btn--secondary"
-                  to="/blog-details"
-                  style={{ marginLeft: "2rem" }}
+                  to="/conocenos"
+                  style={{ marginLeft: "2rem",marginRight: "2rem" }}
                 >
                   Conocenos
                 </Link>
@@ -69,16 +89,16 @@ const HeroAgency = () => {
             </div>
           </div>
         </div>
-        {/* End .ptf-showcase-image */}
+        {/* End .ptf-showcase-image 
 
         <div className="ptf-showcase-image image-2">
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
-                Participa en <br />
-                 nuestros <span className="has-accent-1"><br />Eventos</span> 
+                 <br />
+                  <span className="has-accent-1"><br />Participa</span> 
               </h1>
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> 
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "2.125rem" }}
@@ -86,18 +106,18 @@ const HeroAgency = () => {
 
               <div className="d-flex justify-content-center">
 
-                {/* <!--Button--> */}
+                {/* <!--Button--> 
                 <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
                 
                   Eventos
                 
                 </Link>
-                {/* <!--Button--> */}
+                {/* <!--Button--> 
               </div>
             </div>
           </div>
         </div>
-        {/* End .ptf-showcase-image */}
+        {/* End .ptf-showcase-image 
 
         <div className="ptf-showcase-image image-1">
           <div className="ptf-showcase-slide">
@@ -108,21 +128,21 @@ const HeroAgency = () => {
               <span className="has-accent-3"> Donacion</span> 
               </h1>
 
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> 
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "2.125rem" }}
               ></div>
 
 
-              {/* <!--Spacer--> */}
+              {/* <!--Spacer--> 
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "3.625rem" }}
               ></div>
               <div className="d-flex  justify-content-center">
                 
-                {/* <!--Button--> */}
+                {/* <!--Button--> 
                 <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
                 
                   Ayudanos
@@ -141,23 +161,24 @@ const HeroAgency = () => {
                     <i className="lnil lnil-play"></i>
                   </a>
                   <div className="ptf-video-button__title">
-                    View our <br />
-                    story
+                    Nuestra <br />
+                    Hitoria
                   </div>
                 </div>
-              */}
+              
 
               </div>
             </div>
           </div>
         </div>
         {/* End .ptf-showcase-image */}
+        
       </Slider>
       <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
-        videoId="1gyTUHP6ne8"
+        videoId="D6daFM-p8Mg"
         onClose={() => setOpen(false)}
       />
       {/* End Youtube Modal video */}

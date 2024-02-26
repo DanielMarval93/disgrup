@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import BlogThree from "../../../components/blog/BlogThree";
+import BlogHistorias from "../../../components/blog/BlogHistorias";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
@@ -34,7 +34,12 @@ const Historias = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading has-accent-2">Historias</h1>
+                      <h1
+                        className="large-heading has-accent-1"
+                        style={{ marginLeft: "1.4rem" }}
+                      >
+                        Historias
+                      </h1>
                     </div>
                   </div>
                   {/* End .col */}
@@ -44,9 +49,7 @@ const Historias = () => {
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="100"
-                    >
-
-                    </div>
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -63,8 +66,7 @@ const Historias = () => {
                   className="ptf-animated-block"
                   data-aos="fade"
                   data-aos-delay="0"
-                >
-                </div>
+                ></div>
                 {/* End .ptf-animated-block */}
               </div>
               {/* End .container-xxl */}
@@ -112,9 +114,11 @@ const Historias = () => {
                     style={{
                       "--bs-gutter-x": "3rem",
                       "--bs-gutter-y": "3rem",
+                      "marginLeft": "0",
+                      "marginRight":"0"
                     }}
                   >
-                    <BlogThree />
+                    <BlogHistorias />
                   </div>
                 </div>
                 {/* End .ptf-animated-block */}
@@ -141,7 +145,6 @@ const Historias = () => {
                 ></div>
               </div>
             </section>
-
           </div>
           {/* End .ptf-page */}
         </div>

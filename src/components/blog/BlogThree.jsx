@@ -47,6 +47,12 @@ const blogContent = [
   {
     img: "post-8",
     cat: "Noticias",
+    date: "13 de septiembre de 2019",
+    title: "Avanza el proyecto de una Residencia para Discapacitados en Lanzarote",
+  },
+  {
+    img: "post-9",
+    cat: "Noticias",
     date: "31 de marzo de 2019",
     title: "Denunciamos al Ayuntamiento de Barcelona",
   },
@@ -62,9 +68,10 @@ const BlogThree = () => {
             <div className="ptf-post__media">
               <Link className="ptf-work__link" to="/blog-details"></Link>
               <img
-                src={`assets/img/blog/grid/${val.img}.png`}
+                src={`assets/img/blog/grid/${val.img}.jpg`}
                 alt="blog"
                 loading="lazy"
+                className="image-resize"
               />
             </div>
             <div className="ptf-post__content">

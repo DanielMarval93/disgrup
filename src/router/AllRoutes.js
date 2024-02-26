@@ -46,7 +46,11 @@ import Faq from "../views/inner-pages/Faq";
 import NotFound from "../views/NotFound";
 import { Routes, Route } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
+
+//legal
+import AvisoLegal from "../views/inner-pages/blog/AvisoLegal";
 import PoliticaCookies from "../views/inner-pages/blog/PoliticaCookies";
+import PoliticaPrivacidad from "../views/inner-pages/blog/PoliticaPrivacidad";
 
 const AllRoutes = () => {
   return (
@@ -96,7 +100,9 @@ const AllRoutes = () => {
         
         {/* Legal */}
         <Route path="/cookies" element={<PoliticaCookies/>} />
-        <Route path="/politicas" element={<WorksMasonry />} />
+        <Route path="/aviso-legal" element={<AvisoLegal />} />
+        <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+        
 
         {/* others */}
         <Route path="/team" element={<Team />} />

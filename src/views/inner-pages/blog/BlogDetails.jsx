@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import ImageGridTwo from "../../../components/image-grid/ImageGridTwo";
 import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
+import ModalVideo from "react-modal-video";
 
 const BlogDetails = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Moonex - Bog Post Details</title>
+        <title>Disgrup - Conocenos</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -33,44 +36,38 @@ const BlogDetails = () => {
                     <span className="has-accent-1">Fundación Disgrup</span>?
                   </h1>
                   <div className="ptf-single-post__meta">
+                    
+                    
+                    <div
+                      className="ptf-video-button"
+                      onClick={() => setOpen(true)}
+                      style={{
+                        "--ptf-title-color": "var(--ptf-accent-1)",
+                        marginLeft: "2rem",
+                      }}
+                    >
+                      <a href="/" rel="nofollow">
+                        <i className="lnil lnil-play"></i>
+                      </a>
+                      <div className="ptf-video-button__title">
+                        Nuestra <br />
+                        historia
+                      </div>
+                    </div>
+                      <br/>
+                      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId="D6daFM-p8Mg"
+        onClose={() => setOpen(false)}
+      />
+                    
                     <span className="cat has-accent-1">Disgrup</span>
                     <span className="date"> Ene 1, 2010</span>
                   </div>
                 </div>
               </header>
-
-              {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
-                <div
-                  className="container-xxl"
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                >
-                  <img
-                    src="assets/img/blog/single-post/post-media-1.png"
-                    alt="blog post"
-                    loading="lazy"
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                  >
-                    <YouTubeEmbed
-                      videoId="D6daFM-p8Mg?si=wk6HVaQcyLplEshJ"
-                      width={960}
-                      height={455}
-                    />
-                  </div>
-                </div>
-              </div>
 
               {/* <!--Post Wrapper--> */}
               <div className="ptf-single-post__wrapper">
@@ -78,6 +75,27 @@ const BlogDetails = () => {
                   <div className="row">
                     <div className="col-xl-8 offset-xl-2">
                       {/* <!--Post Info--> */}
+
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div>
+                          <YouTubeEmbed
+                            videoId="D6daFM-p8Mg?si=wk6HVaQcyLplEshJ"
+                            className="youtube-video"
+                          />
+                        </div>
+                      </div>
+
+                      {/* <!--Spacer--> */}
+                      <div
+                        className="ptf-spacer"
+                        style={{ "--ptf-xxl": "3rem", "--ptf-md": "2.5rem" }}
+                      ></div>
 
                       {/* <!--Post Excerpt--> */}
                       <div className="ptf-single-post__excerpt has-accent">

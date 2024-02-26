@@ -19,22 +19,22 @@ const BlogGrid = () => {
         <div className="main">
           <div className="ptf-page ptf-page--blog-grid">
             <section>
-              {/* <!--Spacer--> */}
+              <div className="container-xxl">
+                <div className="row">
+                  <div className="col-xl-8 col-lg-8">
+                                 {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
                 style={{ "--ptf-xxl": "2rem", "--ptf-md": "2rem" }}
               ></div>
-
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-xl-8 col-lg-8">
                     {/* <!--Animated Block--> */}
                     <div
                       className="ptf-animated-block"
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="large-heading has-accent-2">Noticias</h1>
+                      <h1 className="large-heading has-accent-1" 
+                style={{ "marginLeft": "1.4rem"}}>Noticias</h1>
                     </div>
                   </div>
                   {/* End .col */}
@@ -112,6 +112,8 @@ const BlogGrid = () => {
                     style={{
                       "--bs-gutter-x": "3rem",
                       "--bs-gutter-y": "3rem",
+                      "marginLeft": "0",
+                      "marginRight":"0"
                     }}
                   >
                     <BlogThree />

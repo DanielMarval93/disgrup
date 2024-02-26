@@ -11,6 +11,39 @@ const menuContent = [
     ],
   },
   {
+    name: "Conocenos",
+    activeClass: "",
+    menuClass: "",
+    routerPath: "/conocenos",
+    dropDownItems: [
+    
+    ],
+  },
+  {
+    name: "Ayudanos",
+    activeClass: "",
+    menuClass: "",
+    routerPath: "/contact",
+    dropDownItems: [
+    ],
+  },
+  {
+    name: "Noticias",
+    activeClass: "",
+    menuClass: "",
+    dropDownItems: [
+      {
+      name: "Noticias",
+      routerPath: "/noticias",
+    },
+    {
+      name: "Historias",
+      routerPath: "/historias",
+    },
+    
+    ],
+  },
+  {
     name: "Videos",
     activeClass: "",
     menuClass: "",
@@ -31,32 +64,6 @@ const menuContent = [
         name: "Terapia ocupacional con Candi",
         routerPath: "/videos-terapias",
       },
-    ],
-  },
-  {
-    name: "Ayudanos",
-    activeClass: "",
-    menuClass: "",
-    routerPath: "/contact",
-    dropDownItems: [
-    ],
-  },
-  {
-    name: "Noticias",
-    activeClass: "",
-    menuClass: "",
-    routerPath: "/noticias",
-    dropDownItems: [
-    
-    ],
-  },
-  {
-    name: "Conocenos",
-    activeClass: "",
-    menuClass: "",
-    routerPath: "/conocenos",
-    dropDownItems: [
-    
     ],
   },
 ];
