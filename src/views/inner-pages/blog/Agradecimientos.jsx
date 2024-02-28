@@ -1,14 +1,21 @@
-import React from "react";
+import React, {useContext, useRef} from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
-import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioSevenMasonry";
+import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgradecimientos";
+import RefContext from "../../../components/context/RefContext";
 
+const Agradecimientos = () => {
 
+  const {
+    ultimosVideosSection,
+    setUltimosVideosSection,
+  } = useContext(RefContext);
 
-const Ayudas = () => {
+  setUltimosVideosSection(useRef(null));
+
+  
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
@@ -28,11 +35,10 @@ const Ayudas = () => {
             <article className="ptf-single-post">
               {/* <!--Post Header--> */}
               <header className="ptf-single-post__header ptf-single-post__header--style-1">
-                <div className="container-xxl">
+                <div className="container ">
                   <h1 className="ptf-single-post__title">
                     <span className="has-accent-1"> Agradecimientos</span>{" "}
                   </h1>
-
                   <div className="row">
                     <div className="col-xl-8 offset-xl-2">
                       <div className="ptf-single-post__content">
@@ -63,17 +69,24 @@ const Ayudas = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="ptf-single-post__meta">
-                    <YouTubeEmbed
-                      videoId="XaB7dP-b2to?si=xWTZpf6ERyT2dmfd"
-                      width={760}
-                      height={375}
-                    />
-                    <div className="col-xl-8 offset-xl-2">
+                  <div className="row">
+                    <div className="col-lg-10 offset-lg-1">
+                      <div className="ptf-single-post__meta">
+                        <div class="ratio ratio-16x9">
+                          <iframe
+                            src="https://www.youtube.com/embed/XaB7dP-b2to?si=xWTZpf6ERyT2dmfd"
+                            title="YouTube video"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
                       {/* <!--Post Info--> */}
                       <div
                         className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
                       ></div>
                       {/* <!--Post Content--> */}
                       <div className="ptf-single-post__content">
@@ -82,15 +95,42 @@ const Ayudas = () => {
                         labor para conseguir un mundo mejor para el colectivo de
                         personas con discapacidad
                       </div>
+                      </div>
+                      <div className="col-xl-8 offset-xl-2">
                       <div
                         className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
                       ></div>
+                      
+                      {/* <!--Divider--> */}
+                      <div className="ptf-divider"></div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+                      
+                      <div ref={ultimosVideosSection}>
                       <h2 className="has-accent-1">Ultimos Videos</h2>
 
-                      <PortfolioSevenMasonry />
+                      <PortfolioAgradecimientos />
+
+                      </div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+                      
                     </div>
-                  </div>
+                  </div>{" "}
                 </div>
               </header>
 
@@ -126,4 +166,4 @@ const Ayudas = () => {
   );
 };
 
-export default Ayudas;
+export default Agradecimientos;

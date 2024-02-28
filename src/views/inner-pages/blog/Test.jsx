@@ -5,8 +5,9 @@ import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import { Link } from "react-router-dom";
 import ModalVideo from "react-modal-video";
+import Slider from "react-slick";
 
-const blogContent = [
+const blogContentOne = [
   {
     img: "hist-1",
     cat: "Noticias",
@@ -40,6 +41,7 @@ const blogContent = [
     cat: "Historias",
     date: "3 De Marzo De 2023",
     title: "Maria Dolores",
+    videoId: "PMAImUAKqJo",
   },
   {
     img: "hist-6",
@@ -50,9 +52,66 @@ const blogContent = [
   },
 ];
 
-const Historias = () => {
+const blogContentTwo = [
+  {
+    img: "hist-7",
+    cat: "Noticias",
+    date: "17 de abril de 2023",
+    title: "Bayane",
+    videoId: "12RBdsn4TSo",
+  },
+  {
+    img: "hist-8",
+    cat: "Historias",
+    date: "3 De Marzo De 2023",
+    title: "Juan Antonio Herrera",
+    videoId: "w2NL-dSGcqg&t",
+  },
+  {
+    img: "hist-9",
+    cat: "Historias",
+    date: "2 De Marzo De 2022",
+    title: "Ada Luz",
+    videoId: "2Ig0nEx0RGM",
+  },
+  {
+    img: "hist-10",
+    cat: "Historias",
+    date: "3 De Marzo De 2023",
+    title: "Tatiana",
+    videoId: "32fUqM6BK5M",
+  },
+  {
+    img: "hist-11",
+    cat: "Historias",
+    date: "3 De Marzo De 2023",
+    title: "Maria Dolores",
+    videoId: "g5TPeDQhz7rRlJSn",
+  },
+  {
+    img: "hist-12",
+    cat: "Historias",
+    date: "26 De Febrero De 2023",
+    title: "Roberta",
+    videoId: "9ULGYbDR79g",
+  },
+];
+
+const Test = () => {
   const [isOpen, setOpen] = useState(false);
-  const [isVideoId, setVideoId] = useState(false);
+  const [isVideoId, setVideoId] = useState("dQw4w9WgXcQ");
+
+  const settings = {
+    dots: true,
+    arrow: false,
+    infinite: true,
+    fade: true,
+    speed: 4500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    adaptiveHeight: false,
+  };
 
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
@@ -152,56 +211,113 @@ const Historias = () => {
 
               <div className="container-xxl">
                 {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >
-                  <div
-                    className="ptf-isotope-grid row"
-                    style={{
-                      "--bs-gutter-x": "3rem",
-                      "--bs-gutter-y": "3rem",
-                      marginLeft: "0",
-                      marginRight: "0",
-                    }}
-                  >
-                    {blogContent.map((val, i) => (
-                      <div className="col-xl-4 col-lg-4" key={i}>
-                        <article className="ptf-post ptf-post--style-1">
-                          <div className="ptf-post__media">
-                            <img
-                              src={`assets/img/blog/grid/${val.img}.png`}
-                              alt="blog"
-                              loading="lazy"
-                              onClick={() => {
-                                setOpen(true);
-                                setVideoId(val.videoId);
-                              }}
-                            />
-                          </div>
-                          <div className="ptf-post__content">
-                            <header className="ptf-post__header">
-                              <div
-                                className="ptf-post__meta"
-                                style={{ textAlign: "center" }}
-                              >
-                                <span className="cat">{val.cat}</span>
-                                <span className="date">{val.date}</span>
+                <Slider {...settings}>
+                  <div className="ptf-showcase-slide">
+                    <div
+                      className="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="0"
+                    >
+                      <div
+                        className="ptf-isotope-grid row"
+                        style={{
+                          "--bs-gutter-x": "3rem",
+                          "--bs-gutter-y": "3rem",
+                          marginLeft: "0",
+                          marginRight: "0",
+                        }}
+                      >
+                        {blogContentOne.map((val, i) => (
+                          <div className="col-xl-4 col-lg-4" key={i}>
+                            <article className="ptf-post ptf-post--style-1">
+                              <div className="ptf-post__media">
+                                <img
+                                  src={`assets/img/blog/grid/${val.img}.png`}
+                                  alt="blog"
+                                  loading="lazy"
+                                  onClick={() => {
+                                    setOpen(true);
+                                    setVideoId(val.videoId);
+                                  }}
+                                />
                               </div>
-                              <h3
-                                className="ptf-post__title"
-                                style={{ textAlign: "center" }}
-                              >
-                                <Link to="/blog-details">{val.title}</Link>
-                              </h3>
-                            </header>
+                              <div className="ptf-post__content">
+                                <header className="ptf-post__header">
+                                  <div
+                                    className="ptf-post__meta"
+                                    style={{ textAlign: "center" }}
+                                  >
+                                    <span className="cat">{val.cat}</span>
+                                    <span className="date">{val.date}</span>
+                                  </div>
+                                  <h3
+                                    className="ptf-post__title"
+                                    style={{ textAlign: "center" }}
+                                  >
+                                    <Link to="/blog-details">{val.title}</Link>
+                                  </h3>
+                                </header>
+                              </div>
+                            </article>
                           </div>
-                        </article>
+                        ))}
                       </div>
-                    ))}
+                    </div>
                   </div>
-                </div>
+                  <div className="ptf-showcase-slide">
+                    <div
+                      className="ptf-animated-block"
+                      data-aos="fade"
+                      data-aos-delay="0"
+                    >
+                      <div
+                        className="ptf-isotope-grid row"
+                        style={{
+                          "--bs-gutter-x": "3rem",
+                          "--bs-gutter-y": "3rem",
+                          marginLeft: "0",
+                          marginRight: "0",
+                        }}
+                      >
+                        {blogContentTwo.map((val, i) => (
+                          <div className="col-xl-4 col-lg-4" key={i}>
+                            <article className="ptf-post ptf-post--style-1">
+                              <div className="ptf-post__media">
+                                <img
+                                  src={`assets/img/blog/grid/${val.img}.png`}
+                                  alt="blog"
+                                  loading="lazy"
+                                  onClick={() => {
+                                    setOpen(true);
+                                    setVideoId(val.videoId);
+                                  }}
+                                />
+                              </div>
+                              <div className="ptf-post__content">
+                                <header className="ptf-post__header">
+                                  <div
+                                    className="ptf-post__meta"
+                                    style={{ textAlign: "center" }}
+                                  >
+                                    <span className="cat">{val.cat}</span>
+                                    <span className="date">{val.date}</span>
+                                  </div>
+                                  <h3
+                                    className="ptf-post__title"
+                                    style={{ textAlign: "center" }}
+                                  >
+                                    <Link to="/blog-details">{val.title}</Link>
+                                  </h3>
+                                </header>
+                              </div>
+                            </article>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+              
+                </Slider>
                 {/* End .ptf-animated-block */}
 
                 {/* <!--Spacer--> */}
@@ -256,4 +372,4 @@ const Historias = () => {
   );
 };
 
-export default Historias;
+export default Test;

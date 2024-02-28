@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
-import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioSevenMasonry";
+import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgradecimientos";
 
 const WorksMasonry = () => {
   return (
@@ -66,7 +66,7 @@ const WorksMasonry = () => {
                       "--bs-gutter-y": "5.75rem",
                     }}
                   >
-                    <PortfolioSevenMasonry/>
+                    <PortfolioAgradecimientos/>
                   </div>
                 </div>
                 {/* <!--Spacer--> 

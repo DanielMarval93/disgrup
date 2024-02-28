@@ -9,7 +9,7 @@ const Ayudas = () => {
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Videos - Ayudas</title>
+        <title>Videos - Agradecimientos</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -26,9 +26,9 @@ const Ayudas = () => {
               {/* <!--Post Header--> */}
               <header className="ptf-single-post__header ptf-single-post__header--style-1">
                 <div className="container ">
-                <h1 className="ptf-single-post__title">
-                  Nuestras<span className="has-accent-1"> ayudas</span>{" "}
-                </h1>
+                  <h1 className="ptf-single-post__title">
+                    <span className="has-accent-1"> Agradecimientos</span>{" "}
+                  </h1>
                   <div className="row">
                     <div className="col-xl-8 offset-xl-2">
                       <div className="ptf-single-post__content">
@@ -38,13 +38,15 @@ const Ayudas = () => {
                           style={{ "--ptf-xxl": "2rem", "--ptf-md": "2.5rem" }}
                         ></div>
                         <p>
-                        En la Fundación Disgrup ayudamos a personas con
-                        discapacidad con grados diversos. Las ayudas que
-                        proporcionamos son totalmente adaptadas a cada persona,
-                        estudiando su caso y analizando de que mejor forma
-                        podemos ayudarle, siempre intentando que la ayuda sea
-                        efectiva y mejore sustancialemente su situación personal
-                        y su día a día.
+                          En el canal youtube de la Fundación Disgrup, cada día
+                          más personas famosas, influencers, youtubers y en
+                          general relevantes en cualquier disciplina, se
+                          acercan, con la motivación de agradecer de todo
+                          corazón, la labor y el esfuerzo que desde la Fundación
+                          estamos realizando, y así también ellos estan
+                          colaborando, y ponen su «granito de arena». Todos los
+                          actos de buena voluntad, nos ayudan en nuestra misión,
+                          de mejorar las vidas de las personas con discapacidad.
                         </p>
                         {/* <!--Spacer--> */}
                         <div
@@ -62,7 +64,7 @@ const Ayudas = () => {
                       <div className="ptf-single-post__meta">
                         <div class="ratio ratio-16x9">
                           <iframe
-                            src="https://www.youtube.com/embed/12RBdsn4TSo?si=p3nNHQlMXBkZuEp6"
+                            src="https://www.youtube.com/embed/XaB7dP-b2to?si=xWTZpf6ERyT2dmfd"
                             title="YouTube video"
                             allowfullscreen
                           ></iframe>
@@ -78,8 +80,10 @@ const Ayudas = () => {
                       ></div>
                       {/* <!--Post Content--> */}
                       <div className="ptf-single-post__content">
-                      En la Fundación Disgrup ayudamos a personas con
-                      Discapacidad, en este caso ayudamos a Bayane y su família.
+                        El pizzero youtuber con más de 1 millón de suscriptores,
+                        nos brinda su apoyo y agradece personalmente nuestra
+                        labor para conseguir un mundo mejor para el colectivo de
+                        personas con discapacidad
                       </div>
                       </div>
                       <div className="col-xl-8 offset-xl-2">
@@ -103,14 +107,6 @@ const Ayudas = () => {
                       <h2 className="has-accent-1">Ultimos Videos</h2>
 
                       <PortfolioSevenMasonry />
-
-                      <div
-                        className="ptf-spacer"
-                        style={{
-                          "--ptf-xxl": "2.5rem",
-                          "--ptf-md": "2.5rem",
-                        }}
-                      ></div>
                     </div>
                   </div>{" "}
                 </div>

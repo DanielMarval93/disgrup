@@ -101,7 +101,7 @@ const HomeAgency = () => {
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"
-                      style={{ "--ptf-xxl": "4.125rem", "--ptf-lg": "0" }}
+                      style={{ "--ptf-xxl": "4.125rem", "--ptf-lg": "2.5rem" }}
                     ></div>
                     {/* <!--Animated Block--> */}
                     <div
@@ -160,7 +160,7 @@ const HomeAgency = () => {
                     {/* <!--Spacer--> */}
                     <div
                       className="ptf-spacer"
-                      style={{ "--ptf-xxl": "5.125rem", "--ptf-lg": "0" }}
+                      style={{ "--ptf-xxl": "5.125rem", "--ptf-lg": "2.5rem" }}
                     ></div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ const HomeAgency = () => {
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "3rem", "--ptf-md": "5rem" }}
+                style={{ "--ptf-xxl": "3rem", "--ptf-md": "2rem" }}
               ></div>
               <div className="container">
                 <div className="row ">
@@ -195,7 +195,7 @@ const HomeAgency = () => {
                         className="ptf-spacer"
                         style={{
                           "--ptf-xxl": "3.125rem",
-                          "--ptf-md": "4.0625rem",
+                          "--ptf-md": "2.0625rem",
                         }}
                       ></div>
                       <div>
@@ -229,7 +229,7 @@ const HomeAgency = () => {
                       ></div>
                       <img
                         alt="Donacion bizum"
-                        src="https://i.imgur.com/7mG5f1v.jpeg"
+                        src="../../../src/assets/img/home/agency/donacion.jpeg"
                         style={{}}
                       />
                       <div className="has-black-color fz-90 lh-1 text-end"></div>

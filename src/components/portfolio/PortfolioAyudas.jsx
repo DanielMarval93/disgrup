@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Masonry from "react-masonry-css";
-import YouTubeEmbed from "../youtube/youTubeEmbed";
 
 const breakpointColumnsObj = {
   default: 2,
@@ -89,7 +88,7 @@ const PortfolioSevenMasonry = () => {
         {/* <!--Spacer--> */}
         <div
           className="ptf-spacer"
-          style={{ "--ptf-xxl": "2.55rem", "--ptf-md": "2 .125rem" }}
+          style={{ "--ptf-xxl": "0.55rem", "--ptf-md": "0.125rem" }}
         ></div>
 
         {portfolioContent.map((item, i) => (
@@ -123,11 +122,13 @@ const PortfolioSevenMasonry = () => {
                       style={{ "--ptf-xxl": "1.25rem", "--ptf-md": "1.125rem" }}
                     ></div>
                     <div className="ptf-video">
-                      <YouTubeEmbed
-                        videoId={singleItem.videoId}
-                        width={560}
-                        height={315}
-                      />
+                      <div class="ratio ratio-16x9">
+                        <iframe
+                          src={`https://www.youtube.com/embed/${singleItem.videoId}`}
+                          title="YouTube video"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
                     </div>
                   </article>
                 ))}
@@ -138,11 +139,11 @@ const PortfolioSevenMasonry = () => {
             {/* End portfolio */}
           </TabPanel>
         ))}
-                <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
-                      ></div>
-        <div >
+        <div
+          className="ptf-spacer"
+          style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
+        ></div>
+        <div>
           <TabList className="ptf-filters ptf-filters--style-1">
             {portfolioMenu.map((item, i) => (
               <Tab className="filter-item " key={i}>

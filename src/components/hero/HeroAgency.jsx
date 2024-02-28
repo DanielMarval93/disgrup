@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import ModalVideo from "react-modal-video";
 
 const HeroAgency = () => {
-  const [isOpen, setOpen] = useState(false);
-
   const settings = {
     dots: true,
     arrow: true,
@@ -15,50 +12,51 @@ const HeroAgency = () => {
     slidesToShow: 1,
     slidesToScroll: 0,
     autoplay: false,
-     adaptiveHeight: true,
+    adaptiveHeight: false,
   };
   return (
     <>
       <Slider {...settings}>
-
-      <div className="ptf-showcase-image image-3">
+        <div className="ptf-showcase-image image-3">
           <div className="ptf-showcase-slide">
-            <div className="container" >
-              <h1 className="fz-100 fz-80--sm lh-1 has-white-color" style={{"marginLeft":"2.5rem"}}>
-              <span className="has-accent-1">Fundacion</span> <br />
+            <div className="container">
+              <h1
+                className="fz-100 fz-80--sm lh-1 has-white-color"
+                style={{ marginLeft: "2.5rem" }}
+              >
+                <span className="has-accent-1">Fundacion</span> <br />
                 Disgrup
               </h1>
 
-              
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "3.125rem" }}
+                style={{ "--ptf-xxl": "2.125rem" }}
               ></div>
               <p
                 className="fz-24 has-white-color"
-                style={{ maxWidth: "34.375rem","marginLeft":"3rem" }}
+                style={{ maxWidth: "34.375rem", marginLeft: "3rem" }}
               >
                 Ayudando a quien mas lo necesita
               </p>
 
-
- 
               {/* <!--Spacer--> */}
               <div
                 className="ptf-spacer"
-                style={{ "--ptf-xxl": "3.625rem" }}
+                style={{ "--ptf-xxl": "1.625rem" }}
               ></div>
 
               <div className="d-flex justify-content-center">
                 {/* <!--Button--> */}
-                <Link className="ptf-btn ptf-btn--primary" to="/contact" target="_self">
-                
+                <Link
+                  className="ptf-btn ptf-btn--primary"
+                  to="/contact"
+                  target="_self"
+                >
                   Ayudanos
-                
                 </Link>
-          
 
+                {/*
                 <div
                     className="ptf-video-button"
                     onClick={() => setOpen(true)}
@@ -76,12 +74,12 @@ const HeroAgency = () => {
 
                       </div>
                     </div>
-                    
-             {/* <!--Button--> */}
-             <Link
+                    */}
+                {/* <!--Button--> */}
+                <Link
                   className="ptf-btn ptf-btn--secondary"
                   to="/conocenos"
-                  style={{ marginLeft: "2rem",marginRight: "2rem" }}
+                  style={{ marginLeft: "2rem", marginRight: "2rem" }}
                 >
                   Conocenos
                 </Link>
@@ -172,8 +170,8 @@ const HeroAgency = () => {
           </div>
         </div>
         {/* End .ptf-showcase-image */}
-        
       </Slider>
+      {/*
       <ModalVideo
         channel="youtube"
         autoplay
@@ -181,6 +179,7 @@ const HeroAgency = () => {
         videoId="D6daFM-p8Mg"
         onClose={() => setOpen(false)}
       />
+      */}
       {/* End Youtube Modal video */}
     </>
   );

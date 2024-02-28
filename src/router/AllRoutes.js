@@ -52,6 +52,10 @@ import AvisoLegal from "../views/inner-pages/blog/AvisoLegal";
 import PoliticaCookies from "../views/inner-pages/blog/PoliticaCookies";
 import PoliticaPrivacidad from "../views/inner-pages/blog/PoliticaPrivacidad";
 
+//Test
+
+import Test from "../views/inner-pages/blog/Test";
+
 const AllRoutes = () => {
   return (
     <>
@@ -88,6 +92,8 @@ const AllRoutes = () => {
         <Route path="/noticias" element={<BlogGrid />} />
         <Route path="/historias" element={<Historias />} />
 
+        {/* Test */}
+        <Route path="/test" element={<Test />} />
 
 
         {/* Portfolio */}

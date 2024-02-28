@@ -4,7 +4,7 @@ import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
-import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioSevenMasonry";
+import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgradecimientos";
 
 const Terapia = () => {
   return (
@@ -81,7 +81,7 @@ const Terapia = () => {
                         "Challenge", el nº 10 en Terapia Ocupacional.
                       </div>
 
-                      <PortfolioSevenMasonry />
+                      <PortfolioAgradecimientos />
                     </div>
                   </div>
                 </div>

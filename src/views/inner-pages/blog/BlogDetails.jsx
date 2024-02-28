@@ -55,23 +55,16 @@ const BlogDetails = () => {
                       </div>
                     </div>
                       <br/>
-                      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="D6daFM-p8Mg"
-        onClose={() => setOpen(false)}
-      />
+                      
                     
-                    <span className="cat has-accent-1">Disgrup</span>
-                    <span className="date"> Ene 1, 2010</span>
+                   
                   </div>
                 </div>
               </header>
-
+       
               {/* <!--Post Wrapper--> */}
               <div className="ptf-single-post__wrapper">
-                <div className="container-xxl">
+                <div className="container">
                   <div className="row">
                     <div className="col-xl-8 offset-xl-2">
                       {/* <!--Post Info--> */}
@@ -83,19 +76,11 @@ const BlogDetails = () => {
                           alignItems: "center",
                         }}
                       >
-                        <div>
-                          <YouTubeEmbed
-                            videoId="D6daFM-p8Mg?si=wk6HVaQcyLplEshJ"
-                            className="youtube-video"
-                          />
-                        </div>
+                        
                       </div>
 
                       {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "3rem", "--ptf-md": "2.5rem" }}
-                      ></div>
+                   
 
                       {/* <!--Post Excerpt--> */}
                       <div className="ptf-single-post__excerpt has-accent">
@@ -311,6 +296,13 @@ const BlogDetails = () => {
           </div>
         </footer>
       </div>{" "}
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId="D6daFM-p8Mg"
+        onClose={() => setOpen(false)}
+      />
     </div>
   );
 };
