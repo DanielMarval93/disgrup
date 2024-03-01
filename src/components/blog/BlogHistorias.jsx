@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ModalVideo from "react-modal-video";
-import Slider from "react-slick";
 
-const settings = {
-  dots: true,
-  arrow: false,
-  infinite: true,
-  fade: false,
-  speed: 4500,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  autoplay: false,
-   adaptiveHeight: false,
-};
+ //import Slider from "react-slick";
+
+//const settings = {
+//  dots: true,
+//  arrow: false,
+//  infinite: true,
+//  fade: false,
+//  speed: 4500,
+//  slidesToShow: 2,
+//  slidesToScroll: 1,
+//  autoplay: false,
+//   adaptiveHeight: false,
+//};
+
+
+
+
 
 const blogContent = [
+  
   {
     img: "hist-1",
     cat: "Noticias",
@@ -62,6 +68,8 @@ const blogContent = [
 const BlogHistorias = (videoId) => {
   const [isOpen, setOpen,] = useState(false);
   const [isVideoId, setVideoId,] = useState(false);
+
+  
 
   return (
     <>

@@ -4,7 +4,6 @@ import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import ImageGridTwo from "../../../components/image-grid/ImageGridTwo";
-import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
 import ModalVideo from "react-modal-video";
 
 const BlogDetails = () => {

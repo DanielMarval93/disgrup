@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext} from "react";
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Masonry from "react-masonry-css";
@@ -82,7 +82,7 @@ const portfolioContent = [
 ];
 
 const PortfolioAgradecimientos = () => {
-  const { ultimosVideosSection, scrollDown, goToTop } = useContext(RefContext);
+  const { ultimosVideosSection, scrollDown} = useContext(RefContext);
 
   return (
     <>
