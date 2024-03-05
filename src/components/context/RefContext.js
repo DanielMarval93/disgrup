@@ -8,6 +8,7 @@ function Provider({ children }) {
   const [joinUsSection, setJoinUsSection] = useState(null);
   const [servicesSection, setServicesSection] = useState(null);
   const [ultimosVideosSection, setUltimosVideosSection] = useState(null);
+  const [ejerciciosSection, setEjerciciosSection] = useState(null);
 
   const refs = {
     ultimosVideosSection,
@@ -19,6 +20,8 @@ function Provider({ children }) {
     joinUsSection,
     setJoinUsSection,
     servicesSection,
+    setEjerciciosSection,
+    ejerciciosSection,
     setServicesSection,
     scrollDown: (ref, yValue) => {
       window.scrollTo({

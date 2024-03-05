@@ -79,7 +79,7 @@ const Agradecimientos = () => {
                   }}
                 >
                   <div className="row">
-                    <div className="col-lg-10 offset-lg-1">
+                    <div className="col-lg-8 offset-lg-2">
                       <div className="ptf-single-post__meta">
                         <div class="ratio ratio-16x9">
                           <iframe

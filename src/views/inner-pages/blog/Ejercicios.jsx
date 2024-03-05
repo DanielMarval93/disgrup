@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
-import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgradecimientos";
+import PortfolioEjercicios from "../../../components/portfolio/PortfolioEjercicios";
+import RefContext from "../../../components/context/RefContext";
 
 const Ejercicios = () => {
+  const { ejerciciosSection, setEjerciciosSection } =
+    useContext(RefContext);
+
+  setEjerciciosSection(useRef(null));
+
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
@@ -26,7 +31,7 @@ const Ejercicios = () => {
             <article className="ptf-single-post">
               {/* <!--Post Header--> */}
               <header className="ptf-single-post__header ptf-single-post__header--style-1">
-                <div className="container-xxl">
+                <div className="container ">
                   <h1 className="ptf-single-post__title">
                     Ejercicios Cognitivos
                   </h1>
@@ -34,7 +39,6 @@ const Ejercicios = () => {
                     {" "}
                     <span className="has-accent-1">con Guille</span>
                   </h1>
-
                   <div className="row">
                     <div className="col-xl-8 offset-xl-2">
                       <div className="ptf-single-post__content">
@@ -59,42 +63,18 @@ const Ejercicios = () => {
                         <div
                           className="ptf-spacer"
                           style={{
-                            "--ptf-xxl": "2.5rem",
-                            "--ptf-md": "2.5rem",
+                            "--ptf-xxl": "1rem",
+                            "--ptf-md": "1rem",
                           }}
                         ></div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="ptf-single-post__meta">
-                    <YouTubeEmbed
-                      videoId="ZKbz7tRC_2w?si=2lTON9y56idxeXNr"
-                      width={960}
-                      height={455}
-                    />
-                    <div className="col-xl-8 offset-xl-2">
-                      {/* <!--Post Info--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
-                      ></div>
-                      {/* <!--Post Excerpt--> */}
-                      <div className="ptf-single-post__content">
-                        Os traemos un nuevo vídeo y sección sobre ejercicios
-                        cognitivos, para que podáis mejorar vuestras capacidades
-                        y habilidades, en esta ocasión sobre la Atención, estar
-                        atentos para encontrar las diferencias porque el tiempo
-                        corre!!
-                      </div>
-
-                      <PortfolioAgradecimientos />
                     </div>
                   </div>
                 </div>
               </header>
 
               {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
+              <div className="ptf-single-post__header ptf-single-post__header--style-1">
                 <div
                   className="container-xxl"
                   style={{
@@ -102,7 +82,67 @@ const Ejercicios = () => {
                     width: "100%",
                     height: "auto",
                   }}
-                ></div>
+                >
+                  <div className="row">
+                    <div className="col-lg-8 offset-lg-2">
+                      <div className="ptf-single-post__meta">
+                        <div class="ratio ratio-16x9">
+                          <iframe
+                            src="https://www.youtube.com/embed/2cTrbFOxKy8?si=Es9xRf27nOG7hEcz"
+                            title="YouTube video"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                      {/* <!--Post Info--> */}
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+                      {/* <!--Post Content--> */}
+                      <div className="ptf-single-post__content">
+                        Guillermo nos presenta nuevo vídeo de EJERCICIOS
+                        COGNITIVOS desde DACA en el Lalbagh Fort, Dhakeshwari
+                        Temple, y muchos más.
+                      </div>
+                    </div>
+                    <div className="col-xl-8 offset-xl-2">
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+
+                      {/* <!--Divider--> */}
+                      <div className="ptf-divider"></div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+
+                      <div ref={ejerciciosSection}>
+                        <h2 className="has-accent-1">Ultimos Videos</h2>
+
+                        <PortfolioEjercicios />
+                      </div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+                    </div>
+                  </div>{" "}
+                </div>
               </div>
             </article>
           </div>

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioAgradecimientos";
+import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgradecimientos";
+import RefContext from "../../../components/context/RefContext";
 
-const Ayudas = () => {
+const Agradecimientos = () => {
+  const { ultimosVideosSection, setUltimosVideosSection } =
+    useContext(RefContext);
+
+  setUltimosVideosSection(useRef(null));
+
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
@@ -59,8 +65,21 @@ const Ayudas = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </header>
+
+              {/* <!--Post Media--> */}
+              <div className="ptf-single-post__header ptf-single-post__header--style-1">
+                <div
+                  className="container-xxl"
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                >
                   <div className="row">
-                    <div className="col-lg-10 offset-lg-1">
+                    <div className="col-lg-8 offset-lg-2">
                       <div className="ptf-single-post__meta">
                         <div class="ratio ratio-16x9">
                           <iframe
@@ -85,8 +104,8 @@ const Ayudas = () => {
                         labor para conseguir un mundo mejor para el colectivo de
                         personas con discapacidad
                       </div>
-                      </div>
-                      <div className="col-xl-8 offset-xl-2">
+                    </div>
+                    <div className="col-xl-8 offset-xl-2">
                       <div
                         className="ptf-spacer"
                         style={{
@@ -94,7 +113,7 @@ const Ayudas = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      
+
                       {/* <!--Divider--> */}
                       <div className="ptf-divider"></div>
                       <div
@@ -104,24 +123,22 @@ const Ayudas = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      <h2 className="has-accent-1">Ultimos Videos</h2>
 
-                      <PortfolioSevenMasonry />
+                      <div ref={ultimosVideosSection}>
+                        <h2 className="has-accent-1">Ultimos Videos</h2>
+
+                        <PortfolioAgradecimientos />
+                      </div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
                     </div>
                   </div>{" "}
                 </div>
-              </header>
-
-              {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
-                <div
-                  className="container-xxl"
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                ></div>
               </div>
             </article>
           </div>
@@ -144,4 +161,4 @@ const Ayudas = () => {
   );
 };
 
-export default Ayudas;
+export default Agradecimientos;
