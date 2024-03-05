@@ -92,7 +92,6 @@ const PortfolioAgradecimientos = () => {
         {/* <!--Spacer--> */}
         <div
           className="ptf-spacer"
-          ref={ultimosVideosSection}
           style={{ "--ptf-xxl": "0.55rem", "--ptf-md": "0.125rem" }}
         ></div>
 
@@ -154,7 +153,7 @@ const PortfolioAgradecimientos = () => {
               <Tab
                 className="filter-item "
                 key={i}
-                onClick={() => scrollDown(ultimosVideosSection, 0)}
+                onClick={() => scrollDown(ultimosVideosSection, 50)}
               >
                 {item}
               </Tab>

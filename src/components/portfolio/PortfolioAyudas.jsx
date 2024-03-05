@@ -146,7 +146,7 @@ const PortfolioSevenMasonry = () => {
         <div>
           <TabList className="ptf-filters ptf-filters--style-1">
             {portfolioMenu.map((item, i) => (
-              <Tab className="filter-item " key={i}>
+              <Tab className="filter-item" key={i}>
                 {item}
               </Tab>
             ))}

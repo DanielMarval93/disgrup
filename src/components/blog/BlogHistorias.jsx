@@ -24,7 +24,7 @@ const blogContent = [
   
   {
     img: "hist-1",
-    cat: "Noticias",
+    cat: "Historias",
     date: "17 de abril de 2023",
     title: "Anna Millet",
     videoId:"GTXhRDOqiqM"
@@ -76,6 +76,18 @@ const BlogHistorias = (videoId) => {
       {blogContent.map((val, i) => (
         <div className="col-xl-4 col-lg-4" key={i}>
           <article className="ptf-post ptf-post--style-1">
+            
+            <div className="ptf-post__content">
+              <header className="ptf-post__header">
+                <div className="ptf-post__meta" style={{ textAlign: "center" }}>
+                  <span className="cat">{val.cat}</span>
+                  <span className="date">{val.date}</span>
+                </div>
+                <h3 className="ptf-post__title" style={{ textAlign: "center" }}>
+                  <Link to="/blog-details">{val.title}</Link>
+                </h3>
+              </header>
+            </div>
             <div className="ptf-post__media">
               
               <img
@@ -87,17 +99,6 @@ const BlogHistorias = (videoId) => {
                                 videoId=isVideoId;
                               }}
               />
-            </div>
-            <div className="ptf-post__content">
-              <header className="ptf-post__header">
-                <div className="ptf-post__meta" style={{ textAlign: "center" }}>
-                  <span className="cat">{val.cat}</span>
-                  <span className="date">{val.date}</span>
-                </div>
-                <h3 className="ptf-post__title" style={{ textAlign: "center" }}>
-                  <Link to="/blog-details">{val.title}</Link>
-                </h3>
-              </header>
             </div>
           </article>
         </div>

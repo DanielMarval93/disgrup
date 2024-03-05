@@ -37,7 +37,7 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color"
                 style={{ maxWidth: "34.375rem", marginLeft: "3rem" }}
               >
-                Ayudando a quien mas lo necesita
+                Ayudamos a las personas con discapacidad
               </p>
 
               {/* <!--Spacer--> */}

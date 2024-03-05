@@ -268,9 +268,24 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-1 important!">
+                  <h2 className="h1 large-heading has-accent-1 d-inline-flex important!">
                     DISGRUP AYUDA
                   </h2>
+                  <Link
+                    className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
+                    to="/blog-grid"
+                    style={{ marginLeft: "5.625rem" }}
+                  >
+                    + Historias{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      style={{ height: "1em" }}
+                      viewBox="0 0 17 17"
+                    >
+                      <path d="M16 .997V10h-1V2.703L4.683 13l-.707-.708L14.291 1.997H6.975v-1H16z" />
+                    </svg>
+                  </Link>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
