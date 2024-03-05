@@ -153,7 +153,7 @@ const PortfolioAgradecimientos = () => {
               <Tab
                 className="filter-item "
                 key={i}
-                onClick={() => scrollDown(ultimosVideosSection, 50)}
+                onClick={() => scrollDown(ultimosVideosSection, 0)}
               >
                 {item}
               </Tab>
