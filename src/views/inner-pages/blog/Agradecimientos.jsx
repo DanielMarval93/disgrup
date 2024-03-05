@@ -69,7 +69,20 @@ const Agradecimientos = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="row">
+                </div>
+              </header>
+
+              {/* <!--Post Media--> */}
+              <div className="ptf-single-post__header ptf-single-post__header--style-1">
+                <div
+                  className="container-xxl"
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                >
+                                <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                       <div className="ptf-single-post__meta">
                         <div class="ratio ratio-16x9">
@@ -132,18 +145,6 @@ const Agradecimientos = () => {
                     </div>
                   </div>{" "}
                 </div>
-              </header>
-
-              {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
-                <div
-                  className="container-xxl"
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                ></div>
               </div>
             </article>
           </div>
