@@ -1,4 +1,4 @@
-import React, {useContext, useRef} from "react";
+import React, { useContext, useRef } from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
@@ -7,15 +7,11 @@ import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgr
 import RefContext from "../../../components/context/RefContext";
 
 const Agradecimientos = () => {
-
-  const {
-    ultimosVideosSection,
-    setUltimosVideosSection,
-  } = useContext(RefContext);
+  const { ultimosVideosSection, setUltimosVideosSection } =
+    useContext(RefContext);
 
   setUltimosVideosSection(useRef(null));
 
-  
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
@@ -82,7 +78,7 @@ const Agradecimientos = () => {
                     height: "auto",
                   }}
                 >
-                                <div className="row">
+                  <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                       <div className="ptf-single-post__meta">
                         <div class="ratio ratio-16x9">
@@ -108,8 +104,8 @@ const Agradecimientos = () => {
                         labor para conseguir un mundo mejor para el colectivo de
                         personas con discapacidad
                       </div>
-                      </div>
-                      <div className="col-xl-8 offset-xl-2">
+                    </div>
+                    <div className="col-xl-8 offset-xl-2">
                       <div
                         className="ptf-spacer"
                         style={{
@@ -117,7 +113,7 @@ const Agradecimientos = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      
+
                       {/* <!--Divider--> */}
                       <div className="ptf-divider"></div>
                       <div
@@ -127,12 +123,11 @@ const Agradecimientos = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      
+
                       <div ref={ultimosVideosSection}>
-                      <h2 className="has-accent-1">Ultimos Videos</h2>
+                        <h2 className="has-accent-1">Ultimos Videos</h2>
 
-                      <PortfolioAgradecimientos />
-
+                        <PortfolioAgradecimientos />
                       </div>
                       <div
                         className="ptf-spacer"
@@ -141,7 +136,6 @@ const Agradecimientos = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      
                     </div>
                   </div>{" "}
                 </div>
