@@ -281,7 +281,11 @@ const PortfolioEjercicios = () => {
               <Tab
                 className="filter-item "
                 key={i}
-                onClick={() => scrollDown(ejerciciosSection, -400)}
+                onClick={() => {
+                  setTimeout(() => {
+                    scrollDown(ejerciciosSection, -400);
+                  }, 200); // Adjust the timeout duration as per your requirement
+                }}
               >
                 {item}
               </Tab>

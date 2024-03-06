@@ -9,9 +9,7 @@ import HeroAgency from "../../components/hero/HeroAgency";
 import PortfolioTwo from "../../components/portfolio/PortfolioTwo";
 //import Team from "../../components/team/Team";
 //import TestimonialTwo from "../../components/testimonial/TestimonialTwo";//
-import YouTubeEmbed from "../../components/youtube/youTubeEmbed";
 import BlogHistorias from "../../components/blog/BlogHistorias";
-
 
 import CookieConsent from "react-cookie-consent";
 
@@ -198,18 +196,41 @@ const HomeAgency = () => {
                           "--ptf-md": "2.0625rem",
                         }}
                       ></div>
-                      <div>
-                        <YouTubeEmbed
-                          videoId="uRINHRkbhqY?si=SD8zmGBTUAo_-Mpb"
-                          width={560}
-                          height={315}
-                        />
-
-                        <YouTubeEmbed
-                          videoId="12RBdsn4TSo?si=JXu68wX9Fezu-3Mz"
-                          width={560}
-                          height={315}
-                        />
+                      <div className="row">
+                        <div className="col-lg-7">
+                          <div className="ptf-video">
+                            <div class="ratio ratio-16x9">
+                              <iframe
+                                src={`https://www.youtube.com/embed/uRINHRkbhqY?si=SD8zmGBTUAo_-Mpb`}
+                                title="YouTube video"
+                                allowfullscreen
+                              ></iframe>
+                            </div>
+                          </div>
+                          <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "1rem", "--ptf-md": "1rem" }}
+              ></div>
+                          <div className="ptf-video">
+                            <div class="ratio ratio-16x9">
+                              <iframe
+                                src={`https://www.youtube.com/embed/12RBdsn4TSo?si=JXu68wX9Fezu-3Mz`}
+                                title="YouTube video"
+                                allowfullscreen
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-5">
+                        <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "3rem", "--ptf-md": "1rem" }}
+              ></div>
+                          <img
+                            alt="Donacion bizum"
+                            src="https://i.imgur.com/7mG5f1v.jpg"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -229,7 +250,7 @@ const HomeAgency = () => {
                       ></div>
                       <img
                         alt="Donacion bizum"
-                        src="../../../src/assets/img/home/agency/donacion.jpeg"
+                        src="../../../src/assets/img/home/agency/about-image.jpg"
                         style={{}}
                       />
                       <div className="has-black-color fz-90 lh-1 text-end"></div>
@@ -273,10 +294,10 @@ const HomeAgency = () => {
                   </h2>
                   <Link
                     className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
-                    to="/blog-grid"
+                    to="/videos-ayudas"
                     style={{ marginLeft: "5.625rem" }}
                   >
-                    + Historias{" "}
+                    + Ayudas{" "}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -299,17 +320,16 @@ const HomeAgency = () => {
                     "--bs-gutter-y": " 5.3125rem",
                   }}
                 >
-
-<div
+                  <div
                     className="ptf-isotope-grid row"
                     style={{
                       "--bs-gutter-x": "3rem",
                       "--bs-gutter-y": "3rem",
-                      "marginLeft": "0",
-                      "marginRight":"0"
+                      marginLeft: "0",
+                      marginRight: "0",
                     }}
                   >
-                    <BlogHistorias/>
+                    <BlogHistorias />
                   </div>
                 </div>
               </div>

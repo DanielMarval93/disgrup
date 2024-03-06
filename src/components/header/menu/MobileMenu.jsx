@@ -67,15 +67,15 @@ const menuContent = [
     ],
   },
   {
-    name: "Noticias",
+    name: "Noticias/Galeria",
     dropDownItems: [      
       {
       name: "Noticias",
       routerPath: "/noticias",
     },
     {
-      name: "Historias",
-      routerPath: "/historias",
+      name: "Galeria",
+      routerPath: "/galeria",
     }, 
     {
       name: "Eventos",

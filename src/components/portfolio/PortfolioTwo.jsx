@@ -52,12 +52,7 @@ const PortfolioTwo = () => {
               type="dark"
               effect="float"
             >
-              <div className="poup-link">
-                <img
-                  src={`assets/img/portfolio/grid/${val.imgPopup}.png`}
-                  alt="popup"
-                />
-              </div>
+        
             </ReactTooltip>
             <div className="ptf-work__category">{val.date}</div>
             <h4 className="ptf-work__title">{val.title}</h4>

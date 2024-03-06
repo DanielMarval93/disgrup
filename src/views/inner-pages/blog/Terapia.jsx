@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import YouTubeEmbed from "../../../components/youtube/youTubeEmbed";
-import PortfolioAgradecimientos from "../../../components/portfolio/PortfolioAgradecimientos";
+import PortfolioTerapia from "../../../components/portfolio/PortfolioTerapia";
+import RefContext from "../../../components/context/RefContext";
 
 const Terapia = () => {
+  const { ejerciciosSection, setTerapiaSection } =
+    useContext(RefContext);
+
+  setTerapiaSection(useRef(null));
+
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Moonex - Bog Post Details</title>
+        <title>Videos - Terapia</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -26,8 +31,8 @@ const Terapia = () => {
             <article className="ptf-single-post">
               {/* <!--Post Header--> */}
               <header className="ptf-single-post__header ptf-single-post__header--style-1">
-                <div className="container-xxl">
-                  <h1 className="ptf-single-post__title">
+                <div className="container ">
+                <h1 className="ptf-single-post__title">
                     Terapia Ocupacional
                   </h1>
                   <h1>
@@ -43,7 +48,7 @@ const Terapia = () => {
                           style={{ "--ptf-xxl": "2rem", "--ptf-md": "2.5rem" }}
                         ></div>
                         <p>
-                          En la Fundación Disgrup nos preocupamos por la salud
+                        En la Fundación Disgrup nos preocupamos por la salud
                           mental y física de todo el colectivo de personas con
                           discapacidad, pero también de cualquier persona. Es
                           por ello, que en nuestra sección de vídeos «Terapia
@@ -56,39 +61,18 @@ const Terapia = () => {
                         <div
                           className="ptf-spacer"
                           style={{
-                            "--ptf-xxl": "2.5rem",
-                            "--ptf-md": "2.5rem",
+                            "--ptf-xxl": "1rem",
+                            "--ptf-md": "1rem",
                           }}
                         ></div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="ptf-single-post__meta">
-                    <YouTubeEmbed
-                      videoId="qiMeao6QX4E?si=wrH6hwzVBS69Xbm4"
-                      width={960}
-                      height={455}
-                    />
-                    <div className="col-xl-8 offset-xl-2">
-                      {/* <!--Post Info--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem", "--ptf-md": "2.5rem" }}
-                      ></div>
-                      {/* <!--Post Excerpt--> */}
-                      <div className="ptf-single-post__excerpt">
-                        ▶ Nuestra compañera Candi nos trae un nuevo
-                        "Challenge", el nº 10 en Terapia Ocupacional.
-                      </div>
-
-                      <PortfolioAgradecimientos />
                     </div>
                   </div>
                 </div>
               </header>
 
               {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
+              <div className="ptf-single-post__header ptf-single-post__header--style-1">
                 <div
                   className="container-xxl"
                   style={{
@@ -96,7 +80,66 @@ const Terapia = () => {
                     width: "100%",
                     height: "auto",
                   }}
-                ></div>
+                >
+                  <div className="row">
+                    <div className="col-lg-8 offset-lg-2">
+                      <div className="ptf-single-post__meta">
+                        <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/qiMeao6QX4E?si=6qTUgbIVt5mAynSb"
+                            title="YouTube video"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                      {/* <!--Post Info--> */}
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+                      {/* <!--Post Content--> */}
+                      <div className="ptf-single-post__content">
+                      ▶ Nuestra compañera Candi nos trae un nuevo "Challenge", el nº 10 en Terapia Ocupacional. 
+¡¡ Si quires saber más, dale al play ⏩!!
+                      </div>
+                    </div>
+                    <div className="col-xl-8 offset-xl-2">
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+
+                      {/* <!--Divider--> */}
+                      <div className="ptf-divider"></div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+
+                      <div ref={ejerciciosSection}>
+                        <h2 className="has-accent-1">Ultimos Videos</h2>
+
+                        <PortfolioTerapia />
+                      </div>
+                      <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-xxl": "2.5rem",
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
+                    </div>
+                  </div>{" "}
+                </div>
               </div>
             </article>
           </div>

@@ -5,7 +5,7 @@ const menuContent = [
   {
     name: "Home",
     activeClass: "sf-with-ul",
-    routerPath: "/home-agency",
+    routerPath: "/",
     menuClass: "current-menu-item",
     dropDownItems: [
     ],
@@ -20,7 +20,7 @@ const menuContent = [
     ],
   },
   {
-    name: "Ayudanos",
+    name: "Dona",
     activeClass: "",
     menuClass: "",
     routerPath: "/contact",
@@ -28,7 +28,7 @@ const menuContent = [
     ],
   },
   {
-    name: "Noticias",
+    name: "Noticias/Galeria",
     activeClass: "",
     menuClass: "",
     dropDownItems: [
@@ -37,8 +37,8 @@ const menuContent = [
       routerPath: "/noticias",
     },
     {
-      name: "Historias",
-      routerPath: "/historias",
+      name: "Galeria",
+      routerPath: "/galeria",
     },
     
     ],

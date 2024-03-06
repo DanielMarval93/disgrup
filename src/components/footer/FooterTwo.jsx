@@ -48,16 +48,17 @@ const FooterTwo = () => {
                   <p>Aviso legal</p>
                 </Link>
                 <span></span>
-
                 <Link to="/cookies" onClick={scrollToTop}>
                   <p>Política de cookies</p>
                 </Link>
                 <span></span>
                 <Link to="/politica-privacidad" onClick={scrollToTop}>
-                <p >Política de privacidad</p>
+                  <p>Política de privacidad</p>
                 </Link>
-                <span></span>
-                <p>Política de devoluciones y reembolsos</p>
+                <span></span>{" "}
+                <Link to="/politica-devoluciones" onClick={scrollToTop}>
+                  <p>Política de devoluciones y reembolsos</p>
+                </Link>
               </li>
             </ul>
           </div>

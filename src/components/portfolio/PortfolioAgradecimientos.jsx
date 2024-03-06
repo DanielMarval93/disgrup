@@ -153,7 +153,11 @@ const PortfolioAgradecimientos = () => {
               <Tab
                 className="filter-item "
                 key={i}
-                onClick={() => scrollDown(ultimosVideosSection, -400)}
+                onClick={() => {
+                  setTimeout(() => {
+                    scrollDown(ultimosVideosSection, -400);
+                  }, 200); // Adjust the timeout duration as per your requirement
+                }}
               >
                 {item}
               </Tab>

@@ -50,14 +50,14 @@ const blogContent = [
   },
 ];
 
-const Historias = () => {
+const Galeria = () => {
   const [isOpen, setOpen] = useState(false);
   const [isVideoId, setVideoId] = useState(false);
 
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Fundacion Disgrup - Historias</title>
+        <title>Fundacion Disgrup - Galeria</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -86,7 +86,7 @@ const Historias = () => {
                         className="large-heading has-accent-1"
                         style={{ marginLeft: "1.4rem" }}
                       >
-                        Historias
+                        Galeria
                       </h1>
                     </div>
                   </div>
@@ -256,4 +256,4 @@ const Historias = () => {
   );
 };
 
-export default Historias;
+export default Galeria;

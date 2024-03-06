@@ -1,85 +1,166 @@
-import React from "react";
+import React, { useContext} from "react";
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Masonry from "react-masonry-css";
 
+import RefContext from "../context/RefContext";
+
 const breakpointColumnsObj = {
   default: 2,
-  1100: 2,
+  1100: 3,
   768: 2,
   500: 1,
 };
 
-const portfolioMenu = ["1", "2"];
+const portfolioMenu = ["1", "2", "3", "4", "5"];
 
 const portfolioContent = [
   {
     tabContent: [
       {
         img: "work-1",
-        meta: "Fundador de la Casa del Tíbet",
-        title: "Thubten Wangchen",
-        route: "https://www.youtube.com/watch?v=KJK-mxNAotM",
-        videoId: "KJK-mxNAotM?si=N7_BfKDrkrB0bxR8",
+        meta: "Ayudas",
+        title: "Saira",
+        route: "https://www.youtube.com/watch?v=NJ9FaNohG9k",
+        videoId: "NJ9FaNohG9k?si=W34jyArdR8NebFI2",
       },
       {
         img: "work-2",
-        meta: "Subcampeón del Mundo",
-        title: "Lionel Morales",
-        route: "https://www.youtube.com/watch?v=ni3Hwc4JWWQ",
-        videoId: "ni3Hwc4JWWQ?si=rlrHYRFeWOdml5VT",
+        meta: "Ayudas",
+        title: "Juan Antonio",
+        route: "https://www.youtube.com/watch?v=w2NL-dSGcqg",
+        videoId: "w2NL-dSGcqg?si=tLUyRYBEXtH50OAY",
       },
       {
         img: "work-3",
-        meta: "Locutor Radio Mollet",
-        title: "Josep Roca",
-        route: "https://www.youtube.com/watch?v=aPv6sFioSEE",
-        videoId: "aPv6sFioSEE?si=M4em6C6fVj5I7wfb",
+        meta: "Ayudas",
+        title: "Anna Millet",
+        route: "https://www.youtube.com/watch?v=GTXhRDOqiqM&t",
+        videoId: "GTXhRDOqiqM?si=PHGlmI2Ue_6_2Zq1",
       },
       {
         img: "work-4",
-        meta: "Vice presidente de Barcelona Comerç",
-        title: "Lluis Llanas",
-        route: "https://www.youtube.com/watch?v=cGgBDyc5x74",
-        videoId: "cGgBDyc5x74?si=UWH3tS2lvWf5e13s",
+        meta: "Ayudas",
+        title: "David Rodriguez",
+        route: "https://www.youtube.com/watch?v=ZDlwkH6EP1s",
+        videoId: "ZDlwkH6EP1s?si=TY7EXRZkhIEja8I9",
       },
     ],
   },
   {
     tabContent: [
       {
-        img: "work-5",
-        meta: "Activista social / Portavoz de COESPE",
-        title: "Ramon Franquesa",
-        route: "https://www.youtube.com/watch?v=cGgBDyc5x74",
-        videoId: "FHAO7_SHFII?si=IwOR-2uoKcKaXuJf",
+        img: "work-1",
+        meta: "Ayudas",
+        title: "Roberta",
+        route: "https://www.youtube.com/watch?v=9ULGYbDR79g&t",
+        videoId: "9ULGYbDR79g?si=pP8KY5r4qAkNG0Ya",
       },
       {
-        img: "work-6",
-        meta: "Fundación Esport Solidari Internacional",
-        title: "Josep Maldonado",
-        route: "https://www.youtube.com/watch?v=fwtHJCTLbF8",
-        videoId: "fwtHJCTLbF8?si=6vXlefydguOAT4jA",
+        img: "work-2",
+        meta: "Ayudas",
+        title: "Tatiana",
+        route: "https://www.youtube.com/watch?v=32fUqM6BK5M&t",
+        videoId: "32fUqM6BK5M?si=veJkdtSdB0RZcpk_",
       },
       {
-        img: "work-7",
-        meta: "Critico de Moda / Presentador de Television",
-        title: "Erik Putzbach",
-        route: "https://www.youtube.com/watch?v=zIbm5690LKI",
-        videoId: "zIbm5690LKI?si=9yYhc9ADHVU9V2d4",
+        img: "work-3",
+        meta: "Ayudas",
+        title: "Susana",
+        route: "https://www.youtube.com/watch?v=xPmDGom-oFg",
+        videoId: "xPmDGom-oFg?si=xRXgaqVrN4Xpsl2n",
       },
       {
-        img: "work-8",
-        meta: "Pizzero / YouTuber",
-        title: "Pino Prestanizzi",
-        route: "https://www.youtube.com/watch?v=XaB7dP-b2to",
-        videoId: "XaB7dP-b2to?si=OAfCDLjEXFt3rSrY",
+        img: "work-4",
+        meta: "Ayudas",
+        title: "Jordi",
+        route: "https://www.youtube.com/watch?v=qeRZ7x4Tz0E",
+        videoId: "qeRZ7x4Tz0E?si=IHMK_25IgK4-QCCk",
       },
     ],
   },
+  {
+    tabContent: [
+      {
+        img: "work-1",
+        meta: "Ayudas",
+        title: "Carmen",
+        route: "https://www.youtube.com/watch?v=PiMykbANYTQ",
+        videoId: "PiMykbANYTQ?si=WnLoB_RF121nTJhd",
+      },
+      {
+        img: "work-2",
+        meta: "Ayudas",
+        title: "Modibo",
+        route: "https://www.youtube.com/watch?v=RnD-y0V8Lko",
+        videoId: "RnD-y0V8Lko?si=JBiW_NtQWTxwi2gi",
+      },
+      {
+        img: "work-3",
+        meta: "Ayudas",
+        title: "Ada Luz",
+        route: "https://www.youtube.com/watch?v=2Ig0nEx0RGM&t",
+        videoId: "2Ig0nEx0RGM?si=b6zcrL7NxEjxr3j-",
+      },
+      {
+        img: "work-4",
+        meta: "Ayudas",
+        title: "Francisco Ribas",
+        route: "https://www.youtube.com/watch?v=WAq4aPjFAYU",
+        videoId: "WAq4aPjFAYU?si=7LYHOXJ21ujPExTz",
+      },
+    ],
+  },
+  {
+    tabContent: [
+      {
+        img: "work-1",
+        meta: "Ayudas",
+        title: "Manel Martin",
+        route: "https://www.youtube.com/watch?v=2Qzy3dsS0Xs",
+        videoId: "2Qzy3dsS0Xs?si=sXKTPFcZB8_yrSdx",
+      },
+      {
+        img: "work-2",
+        meta: "Ayudas",
+        title: "Aron",
+        route: "https://www.youtube.com/watch?v=Ey-VoBDOg7Q",
+        videoId: "Ey-VoBDOg7Q?si=QYWIIvDty8LaG1Q2",
+      },
+      {
+        img: "work-3",
+        meta: "Ayudas",
+        title: "Manuel",
+        route: "https://www.youtube.com/watch?v=_9zb9Q-If6E",
+        videoId: "_9zb9Q-If6E?si=Cb4TktkoY8K1OZYD",
+      },
+      {
+        img: "work-4",
+        meta: "Ayudas",
+        title: "Jorge",
+        route: "https://www.youtube.com/watch?v=r1SGhIPd44o",
+        videoId: "r1SGhIPd44o?si=QqjW5-hMnRtQLIbe",
+      },
+    ],
+  },
+  {
+    tabContent: [
+      {
+        img: "work-2",
+        meta: "Ayudas",
+        title: "Eugenio Fernandez",
+        route: "https://www.youtube.com/watch?v=ep_a1dyNqno",
+        videoId: "ep_a1dyNqno?si=YczAVANXA3veM5ms",
+      },
+
+    ],
+  },
+  
 ];
 
-const PortfolioSevenMasonry = () => {
+const PortfolioAyudas = () => {
+  const { ayudasSection, scrollDown} = useContext(RefContext);
+
   return (
     <>
       <Tabs>
@@ -146,7 +227,15 @@ const PortfolioSevenMasonry = () => {
         <div>
           <TabList className="ptf-filters ptf-filters--style-1">
             {portfolioMenu.map((item, i) => (
-              <Tab className="filter-item" key={i}>
+              <Tab
+                className="filter-item "
+                key={i}
+                onClick={() => {
+                  setTimeout(() => {
+                    scrollDown(ayudasSection, -400);
+                  }, 200); // Adjust the timeout duration as per your requirement
+                }}
+              >
                 {item}
               </Tab>
             ))}
@@ -157,4 +246,4 @@ const PortfolioSevenMasonry = () => {
   );
 };
 
-export default PortfolioSevenMasonry;
+export default PortfolioAyudas;

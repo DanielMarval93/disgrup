@@ -24,7 +24,7 @@ const AvisoLegal = () => {
             <article className="ptf-single-post">
               {/* <!--Post Wrapper--> */}
               <div className="ptf-single-post__wrapper">
-                <div className="container-xxl">
+                <div className="container">
                   <div className="row">
                     <div className="col-xl-8 offset-xl-2">
                       {/* <!--Post Info--> */}

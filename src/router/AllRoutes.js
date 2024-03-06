@@ -24,11 +24,11 @@ import BlogDetailsSidebar from "../views/inner-pages/blog/BlogDetailsSidebar";
 import Ayudas from "../views/inner-pages/blog/Ayudas";
 import Agradecimientos from "../views/inner-pages/blog/Agradecimientos"
 import Ejercicios from "../views/inner-pages/blog/Ejercicios";
-import Terapias from "../views/inner-pages/blog/Terapia"
+import Terapia from "../views/inner-pages/blog/Terapia"
 
 // Noticias
 
-import Historias from "../views/inner-pages/blog/Historias";
+import Galeria from "../views/inner-pages/blog/Galeria";
 
 // Portfolio
 import WorksGrid from "../views/inner-pages/portfolio/WorksGrid";
@@ -51,8 +51,10 @@ import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
 import AvisoLegal from "../views/inner-pages/blog/AvisoLegal";
 import PoliticaCookies from "../views/inner-pages/blog/PoliticaCookies";
 import PoliticaPrivacidad from "../views/inner-pages/blog/PoliticaPrivacidad";
+import Devoluciones from "../views/inner-pages/blog/Devoluciones";
 
 //Test
+
 
 import Test from "../views/inner-pages/blog/Test";
 
@@ -85,12 +87,12 @@ const AllRoutes = () => {
         <Route path="/videos-ayudas" element={<Ayudas />} />
         <Route path="/videos-agradecimientos" element={<Agradecimientos />} />
         <Route path="/videos-ejercicios" element={<Ejercicios />} />
-        <Route path="/videos-terapias" element={<Terapias />} />
+        <Route path="/videos-terapias" element={<Terapia />} />
 
         
         {/* Noticias */}
         <Route path="/noticias" element={<BlogGrid />} />
-        <Route path="/historias" element={<Historias />} />
+        <Route path="/galeria" element={<Galeria />} />
 
         {/* Test */}
         <Route path="/test" element={<Test />} />
@@ -108,6 +110,8 @@ const AllRoutes = () => {
         <Route path="/cookies" element={<PoliticaCookies/>} />
         <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+        <Route path="/politica-devoluciones" element={<Devoluciones />} />
+
         
 
         {/* others */}

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import { Helmet } from "react-helmet";
 import CopyRight from "../../../components/footer/copyright/CopyRight";
 import Footer from "../../../components/footer/Footer";
 import HeaderDefault from "../../../components/header/HeaderDefault";
-import PortfolioSevenMasonry from "../../../components/portfolio/PortfolioAgradecimientos";
+import PortfolioAyudas from "../../../components/portfolio/PortfolioAyudas";
+import RefContext from "../../../components/context/RefContext";
 
 const Ayudas = () => {
+  const { ayudasSection, setAyudasSection } =
+    useContext(RefContext);
+
+  setAyudasSection(useRef(null));
+
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
@@ -57,8 +63,21 @@ const Ayudas = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </header>
+
+              {/* <!--Post Media--> */}
+              <div className="ptf-single-post__header ptf-single-post__header--style-1">
+                <div
+                  className="container-xxl"
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                >
                   <div className="row">
-                    <div className="col-lg-10 offset-lg-1">
+                    <div className="col-lg-8 offset-lg-2">
                       <div className="ptf-single-post__meta">
                         <div class="ratio ratio-16x9">
                           <iframe
@@ -81,8 +100,8 @@ const Ayudas = () => {
                       En la Fundación Disgrup ayudamos a personas con
                       Discapacidad, en este caso ayudamos a Bayane y su família.
                       </div>
-                      </div>
-                      <div className="col-xl-8 offset-xl-2">
+                    </div>
+                    <div className="col-xl-8 offset-xl-2">
                       <div
                         className="ptf-spacer"
                         style={{
@@ -90,7 +109,7 @@ const Ayudas = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      
+
                       {/* <!--Divider--> */}
                       <div className="ptf-divider"></div>
                       <div
@@ -100,10 +119,12 @@ const Ayudas = () => {
                           "--ptf-md": "2.5rem",
                         }}
                       ></div>
-                      <h2 className="has-accent-1">Ultimos Videos</h2>
 
-                      <PortfolioSevenMasonry />
+                      <div ref={ayudasSection}>
+                        <h2 className="has-accent-1">Ultimos Videos</h2>
 
+                        <PortfolioAyudas />
+                      </div>
                       <div
                         className="ptf-spacer"
                         style={{
@@ -114,18 +135,6 @@ const Ayudas = () => {
                     </div>
                   </div>{" "}
                 </div>
-              </header>
-
-              {/* <!--Post Media--> */}
-              <div className="ptf-single-post__media">
-                <div
-                  className="container-xxl"
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                ></div>
               </div>
             </article>
           </div>

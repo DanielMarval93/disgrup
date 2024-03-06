@@ -1,85 +1,99 @@
-import React from "react";
+import React, { useContext} from "react";
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Masonry from "react-masonry-css";
 
+import RefContext from "../context/RefContext";
+
 const breakpointColumnsObj = {
   default: 2,
-  1100: 2,
+  1100: 3,
   768: 2,
   500: 1,
 };
 
-const portfolioMenu = ["1", "2"];
+const portfolioMenu = ["1", "2", "3"];
 
 const portfolioContent = [
   {
     tabContent: [
       {
         img: "work-1",
-        meta: "Fundador de la Casa del Tíbet",
-        title: "Thubten Wangchen",
-        route: "https://www.youtube.com/watch?v=KJK-mxNAotM",
-        videoId: "KJK-mxNAotM?si=N7_BfKDrkrB0bxR8",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 9",
+        route: "https://www.youtube.com/watch?v=EtFimAcpRdU",
+        videoId: "EtFimAcpRdU?si=C7frKVxAmFVopWQ1",
       },
       {
-        img: "work-2",
-        meta: "Subcampeón del Mundo",
-        title: "Lionel Morales",
-        route: "https://www.youtube.com/watch?v=ni3Hwc4JWWQ",
-        videoId: "ni3Hwc4JWWQ?si=rlrHYRFeWOdml5VT",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 8",
+        route: "https://www.youtube.com/watch?v=EtFimAcpRdU",
+        videoId: "EtFimAcpRdU?si=C7frKVxAmFVopWQ1",
       },
       {
-        img: "work-3",
-        meta: "Locutor Radio Mollet",
-        title: "Josep Roca",
-        route: "https://www.youtube.com/watch?v=aPv6sFioSEE",
-        videoId: "aPv6sFioSEE?si=M4em6C6fVj5I7wfb",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 7",
+        route: "https://www.youtube.com/watch?v=tn1o6DWGuSo",
+        videoId: "tn1o6DWGuSo?si=p0DFrcgmX7mjyka6",
       },
       {
-        img: "work-4",
-        meta: "Vice presidente de Barcelona Comerç",
-        title: "Lluis Llanas",
-        route: "https://www.youtube.com/watch?v=cGgBDyc5x74",
-        videoId: "cGgBDyc5x74?si=UWH3tS2lvWf5e13s",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 6",
+        route: "https://www.youtube.com/watch?v=YwyzgbyuEGI",
+        videoId: "YwyzgbyuEGI?si=OXBez1rswH16Q86r",
       },
     ],
   },
   {
     tabContent: [
       {
-        img: "work-5",
-        meta: "Activista social / Portavoz de COESPE",
-        title: "Ramon Franquesa",
-        route: "https://www.youtube.com/watch?v=cGgBDyc5x74",
-        videoId: "FHAO7_SHFII?si=IwOR-2uoKcKaXuJf",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 5",
+        route: "https://www.youtube.com/watch?v=jCZlQTr_UJY",
+        videoId: "jCZlQTr_UJY?si=N5diFoB7vaFC7rqC",
       },
       {
-        img: "work-6",
-        meta: "Fundación Esport Solidari Internacional",
-        title: "Josep Maldonado",
-        route: "https://www.youtube.com/watch?v=fwtHJCTLbF8",
-        videoId: "fwtHJCTLbF8?si=6vXlefydguOAT4jA",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 4",
+        route: "https://www.youtube.com/watch?v=IM3XN62aDdI",
+        videoId: "IM3XN62aDdI?si=vFwRy10A5DHsULgc",
       },
       {
-        img: "work-7",
-        meta: "Critico de Moda / Presentador de Television",
-        title: "Erik Putzbach",
-        route: "https://www.youtube.com/watch?v=zIbm5690LKI",
-        videoId: "zIbm5690LKI?si=9yYhc9ADHVU9V2d4",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 3",
+        route: "https://www.youtube.com/watch?v=t2xsNW3S7z0",
+        videoId: "t2xsNW3S7z0?si=YwMngV_SYC417rvF",
       },
       {
-        img: "work-8",
-        meta: "Pizzero / YouTuber",
-        title: "Pino Prestanizzi",
-        route: "https://www.youtube.com/watch?v=XaB7dP-b2to",
-        videoId: "XaB7dP-b2to?si=OAfCDLjEXFt3rSrY",
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 2",
+        route: "https://www.youtube.com/watch?v=ExFkIFhBJBc",
+        videoId: "ExFkIFhBJBc?si=fjs_yJkLx6NuXkjn",
+      },
+    ],
+  },  {
+    tabContent: [
+      {
+        img: "work-1",
+        meta: "Terapia Ocupacional",
+        title: "Challenge Nº 1",
+        route: "https://www.youtube.com/watch?v=sNc2HkEJgLE",
+        videoId: "sNc2HkEJgLE?si=tY9aNKc_0_XvHBoj",
       },
     ],
   },
 ];
 
-const PortfolioSevenMasonry = () => {
+const PortfolioTerapia = () => {
+  const { terapiaSection, scrollDown} = useContext(RefContext);
+
   return (
     <>
       <Tabs>
@@ -146,7 +160,15 @@ const PortfolioSevenMasonry = () => {
         <div>
           <TabList className="ptf-filters ptf-filters--style-1">
             {portfolioMenu.map((item, i) => (
-              <Tab className="filter-item " key={i}>
+              <Tab
+                className="filter-item "
+                key={i}
+                onClick={() => {
+                  setTimeout(() => {
+                    scrollDown(terapiaSection, -400);
+                  }, 200); // Adjust the timeout duration as per your requirement
+                }}
+              >
                 {item}
               </Tab>
             ))}
@@ -157,4 +179,4 @@ const PortfolioSevenMasonry = () => {
   );
 };
 
-export default PortfolioSevenMasonry;
+export default PortfolioTerapia;

@@ -3,9 +3,9 @@ import { createContext, useState } from "react";
 const RefContext = createContext();
 
 function Provider({ children }) {
-  const [gallerySection, setGallerySection] = useState(null);
+  const [ayudasSection, setAyudasSection] = useState(null);
   const [contactSection, setContactSection] = useState(null);
-  const [joinUsSection, setJoinUsSection] = useState(null);
+  const [terapiaSection, setTerapiaSection] = useState(null);
   const [servicesSection, setServicesSection] = useState(null);
   const [ultimosVideosSection, setUltimosVideosSection] = useState(null);
   const [ejerciciosSection, setEjerciciosSection] = useState(null);
@@ -13,12 +13,12 @@ function Provider({ children }) {
   const refs = {
     ultimosVideosSection,
     setUltimosVideosSection,
-    gallerySection,
-    setGallerySection,
+    ayudasSection,
+    setAyudasSection,
     contactSection,
     setContactSection,
-    joinUsSection,
-    setJoinUsSection,
+    terapiaSection,
+    setTerapiaSection,
     servicesSection,
     setEjerciciosSection,
     ejerciciosSection,
