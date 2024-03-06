@@ -248,11 +248,7 @@ const HomeAgency = () => {
                           "--ptf-md": "4.0625rem",
                         }}
                       ></div>
-                      <img
-                        alt="Donacion bizum"
-                        src="../../../src/assets/img/home/agency/about-image.jpg"
-                        style={{}}
-                      />
+                   
                       <div className="has-black-color fz-90 lh-1 text-end"></div>
                     </div>
                   </div>
