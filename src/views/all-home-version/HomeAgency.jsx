@@ -221,16 +221,7 @@ const HomeAgency = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-5">
-                        <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "3rem", "--ptf-md": "1rem" }}
-              ></div>
-                          <img
-                            alt="Donacion bizum"
-                            src="https://i.imgur.com/7mG5f1v.jpg"
-                          />
-                        </div>
+                 
                       </div>
                     </div>
                   </div>
@@ -241,13 +232,14 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="100"
                     >
-                      <div
-                        className="ptf-spacer"
-                        style={{
-                          "--ptf-xxl": "5.125rem",
-                          "--ptf-md": "4.0625rem",
-                        }}
-                      ></div>
+                       <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "3rem", "--ptf-md": "1rem" }}
+              ></div>
+                          <img
+                            alt="Donacion bizum"
+                            src="https://i.imgur.com/7mG5f1v.jpg"
+                          />
                    
                       <div className="has-black-color fz-90 lh-1 text-end"></div>
                     </div>
