@@ -181,7 +181,7 @@ const HomeAgency = () => {
               ></div>
               <div className="container">
                 <div className="row ">
-                  <div className="col-xl-7 ">
+                  <div className="col-xl-12 ">
                     {/* <!--Animated Block--> */}
                     <div
                       className="ptf-animated-block"
