@@ -8,36 +8,57 @@ import ModalVideo from "react-modal-video";
 
 const blogContent = [
   {
-    img: "lolo-1",
-    cat: "Desventuras de Lolo",
-    date: "14 Mayo 2021",
-    title: "Ascensores publicos",
-    videoId: "V4sZcIzwTXY",
+    img: "santi-1",
+    cat: "Camino de Santiago",
+    date: "17 Junio 2023",
+    title: "Presentación",
+    videoId: "uRINHRkbhqY",
   },
   {
-    img: "lolo-2",
-    cat: "Desventuras de Lolo",
-    date: "9 Junio De 2021",
-    title: "Deposiciones Caninas",
-    videoId: "3rhEq64CTcA",
+    img: "santi-2",
+    cat: "Camino de Santiago",
+    date: "21 junio 2023",
+    title: "Dia 1 - Barcelona - Madrid - Sarria",
+    videoId: "b-M9QsO9feU",
   },
   {
-    img: "lolo-3",
-    cat: "Desventuras de Lolo",
-    date: "1 de Julio De 2021",
-    title: "Superando Barreras",
-    videoId: "S8mdkNkI3f8",
+    img: "santi-3",
+    cat: "Camino de Santiago",
+    date: "23 Junio 2023",
+    title: "Dia 2 - Sarria",
+    videoId: "tnLV_F9KVeE",
+  },
+  {
+    img: "santi-4",
+    cat: "Camino de Santiago",
+    date: "25 Junio 2023",
+    title: "Dia 3 - Sarria Portomarin",
+    videoId: "54eM-cxvqT8",
+  },
+  {
+    img: "santi-5",
+    cat: "Camino de Santiago",
+    date: "26 junio 2023",
+    title: "Dia 4 - Portomarín - Palas de Rei - Arzúa",
+    videoId: "21TIfb2SSXY",
+  },
+  {
+    img: "santi-6",
+    cat: "Camino de Santiago",
+    date: "29 Junio 2023",
+    title: "Dia 5 - Arzua - Pedrouzo - Santiago",
+    videoId: "UyKOdfJLHP0",
   },
 ];
 
-const Galeria = () => {
+const CaminoSantiago = () => {
   const [isOpen, setOpen] = useState(false);
   const [isVideoId, setVideoId] = useState(false);
 
   return (
     <div className="ptf-site-wrapper animsition ptf-is--blog-grid">
       <Helmet>
-        <title>Fundacion Disgrup - Galeria</title>
+        <title>Fundacion Disgrup - Camino de Santiago</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="ptf-site-wrapper__inner">
@@ -66,7 +87,7 @@ const Galeria = () => {
                         className="large-heading has-accent-1"
                         style={{ marginLeft: "1.4rem" }}
                       >
-                        Galeria
+                        Camino de <span className="has-black-color">Santiago </span>
                       </h1>
                     </div>
                   </div>
@@ -151,7 +172,7 @@ const Galeria = () => {
                         <article className="ptf-post ptf-post--style-1">
                           <div className="ptf-post__media">
                             <img
-                              src={`assets/img/blog/grid/${val.img}.png`}
+                              src={`assets/img/blog/grid/${val.img}.jpg`}
                               alt="blog"
                               loading="lazy"
                               onClick={() => {
@@ -236,4 +257,4 @@ const Galeria = () => {
   );
 };
 
-export default Galeria;
+export default CaminoSantiago;

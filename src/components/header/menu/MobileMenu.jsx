@@ -29,7 +29,7 @@ const menuContent = [
     ],
   },
   {
-    name: "Ayudanos",
+    name: "Dona",
     dropDownItems: [
       {
         name: "Beneficios de donar",
@@ -78,9 +78,9 @@ const menuContent = [
       routerPath: "/galeria",
     }, 
     {
-      name: "Eventos",
-      routerPath: "/coming-soon",
-    }, 
+      name: "Camino de Santiago",
+      routerPath: "/camino-de-santiago",
+    },
     ],
   },
 ];

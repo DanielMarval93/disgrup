@@ -40,6 +40,10 @@ const menuContent = [
       name: "Galeria",
       routerPath: "/galeria",
     },
+    {
+      name: "Camino de Santiago",
+      routerPath: "/camino-de-santiago",
+    },
     
     ],
   },

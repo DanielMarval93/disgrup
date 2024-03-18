@@ -57,6 +57,7 @@ import Devoluciones from "../views/inner-pages/blog/Devoluciones";
 
 
 import Test from "../views/inner-pages/blog/Test";
+import CaminoSantiago from "../views/inner-pages/blog/caminoSantiago";
 
 const AllRoutes = () => {
   return (
@@ -93,6 +94,8 @@ const AllRoutes = () => {
         {/* Noticias */}
         <Route path="/noticias" element={<BlogGrid />} />
         <Route path="/galeria" element={<Galeria />} />
+        <Route path="/camino-de-santiago" element={<CaminoSantiago />} />
+
 
         {/* Test */}
         <Route path="/test" element={<Test />} />
