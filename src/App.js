@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import AllRoutes from "./router/AllRoutes";
-import ScrollToTop from "./components/ScrollToTop";
 import AOS from "aos";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,8 +36,6 @@ const App = () => {
       />
       {/* End Animated Cursor */}
 
-      <ScrollToTop />
-      {/* End Scroll To Top */}
 
       <AllRoutes />
       {/* End All Routes */}
