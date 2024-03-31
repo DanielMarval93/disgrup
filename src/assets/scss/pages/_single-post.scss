@@ -18,6 +18,22 @@
     }
   }
 
+  &__headerTwo {
+    padding: px2rem(30px) 0 px2rem(0px);
+
+    @include mq("medium") {
+      padding: px2rem(80px) 0 px2rem(50px);
+    }
+
+    &--style-1 {
+      text-align: center;
+    }
+
+    .ptf-single-post__meta {
+      margin-top: px2rem(40px);
+    }
+  }
+
   &__meta {
     text-transform: uppercase;
     color: var(--ptf-color-black);
@@ -45,7 +61,7 @@
 
   &__wrapper {
     padding-top: px2rem(90px);
-    padding-bottom: px2rem(160px);
+    padding-bottom: px2rem(50px);
 
     @include mq("medium") {
       padding-top: px2rem(45px);
@@ -72,6 +88,21 @@
     font-size: px2rem(30px);
     line-height: 1.6;
     font-weight: 700;
+
+    @include mq("medium") {
+      margin-bottom: px2rem(30px);
+    }
+  }
+
+  &__excerpt2 {
+    margin-bottom: px2rem(30px);
+    padding-right: 5%;
+
+    color: var(--ptf-color-black);
+    font-size: px2rem(24px);
+    line-height: 1.6;
+    font-weight: 500;
+    font-style:italic ;
 
     @include mq("medium") {
       margin-bottom: px2rem(30px);
@@ -131,12 +162,10 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: px2rem(90px);
-    padding-bottom: px2rem(90px);
+    margin-top: px2rem(20px);
 
     @include mq("medium") {
-      margin-top: px2rem(45px);
-      padding-bottom: px2rem(45px);
+      margin-top: px2rem(20px);
     }
     @include mq("large") {
       flex-direction: column;
@@ -162,6 +191,44 @@
         text-transform: uppercase;
         color: var(--ptf-color-black);
         font-size: px2rem(14px);
+
+        @include mq("large") {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  &__footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    
+    @include mq("large") {
+      flex-direction: column;
+    }
+
+    .ptf-post-tags {
+      a {
+        @extend %ptf_tag;
+      }
+    }
+
+    .ptf-post-socials {
+      display: flex;
+      align-items: center;
+      @include mq("large") {
+      }
+
+      span {
+        margin-right: px2rem(20px);
+
+        text-transform: uppercase;
+        color: var(--ptf-color-black);
+        font-size: px2rem(20px);
 
         @include mq("large") {
           display: none;

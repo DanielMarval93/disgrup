@@ -30,6 +30,8 @@ import Terapia from "../views/inner-pages/blog/Terapia"
 
 import Galeria from "../views/inner-pages/blog/Galeria";
 
+import NoticiaDenunciaBarcelona from "../views/inner-pages/blog/Noticias/NoticiaDenunciaBarcelona";
+
 // Portfolio
 import WorksGrid from "../views/inner-pages/portfolio/WorksGrid";
 import WorksMasonry from "../views/inner-pages/portfolio/WorksMasonry";
@@ -95,6 +97,8 @@ const AllRoutes = () => {
         <Route path="/noticias" element={<BlogGrid />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/camino-de-santiago" element={<CaminoSantiago />} />
+        
+        <Route path="/noticia-denuncia-barcelona" element={<NoticiaDenunciaBarcelona />} />
 
 
         {/* Test */}

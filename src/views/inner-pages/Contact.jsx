@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import HeaderDefault from "../../components/header/HeaderDefault";
-import CopyRight from "../../components/footer/copyright/CopyRight";
-import Footer from "../../components/footer/Footer";
+import CopyRightTwo from "../../components/footer/copyright/CopyRightTwo";
+import FooterTwo from "../../components/footer/FooterTwo";
 import Social from "../../components/social/Social";
 import ContactForm from "../../components/ContactForm";
 import Address from "../../components/Address";
@@ -102,19 +102,24 @@ const Contact = () => {
         </div>
       </div>
 
-      {/*=============================================
-        Start Footer
-        ============================================== */}
-      <footer className="ptf-footer ptf-footer--style-1">
-        <div className="container-xxl">
-          <div className="ptf-footer__top">
-            <Footer />
-          </div>
-          <div className="ptf-footer__bottom">
-            <CopyRight />
-          </div>
-        </div>
-      </footer>
+      {/* <!--Footer--> */}
+      <footer className="ptf-footer ptf-footer--style-3">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xl-10 offset-xl-2">
+                    <div className="ptf-footer__top">
+                      <FooterTwo />
+                    </div>
+                    {/* End .ptf-footer__top */}
+
+                    <div className="ptf-footer__bottom">
+                      <CopyRightTwo />
+                    </div>
+                    {/* End .ptf-footer__bottom */}
+                  </div>
+                </div>
+              </div>
+            </footer>
     </div>
   );
 };

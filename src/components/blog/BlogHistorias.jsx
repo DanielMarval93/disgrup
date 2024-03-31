@@ -87,6 +87,10 @@ const BlogHistorias = (videoId) => {
                   <Link to="/blog-details">{val.title}</Link>
                 </h3>
               </header>
+              <div
+                className="ptf-spacer"
+                style={{ "--ptf-xxl": "1rem", "--ptf-md": "1rem" }}
+              ></div>
             </div>
             <div className="ptf-post__media">
               

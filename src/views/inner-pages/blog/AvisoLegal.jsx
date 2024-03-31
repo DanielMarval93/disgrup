@@ -118,7 +118,7 @@ const AvisoLegal = () => {
                             <li>Teléfono: 932 265 050</li>
                             <li>e-mail: info@disgrup.org</li>
                             <li>
-                              Inscrita en el Registro (Mercantil / Público):
+                            Inscrita en el Registro de fundaciones del ministerio de justicia
                             </li>
                           </ul>
 

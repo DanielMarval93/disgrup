@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import CopyRight from "../../../components/footer/copyright/CopyRight";
-import Footer from "../../../components/footer/Footer";
+import CopyRightTwo from "../../../components/footer/copyright/CopyRightTwo";
+import FooterTwo from "../../../components/footer/FooterTwo";
 import HeaderDefault from "../../../components/header/HeaderDefault";
 import ImageGridTwo from "../../../components/image-grid/ImageGridTwo";
 import ModalVideo from "react-modal-video";
@@ -283,17 +283,24 @@ const BlogDetails = () => {
         </div>
         {/* End .main */}
 
-        {/* <!--Footer--> */}
-        <footer className="ptf-footer ptf-footer--style-1">
-          <div className="container-xxl">
-            <div className="ptf-footer__top has-black-color">
-              <Footer />
-            </div>
-            <div className="ptf-footer__bottom">
-              <CopyRight />
-            </div>
-          </div>
-        </footer>
+      {/* <!--Footer--> */}
+      <footer className="ptf-footer ptf-footer--style-3">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xl-10 offset-xl-2">
+                    <div className="ptf-footer__top">
+                      <FooterTwo />
+                    </div>
+                    {/* End .ptf-footer__top */}
+
+                    <div className="ptf-footer__bottom">
+                      <CopyRightTwo />
+                    </div>
+                    {/* End .ptf-footer__bottom */}
+                  </div>
+                </div>
+              </div>
+            </footer>
       </div>{" "}
       <ModalVideo
         channel="youtube"

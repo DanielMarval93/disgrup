@@ -55,6 +55,7 @@ const blogContent = [
     cat: "Noticias",
     date: "31 de marzo de 2019",
     title: "Denunciamos al Ayuntamiento de Barcelona",
+    route: "/noticia-denuncia-barcelona"
   },
 
 ];
@@ -66,7 +67,7 @@ const BlogThree = () => {
         <div className="col-xl-4 col-lg-4" key={i}>
           <article className="ptf-post ptf-post--style-1">
             <div className="ptf-post__media">
-              <Link className="ptf-work__link" to="/blog-details"></Link>
+              <Link className="ptf-work__link" to={val.route}></Link>
               <img
                 src={`assets/img/blog/grid/${val.img}.jpg`}
                 alt="blog"
@@ -81,7 +82,7 @@ const BlogThree = () => {
                   <span className="date">{val.date}</span>
                 </div>
                 <h3 className="ptf-post__title">
-                  <Link to="/blog-details">{val.title}</Link>
+                  <Link to={val.route}>{val.title}</Link>
                 </h3>
               </header>
             </div>

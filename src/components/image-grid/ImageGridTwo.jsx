@@ -42,7 +42,7 @@ const ImageGridTwo = () => {
                       alt="service"
                       role="button"
                       ref={ref}
-                      onClick={open}
+                      
                     />
                   )}
                 </Item>

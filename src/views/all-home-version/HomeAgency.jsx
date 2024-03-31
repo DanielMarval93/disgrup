@@ -133,10 +133,10 @@ const HomeAgency = () => {
                       >
                         Señala su fundador al referirse al sentido que le impuso
                         a este grupo de personas que trabajan desde hace más de
-                        diez años brindándoles ayudas directas a los socios en
-                        toda España, que van desde productos ortopédicos, hasta
-                        terapias a las que de otra manera no accederían y que
-                        mejoran sensiblemente su día a día.
+                        diez años brindándoles ayuda directa a las personas con
+                        discapacidad de toda España, que van desde productos
+                        ortopédicos, hasta terapias a las que de otra manera no
+                        accederían y que mejoran sensiblemente su día a día.
                       </p>
                       {/* <!--Spacer--> */}
                       <div
@@ -188,7 +188,9 @@ const HomeAgency = () => {
                       data-aos="fade"
                       data-aos-delay="0"
                     >
-                      <h1 className="has-accent-1">ULTIMOS VIDEOS</h1>
+
+                      
+                      <h1 className="has-accent-2">ULTIMOS VIDEOS</h1>
                       <div
                         className="ptf-spacer"
                         style={{
@@ -208,9 +210,9 @@ const HomeAgency = () => {
                             </div>
                           </div>
                           <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "1rem", "--ptf-md": "1rem" }}
-              ></div>
+                            className="ptf-spacer"
+                            style={{ "--ptf-xxl": "1rem", "--ptf-md": "1rem" }}
+                          ></div>
                           <div className="ptf-video">
                             <div class="ratio ratio-16x9">
                               <iframe
@@ -222,19 +224,26 @@ const HomeAgency = () => {
                           </div>
                         </div>
                         <div className="col-lg-5">
-                        <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "3rem", "--ptf-md": "1rem" }}
-              ></div>
+                          <div
+                            className="ptf-spacer"
+                            style={{ "--ptf-xxl": "3rem", "--ptf-md": "1rem" }}
+                          ></div>
                           <img
                             alt="Donacion bizum"
                             src="https://i.imgur.com/7mG5f1v.jpg"
                           />
                         </div>
+                        {/* <!--Spacer--> */}
+                        <div
+                          className="ptf-spacer"
+                          style={{
+                            "--ptf-xxl": "1.5rem",
+                            "--ptf-md": "1.5rem",
+                          }}
+                        ></div>
                       </div>
                     </div>
                   </div>
-         
                 </div>
               </div>
             </section>
@@ -268,30 +277,20 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-1 d-inline-flex important!">
-                    DISGRUP AYUDA
-                  </h2>
-                  <Link
-                    className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
-                    to="/videos-ayudas"
-                    style={{ marginLeft: "5.625rem" }}
-                  >
-                    + Ayudas{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      style={{ height: "1em" }}
-                      viewBox="0 0 17 17"
-                    >
-                      <path d="M16 .997V10h-1V2.703L4.683 13l-.707-.708L14.291 1.997H6.975v-1H16z" />
-                    </svg>
-                  </Link>
+                  <row>
+                    <div className="col-lg-8">
+                      <h3
+                        className="ptf-post__title has-accent-2 "
+                        style={{ fontSize: "60px" }}
+                      >
+                        <Link to="/videos-ayudas">
+                          DISGRUP AYUDA A LA DISCAPACIDAD
+                        </Link>
+                      </h3>
+                    </div>
+                  </row>
                 </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "4.375rem", "--ptf-md": "2.1875rem" }}
-                ></div>
+
                 <div
                   className="row"
                   style={{
@@ -331,24 +330,18 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 fz-40 large-heading has-accent-1 d-inline-flex">
-                    ULTIMAS NOTICIAS
-                  </h2>
-                  <Link
-                    className="ptf-link-with-arrow fz-18 text-uppercase d-none d-lg-inline-flex"
-                    to="/blog-grid"
-                    style={{ marginLeft: "5.625rem" }}
-                  >
-                    + Noticias{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      style={{ height: "1em" }}
-                      viewBox="0 0 17 17"
-                    >
-                      <path d="M16 .997V10h-1V2.703L4.683 13l-.707-.708L14.291 1.997H6.975v-1H16z" />
-                    </svg>
-                  </Link>
+
+<h3
+                        className="ptf-post__title has-accent-2 "
+                        style={{ fontSize: "60px" }}
+                      >
+                        <Link to="/noticias">
+                        ULTIMAS NOTICIAS
+                        </Link>
+                      </h3>
+                  
+              
+ 
                 </div>
                 {/* End .ptf-animated-block */}
 

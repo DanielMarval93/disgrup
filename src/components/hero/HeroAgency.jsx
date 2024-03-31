@@ -46,10 +46,14 @@ const HeroAgency = () => {
                 style={{ "--ptf-xxl": "1.625rem" }}
               ></div>
 
-              <div className="d-flex justify-content-center">
+              <div className="d-flex "
+              
+              style={{ "marginLeft": "5.3rem" }}>
                 {/* <!--Button--> */}
                 <Link
                   className="ptf-btn ptf-btn--primary"
+                  
+                style={{ "fontSize": "36px" }}
                   to="/contact"
                   target="_self"
                 >
@@ -75,14 +79,14 @@ const HeroAgency = () => {
                       </div>
                     </div>
                     */}
-                {/* <!--Button--> */}
+                {/* <!--Button--> 
                 <Link
                   className="ptf-btn ptf-btn--secondary"
                   to="/conocenos"
                   style={{ marginLeft: "2rem", marginRight: "2rem" }}
                 >
                   Conocenos
-                </Link>
+                </Link>*/}
               </div>
             </div>
           </div>
