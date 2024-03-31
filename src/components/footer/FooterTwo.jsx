@@ -62,6 +62,13 @@ const FooterTwo = () => {
               </li>
             </ul>
           </div>
+
+          <div
+                        className="ptf-spacer"
+                        style={{
+                          "--ptf-md": "2.5rem",
+                        }}
+                      ></div>
         </div>
       </div>
     </div>

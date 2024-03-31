@@ -41,7 +41,7 @@ const Agradecimientos = () => {
                         {/* <!--Spacer--> */}
                         <div
                           className="ptf-spacer"
-                          style={{ "--ptf-xxl": "2rem", "--ptf-md": "2.5rem" }}
+                          style={{ "--ptf-xxl": "2rem", "--ptf-md": "0.5rem" }}
                         ></div>
                         <p>
                           En el canal youtube de la Fundación Disgrup, cada día

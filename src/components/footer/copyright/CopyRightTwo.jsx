@@ -13,7 +13,7 @@ const CopyRightTwo = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-12 col-md-5">
+      <div className="col-12 col-md-5" style={{"marginLeft":"4rem"}}>
         <p className="ptf-footer-copyright has-3-color">
           ©2023 &nbsp;
           <span className="has-white-color">
@@ -30,7 +30,8 @@ const CopyRightTwo = () => {
       </div>
       {/* End .col */}
 
-      <div className="col-12 col-lg">
+      <div className="col-12 col-lg"
+      style={{"marginLeft":"4rem"}}>
         <div className="ptf-footer-socials has-white-color">
           <SocialTwo />
           {/* <!--Social Icon--> */}
